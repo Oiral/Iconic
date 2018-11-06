@@ -9,7 +9,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: powerUp.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
@@ -114,6 +114,7 @@ MonoBehaviour:
   powerUp:
   - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
   - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
+  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
 --- !u!212 &212503338916658714
 SpriteRenderer:
   m_ObjectHideFlags: 1

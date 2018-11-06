@@ -10,12 +10,30 @@ public class CharacterMovement : MonoBehaviour {
     public GameObject bulletPrefab;
     public float shotSpeed = 0.5f;
 
+    public int health = 2;
+    public float invulnerableTimer = 0;
+
+    float healthRegenTimer;
+    public float healthRegenTime;
+
     float shotTimer;
+
+    public int multiShot = 1;
+
+    public float range = 70;
 
 	// Update is called once per frame
 	void Update () {
         Movement();
+        Firing();
+        InvulnerabilityTimer();
+        
 
+        ClampToScreen(0.01f,0.99f);
+    }
+
+    public void Firing()
+    {
         shotTimer += Time.deltaTime;
 
         if (Input.GetButton("Fire1"))
@@ -25,10 +43,20 @@ public class CharacterMovement : MonoBehaviour {
                 shotTimer = 0;
                 //Spawn stuff
                 Debug.Log("Pew");
+                for (int i = 0; i < multiShot - 1; i++)
+                {
+                    float angle = Random.Range(0, (70 / 2));
+                    angle = angle * RandomSign();
+
+                    angle -= 90;
+
+                    Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
+                }
+
                 Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, -90)), null);
+                ScreenShake.instance.shake = .2f;
             }
         }
-        ClampToScreen(0.01f,0.99f);
     }
 
     public void Movement()
@@ -53,6 +81,36 @@ public class CharacterMovement : MonoBehaviour {
         }
     }
 
+    public void InvulnerabilityTimer()
+    {
+        if (invulnerableTimer > 0)
+        {
+            invulnerableTimer -= Time.deltaTime;
+            Time.timeScale = Mathf.Abs( 1 - (invulnerableTimer / 2));
+        }
+        else
+        {
+            invulnerableTimer = 0;
+            Time.timeScale = 1;
+        }
+    }
+
+    public void HealthRegen()
+    {
+        if (invulnerableTimer == 0)
+        {
+            healthRegenTimer += Time.deltaTime;
+            if (healthRegenTimer > healthRegenTime)
+            {
+                health += 1;
+                if (health > 2)
+                {
+                    health = 2;
+                }
+            }
+        }
+    }
+
     public void ClampToScreen(float min, float max)
     {
         var pos = Camera.main.WorldToViewportPoint(transform.position);
@@ -64,6 +122,23 @@ public class CharacterMovement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Game Over");
-        Debug.Break();
+
+        if (health > 0)
+        {
+            invulnerableTimer += 1;
+            healthRegenTimer = 0;
+            collision.gameObject.GetComponent<BasicEnemyMovement>().RemoveHealth(99);
+            health -= 1;
+        }
+        else
+        {
+            Debug.Break();
+        }
+        
+    }
+
+    int RandomSign()
+    {
+        return Random.value < .5 ? 1 : -1;
     }
 }
