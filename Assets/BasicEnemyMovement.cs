@@ -34,7 +34,7 @@ public class BasicEnemyMovement : MonoBehaviour {
     public void RemoveHealth(int damage)
     {
         EnemyManager.instance.enemiesAlive -= 1;
-        if (Random.Range(0f,1f) > 0.7f)
+        if (Random.Range(0f,1f) > 0.9f)
         {
             Instantiate(powerUp[Random.Range(0,powerUp.Count)], transform.position, Quaternion.identity, null);
         }
