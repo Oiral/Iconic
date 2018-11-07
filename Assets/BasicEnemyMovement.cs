@@ -10,6 +10,8 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public float maxSpeed = 0.1f;
 
+    public int health = 1;
+
     Rigidbody2D rb;
     // Use this for initialization
 
@@ -33,12 +35,17 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public void RemoveHealth(int damage)
     {
-        EnemyManager.instance.enemiesAlive -= 1;
-        if (Random.Range(0f,1f) > 0.9f)
+        health -= damage;
+        if (health <= 0)
         {
-            Instantiate(powerUp[Random.Range(0,powerUp.Count)], transform.position, Quaternion.identity, null);
-        }
 
-        Destroy(gameObject);
+            EnemyManager.instance.enemiesAlive -= 1;
+            if (Random.Range(0f, 1f) > 0.9f)
+            {
+                Instantiate(powerUp[Random.Range(0, powerUp.Count)], transform.position, Quaternion.identity, null);
+            }
+
+            Destroy(gameObject);
+        }
     }
 }

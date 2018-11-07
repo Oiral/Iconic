@@ -21,7 +21,7 @@ public class EnemyManager : MonoBehaviour {
 
     public float spawnRange = 5f;
 
-    float waveNumber = 0;
+    public float waveNumber = 0;
 
     public float enemiesAlive = 0;
 
@@ -29,10 +29,19 @@ public class EnemyManager : MonoBehaviour {
     {
         if (enemiesAlive <= 0)
         {
-            waveNumber += 1;
-            for (int i = 0; i < waveNumber; i++)
+            //Check if there are no more left
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
             {
-                SpawnEnemy();
+
+                waveNumber += 1;
+                for (int i = 0; i < waveNumber; i++)
+                {
+                    SpawnEnemy();
+                }
+            }
+            else
+            {
+                enemiesAlive = GameObject.FindGameObjectsWithTag("Enemy").Length;
             }
         }
     }

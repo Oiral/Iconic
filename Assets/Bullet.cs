@@ -9,6 +9,10 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.position += transform.up * bulletSpeed * Time.deltaTime;
+        if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position,transform.position) > 30)
+        {
+            Destroy(gameObject);
+        }
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
