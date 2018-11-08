@@ -17,6 +17,8 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public List<GameObject> powerUp;
 
+    public bool destroy;
+
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
@@ -36,9 +38,9 @@ public class BasicEnemyMovement : MonoBehaviour {
     public void RemoveHealth(int damage)
     {
         health -= damage;
-        if (health <= 0)
+        if (health <= 0 && destroy == false)
         {
-
+            destroy = true;
             EnemyManager.instance.enemiesAlive -= 1;
             if (Random.Range(0f, 1f) > 0.9f)
             {

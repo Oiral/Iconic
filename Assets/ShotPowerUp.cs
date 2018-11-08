@@ -15,7 +15,7 @@ public class ShotPowerUp : MonoBehaviour {
             switch (type)
             {
                 case PowerUpType.fireRate:
-                    collision.gameObject.GetComponent<CharacterMovement>().shotSpeed = collision.gameObject.GetComponent<CharacterMovement>().shotSpeed / 1.1f;
+                    collision.gameObject.GetComponent<CharacterMovement>().shotSpeed += 1;
                     break;
                 case PowerUpType.multishot:
                     collision.gameObject.GetComponent<CharacterMovement>().multiShot += 1;

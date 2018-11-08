@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterMovement : MonoBehaviour {
 
@@ -8,7 +9,7 @@ public class CharacterMovement : MonoBehaviour {
     public float moveSpeed = 5;
 
     public GameObject bulletPrefab;
-    public float shotSpeed = 0.5f;
+    public float shotSpeed = 1f;
 
     public int health = 2;
     public float invulnerableTimer = 0;
@@ -22,12 +23,18 @@ public class CharacterMovement : MonoBehaviour {
 
     public float range = 70;
 
+    [Header("UI")]
+    public Text speedText;
+    public Text shotSpeedText;
+    public Text multiShotText;
+
 	// Update is called once per frame
 	void Update () {
         Movement();
         Firing();
         InvulnerabilityTimer();
-        
+        UpdateUI();
+
 
         ClampToScreen(0.01f,0.99f);
     }
@@ -38,14 +45,14 @@ public class CharacterMovement : MonoBehaviour {
 
         if (Input.GetButton("Fire1"))
         {
-            if (shotTimer >= shotSpeed)
+            if (shotTimer >= (1/ (shotSpeed/2)))
             {
                 shotTimer = 0;
                 //Spawn stuff
                 Debug.Log("Pew");
                 for (int i = 0; i < multiShot - 1; i++)
                 {
-                    float angle = Random.Range(0, (70 / 2));
+                    float angle = Random.Range(0, (range / 2));
                     angle = angle * RandomSign();
 
                     angle -= 90;
@@ -140,5 +147,12 @@ public class CharacterMovement : MonoBehaviour {
     int RandomSign()
     {
         return Random.value < .5 ? 1 : -1;
+    }
+
+    public void UpdateUI()
+    {
+        speedText.text = moveSpeed.ToString();
+        shotSpeedText.text = shotSpeed.ToString();
+        multiShotText.text = multiShot.ToString();
     }
 }
