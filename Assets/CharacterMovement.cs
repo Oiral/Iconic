@@ -43,7 +43,9 @@ public class CharacterMovement : MonoBehaviour {
     {
         shotTimer += Time.deltaTime;
 
-        if (Input.GetButton("Fire1"))
+        Vector2 aim = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
+
+        if (Input.GetButton("Fire1") || aim.magnitude > aimDeadZone)
         {
             if (shotTimer >= (1/ (shotSpeed/2)))
             {
