@@ -1085,7 +1085,8 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 1490664565516690, guid: a116573c18beb8b4f9796c6cf5697545, type: 2}
   - {fileID: 1317101449535394, guid: 81c6c98ec6a6f414c9ddd65a4391e17a, type: 2}
-  enemyCosts: 0100000003000000
+  - {fileID: 1151808859598652, guid: 22ec8f33b35eb93418168e8d2c2d26aa, type: 2}
+  enemyCosts: 010000000300000002000000
   waveCost: 0
   spawnRange: 15
   waveNumber: 0
@@ -1805,15 +1806,16 @@ MonoBehaviour:
   moveDeadZone: 0
   aimDeadZone: 0
   moveSpeed: 5
-  bulletPrefab: {fileID: 1631492202599202, guid: 0c3df158ff717824ea84cddd919272e4,
-    type: 2}
-  shotSpeed: 1
+  usingMouse: 1
   health: 1
   maxHealth: 1
   invulnerableTime: 1
   healthRegenTime: 1
-  multiShot: 1
   range: 70
+  bulletPrefab: {fileID: 1631492202599202, guid: 0c3df158ff717824ea84cddd919272e4,
+    type: 2}
+  shotSpeed: 1
+  multiShot: 1
   speedText: {fileID: 2068629864}
   shotSpeedText: {fileID: 1032888027}
   multiShotText: {fileID: 1440197157}

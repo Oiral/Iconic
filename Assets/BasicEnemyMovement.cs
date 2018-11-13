@@ -21,6 +21,8 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public GameObject deathParticle;
 
+    public bool aimAtPlayer = true;
+
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
@@ -29,8 +31,12 @@ public class BasicEnemyMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         var dir = target.transform.position - transform.position;
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+        if (aimAtPlayer)
+        {
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
 
         rb.velocity += (Vector2)dir * accelerationSpeed * Time.deltaTime;
 

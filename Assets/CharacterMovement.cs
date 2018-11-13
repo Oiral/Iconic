@@ -8,6 +8,7 @@ public class CharacterMovement : MonoBehaviour {
     public float moveDeadZone;
     public float aimDeadZone;
     public float moveSpeed = 5;
+    public bool usingMouse = true;
 
     [Header("Health")]
     public int health = 1;
@@ -76,23 +77,43 @@ public class CharacterMovement : MonoBehaviour {
 
     public void Movement()
     {
-        Vector2 inputVect = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        Vector2 movementVect = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-        Vector2 movementVect = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
+        Vector2 aimVect = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
 
-        if (inputVect.magnitude > moveDeadZone)
+        if (usingMouse && aimVect.magnitude > aimDeadZone)
         {
-
-            transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(inputVect.y, inputVect.x) * 180 / Mathf.PI);
-
-            transform.position += transform.right * moveSpeed * inputVect.magnitude * Time.deltaTime;
-
-
+            usingMouse = false;
         }
-        if (movementVect.magnitude > aimDeadZone)
+
+        if (movementVect.magnitude > moveDeadZone)
         {
 
             transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(movementVect.y, movementVect.x) * 180 / Mathf.PI);
+
+            transform.position += transform.right * moveSpeed * movementVect.magnitude * Time.deltaTime;
+
+
+        }
+        if (usingMouse)
+        {
+            //Aim towards the mouse
+
+            // Get Angle in Radians
+            float AngleRad = Mathf.Atan2(Camera.main.ScreenToWorldPoint(Input.mousePosition).y - transform.position.y, Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x);
+            // Get Angle in Degrees
+            float AngleDeg = (180 / Mathf.PI) * AngleRad;
+            // Rotate Object
+            this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+        }
+        else
+        {
+            //Aim with the aim keys/joystick
+            if (aimVect.magnitude > aimDeadZone)
+            {
+
+                transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(aimVect.y, aimVect.x) * 180 / Mathf.PI);
+            }
         }
     }
 
@@ -138,12 +159,19 @@ public class CharacterMovement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Debug.Log("Game Over");
-
+        
         if (health > 0)
         {
             invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
-            collision.gameObject.GetComponent<BasicEnemyMovement>().RemoveHealth(99);
+            if (collision.gameObject.tag == "Enemy")
+            {
+                collision.gameObject.GetComponent<BasicEnemyMovement>().RemoveHealth(99);
+            }
+            else
+            {
+                Destroy(collision.gameObject);
+            }
             health -= 1;
         }
         else

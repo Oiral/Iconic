@@ -10,6 +10,8 @@ public class HeavyEnemySpawn : MonoBehaviour {
 
         CharacterMovement playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
 
-        stats.health = playerStats.multiShot;
+        stats.health = playerStats.multiShot * 2;
+
+        Destroy(this);
 	}
 }

@@ -45,7 +45,18 @@ public class EnemyManager : MonoBehaviour {
                 while (waveCost > 0)
                 {
                     //pick a random thing
-                    int num = Random.Range(0, enemyPrefabs.Count);
+                    int num = 0;
+
+                    float value = Random.value;
+
+                    if (value > 0.9f)
+                    {
+                        num = 1;
+                    } else if (value > 0.7f)
+                    {
+                        num = 2;
+                    }
+
                     if (waveCost >= enemyCosts[num])
                     {
                         waveCost -= enemyCosts[num];
