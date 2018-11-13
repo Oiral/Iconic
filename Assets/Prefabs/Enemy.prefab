@@ -112,6 +112,9 @@ MonoBehaviour:
   - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
   - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
   - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
+  destroy: 0
+  deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
+    type: 2}
 --- !u!212 &212088653082552394
 SpriteRenderer:
   m_ObjectHideFlags: 1

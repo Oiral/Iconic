@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyManager : MonoBehaviour {
 
     public static EnemyManager instance;
-
+    
     private void Awake()
     {
         if (instance == null)
@@ -17,13 +18,19 @@ public class EnemyManager : MonoBehaviour {
         }
     }
 
-    public GameObject enemyPrefab;
+    public List<GameObject> enemyPrefabs;
+    public List<int> enemyCosts;
+
+    public int waveCost;
 
     public float spawnRange = 5f;
 
     public float waveNumber = 0;
 
     public float enemiesAlive = 0;
+
+    public int enemiesKilled;
+    public Text enemiesKilledText;
 
     private void Update()
     {
@@ -32,11 +39,18 @@ public class EnemyManager : MonoBehaviour {
             //Check if there are no more left
             if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
             {
-
                 waveNumber += 1;
-                for (int i = 0; i < waveNumber; i++)
+                waveCost = (int)waveNumber;
+
+                while (waveCost > 0)
                 {
-                    SpawnEnemy();
+                    //pick a random thing
+                    int num = Random.Range(0, enemyPrefabs.Count);
+                    if (waveCost >= enemyCosts[num])
+                    {
+                        waveCost -= enemyCosts[num];
+                        SpawnEnemy(num);
+                    }
                 }
             }
             else
@@ -46,12 +60,12 @@ public class EnemyManager : MonoBehaviour {
         }
     }
 
-    public void SpawnEnemy()
+    public void SpawnEnemy(int enemyToSpawn)
     {
         enemiesAlive += 1;
 
         Vector2 randomPoint = Random.insideUnitCircle.normalized;
         randomPoint *= spawnRange + Random.Range(1,10);
-        Instantiate(enemyPrefab, randomPoint, Quaternion.identity,null);
+        Instantiate(enemyPrefabs[enemyToSpawn], randomPoint, Quaternion.identity,null);
     }
 }

@@ -19,6 +19,8 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public bool destroy;
 
+    public GameObject deathParticle;
+
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
@@ -42,10 +44,15 @@ public class BasicEnemyMovement : MonoBehaviour {
         {
             destroy = true;
             EnemyManager.instance.enemiesAlive -= 1;
+            EnemyManager.instance.enemiesKilled += 1;
+            EnemyManager.instance.enemiesKilledText.text = EnemyManager.instance.enemiesKilled.ToString(); ;
             if (Random.Range(0f, 1f) > 0.9f)
             {
                 Instantiate(powerUp[Random.Range(0, powerUp.Count)], transform.position, Quaternion.identity, null);
             }
+            Instantiate(deathParticle, transform.position, transform.rotation, null);
+
+            ScreenShake.instance.shake = 0.05f;
 
             Destroy(gameObject);
         }

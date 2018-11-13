@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212694123989814554}
   - component: {fileID: 58439811179895996}
   - component: {fileID: 114154122118394608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotSpeedUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,6 +68,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e266fde23b8b13c40a65d31b7c3367a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 0
 --- !u!212 &212694123989814554
 SpriteRenderer:
   m_ObjectHideFlags: 1

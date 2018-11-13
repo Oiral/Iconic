@@ -1,27 +1,33 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour {
 
+    [Header("Input")]
     public float moveDeadZone;
     public float aimDeadZone;
-
     public float moveSpeed = 5;
 
-    public GameObject bulletPrefab;
-    public float shotSpeed = 1f;
+    [Header("Health")]
+    public int health = 1;
+    public int maxHealth = 1;
 
-    public int health = 2;
-    public float invulnerableTimer = 0;
+    public float invulnerableTime = 1;
+    float invulnerableTimer = 0;
 
     float healthRegenTimer;
     public float healthRegenTime;
 
-    float shotTimer;
-
-    public int multiShot = 1;
-
+    [Header("Shooting")]
     public float range = 70;
+    float shotTimer;
+    public GameObject bulletPrefab;
+
+    [Header("Power Ups")]
+
+    public float shotSpeed = 1f;
+    public int multiShot = 1;
 
     [Header("UI")]
     public Text speedText;
@@ -33,8 +39,8 @@ public class CharacterMovement : MonoBehaviour {
         Movement();
         Firing();
         InvulnerabilityTimer();
+        HealthRegen();
         UpdateUI();
-
 
         ClampToScreen(0.01f,0.99f);
     }
@@ -106,15 +112,16 @@ public class CharacterMovement : MonoBehaviour {
 
     public void HealthRegen()
     {
-        if (invulnerableTimer == 0)
+        if (invulnerableTimer == 0 && health < maxHealth)
         {
             healthRegenTimer += Time.deltaTime;
             if (healthRegenTimer > healthRegenTime)
             {
+                healthRegenTimer = 0;
                 health += 1;
-                if (health > 2)
+                if (health > maxHealth)
                 {
-                    health = 2;
+                    health = maxHealth;
                 }
             }
         }
@@ -130,11 +137,11 @@ public class CharacterMovement : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Game Over");
+        //Debug.Log("Game Over");
 
         if (health > 0)
         {
-            invulnerableTimer += 1;
+            invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
             collision.gameObject.GetComponent<BasicEnemyMovement>().RemoveHealth(99);
             health -= 1;
@@ -142,6 +149,8 @@ public class CharacterMovement : MonoBehaviour {
         else
         {
             Debug.Break();
+            Time.timeScale = 1;
+            SceneManager.LoadScene(0);
         }
         
     }
