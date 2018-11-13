@@ -67,6 +67,12 @@
     <Compile Include="Assets\HeavyEnemySpawn.cs" />
     <Compile Include="Assets\ScreenShake.cs" />
     <Compile Include="Assets\ShotPowerUp.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Examples\2D Example\Player2DExample.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Examples\3D Example\Player3DExample.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

@@ -1,6 +1,6 @@
-OSXStandalone
+Android
 PlayerPath?
-D:/845858107/Desktop/Shooter.app
+D:/845858107/Desktop/Test/TwinStick/TwinStick3.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -80,9 +80,9 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-05c249f4f65848d4f71d3821c96b0335 Assembly-CSharp.dll:.CharacterMovement
+1a6dff6d0d1c820987c1d212ffabe624 Assembly-CSharp.dll:.CharacterMovement
 7a75edc83a9f267c790ac1425865847a Assembly-CSharp.dll:.ShotPowerUp
-9a06967ddb15dd71efdbc3483a569152 Assembly-CSharp.dll:.BasicEnemyMovement
+c17ed8ee164e732b4758986411737a30 Assembly-CSharp.dll:.BasicEnemyMovement
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -284,3 +284,12 @@ a924c90a95cf65003f662aa5e30abb6b Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 3d1b89310e77c34bc0c8d7132231345c Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 05524b8f659e7bfe5756d1335fec24ba Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HeavyEnemySpawn
+d0313c591db317f21f3417fc4bce670c Assembly-CSharp.dll:.EnemyShooting
+fe758c034deff6bf9d0635241f5891dd Assembly-CSharp.dll:.FloatingJoystick
+fe758c034deff6bf9d0635241f5891dd Assembly-CSharp.dll:.Joystick
+5e23029b7574e33b588880b072e31837 Assembly-CSharp.dll:.Player2DExample
+5e23029b7574e33b588880b072e31837 Assembly-CSharp.dll:.Player3DExample
+fe758c034deff6bf9d0635241f5891dd Assembly-CSharp.dll:.FixedJoystick
+81b600441d79363d555a04fd499d83ca Assembly-CSharp.dll:.VariableJoystick
+05524b8f659e7bfe5756d1335fec24ba UnityStore.dll:UnityEngine.Store.MainThreadDispatcher
+50667894c33b478dc38ae949114bb1e8 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings

@@ -9,6 +9,10 @@ public class CharacterMovement : MonoBehaviour {
     public float aimDeadZone;
     public float moveSpeed = 5;
     public bool usingMouse = true;
+    public bool touch = false;
+
+    public FixedJoystick movementStick;
+    public FixedJoystick aimStick;
 
     [Header("Health")]
     public int health = 1;
@@ -50,7 +54,15 @@ public class CharacterMovement : MonoBehaviour {
     {
         shotTimer += Time.deltaTime;
 
-        Vector2 aim = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
+        Vector2 aim;
+        if (touch)
+        {
+            aim = aimStick.Direction;
+        }
+        else
+        {
+            aim = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
+        }
 
         if (Input.GetButton("Fire1") || aim.magnitude > aimDeadZone)
         {
@@ -77,9 +89,17 @@ public class CharacterMovement : MonoBehaviour {
 
     public void Movement()
     {
+
+
         Vector2 movementVect = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
         Vector2 aimVect = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"));
+
+        if (touch)
+        {
+            movementVect = movementStick.Direction;
+            aimVect = aimStick.Direction;
+        }
 
         if (usingMouse && aimVect.magnitude > aimDeadZone)
         {
@@ -95,7 +115,7 @@ public class CharacterMovement : MonoBehaviour {
 
 
         }
-        if (usingMouse)
+        if (usingMouse && touch == false)
         {
             //Aim towards the mouse
 
