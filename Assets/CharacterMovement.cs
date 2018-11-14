@@ -207,8 +207,17 @@ public class CharacterMovement : MonoBehaviour {
 
             deathScreen.SetActive(true);
             scoreText.text = EnemyManager.instance.score.ToString();
-
+            
             Destroy(EnemyManager.instance.gameObject);
+
+            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
+            {
+                Destroy(enemy);
+            }
+            foreach (GameObject bullet in GameObject.FindGameObjectsWithTag("Bullet"))
+            {
+                Destroy(bullet);
+            }
 
             //SceneManager.LoadScene(0);
         }
