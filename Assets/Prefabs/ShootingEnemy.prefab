@@ -116,6 +116,7 @@ MonoBehaviour:
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
   aimAtPlayer: 0
+  score: 4
 --- !u!114 &114423385222135614
 MonoBehaviour:
   m_ObjectHideFlags: 1

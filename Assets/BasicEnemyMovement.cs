@@ -23,6 +23,8 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public bool aimAtPlayer = true;
 
+    public int score;
+
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
@@ -59,6 +61,8 @@ public class BasicEnemyMovement : MonoBehaviour {
             Instantiate(deathParticle, transform.position, transform.rotation, null);
 
             ScreenShake.instance.shake = 0.05f;
+
+            EnemyManager.instance.score += score;
 
             Destroy(gameObject);
         }

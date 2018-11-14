@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Top Down Shooter", "Top Down Shooter.csproj", "{E7E4161D-5311-5008-D29E-C1D8A13395FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XiaomiSupport", "XiaomiSupport.csproj", "{A2A6A8B2-DDE1-D596-6008-90CE9610175C}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.StandardEvents", "UnityEditor.StandardEvents.csproj", "{6800202F-4402-D405-F8CB-03DC7BD78B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor", "Editor.csproj", "{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +21,10 @@ Global
 		{E7E4161D-5311-5008-D29E-C1D8A13395FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7E4161D-5311-5008-D29E-C1D8A13395FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7E4161D-5311-5008-D29E-C1D8A13395FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A6A8B2-DDE1-D596-6008-90CE9610175C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A6A8B2-DDE1-D596-6008-90CE9610175C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A6A8B2-DDE1-D596-6008-90CE9610175C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A6A8B2-DDE1-D596-6008-90CE9610175C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -25,6 +33,10 @@ Global
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

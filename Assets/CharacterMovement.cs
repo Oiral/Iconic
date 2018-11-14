@@ -39,6 +39,10 @@ public class CharacterMovement : MonoBehaviour {
     public Text shotSpeedText;
     public Text multiShotText;
 
+    public GameObject inGameUI;
+    public GameObject deathScreen;
+    public Text scoreText;
+
 	// Update is called once per frame
 	void Update () {
         Movement();
@@ -198,7 +202,15 @@ public class CharacterMovement : MonoBehaviour {
         {
             Debug.Break();
             Time.timeScale = 1;
-            SceneManager.LoadScene(0);
+
+            //inGameUI.SetActive(false);
+
+            deathScreen.SetActive(true);
+            scoreText.text = EnemyManager.instance.score.ToString();
+
+            Destroy(EnemyManager.instance.gameObject);
+
+            //SceneManager.LoadScene(0);
         }
         
     }

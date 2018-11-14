@@ -32,6 +32,9 @@ public class EnemyManager : MonoBehaviour {
     public int enemiesKilled;
     public Text enemiesKilledText;
 
+    public int score;
+    public Text scoreText;
+
     private void Update()
     {
         if (enemiesAlive <= 0)
@@ -69,6 +72,8 @@ public class EnemyManager : MonoBehaviour {
                 enemiesAlive = GameObject.FindGameObjectsWithTag("Enemy").Length;
             }
         }
+
+        scoreText.text = score.ToString();
     }
 
     public void SpawnEnemy(int enemyToSpawn)

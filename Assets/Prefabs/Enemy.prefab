@@ -115,6 +115,8 @@ MonoBehaviour:
   destroy: 0
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
+  aimAtPlayer: 1
+  score: 1
 --- !u!212 &212088653082552394
 SpriteRenderer:
   m_ObjectHideFlags: 1

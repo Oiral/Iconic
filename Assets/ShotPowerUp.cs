@@ -8,6 +8,8 @@ public class ShotPowerUp : MonoBehaviour {
 
     public PowerUpType type = PowerUpType.fireRate;
 
+    public int score;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
@@ -27,7 +29,7 @@ public class ShotPowerUp : MonoBehaviour {
                     break;
             }
 
-            
+            EnemyManager.instance.score += score;
             Destroy(gameObject);
         }
     }
