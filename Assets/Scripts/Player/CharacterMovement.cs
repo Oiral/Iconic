@@ -45,11 +45,14 @@ public class CharacterMovement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        Movement();
-        Firing();
-        InvulnerabilityTimer();
-        HealthRegen();
-        UpdateUI();
+        if (PauseScript.paused == false)
+        {
+            Movement();
+            Firing();
+            InvulnerabilityTimer();
+            HealthRegen();
+            UpdateUI();
+        }
 
         ClampToScreen(0.01f,0.99f);
     }

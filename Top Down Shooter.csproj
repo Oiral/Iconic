@@ -314,14 +314,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BasicEnemyMovement.cs" />
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\CharacterMovement.cs" />
-    <Compile Include="Assets\EnemyManager.cs" />
-    <Compile Include="Assets\EnemyShooting.cs" />
-    <Compile Include="Assets\HeavyEnemySpawn.cs" />
-    <Compile Include="Assets\ScreenShake.cs" />
-    <Compile Include="Assets\ShotPowerUp.cs" />
+    <Compile Include="Assets\PauseScript.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
+    <Compile Include="Assets\Scripts\Enemy\HeavyEnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\Extras\ScreenShake.cs" />
+    <Compile Include="Assets\Scripts\Extras\ShotPowerUp.cs" />
+    <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\MenuFunctions.cs" />
+    <Compile Include="Assets\Scripts\Player\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Player\CharacterMovement.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\2D Example\Player2DExample.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\3D Example\Player3DExample.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />

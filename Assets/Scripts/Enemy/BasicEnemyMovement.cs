@@ -28,21 +28,31 @@ public class BasicEnemyMovement : MonoBehaviour {
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
+        PauseScript.OnPauseEvent.AddListener(TogglePause);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        var dir = target.transform.position - transform.position;
 
-        if (aimAtPlayer)
+        if (PauseScript.paused == false)
         {
-            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+            //Get the direction to the player
+            var dir = target.transform.position - transform.position;
+
+            //Aim at the player
+            if (aimAtPlayer)
+            {
+                var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
+
+            //Move the thingy forward
+            rb.velocity += (Vector2)dir * accelerationSpeed * Time.deltaTime;
+
+            //Clamp the velocity to the max speed
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
-
-        rb.velocity += (Vector2)dir * accelerationSpeed * Time.deltaTime;
-
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
 	}
 
     public void RemoveHealth(int damage)
@@ -65,6 +75,21 @@ public class BasicEnemyMovement : MonoBehaviour {
             EnemyManager.instance.score += score;
 
             Destroy(gameObject);
+        }
+    }
+
+    private Vector2 savedMovementVel;
+    public void TogglePause()
+    {
+        if (PauseScript.paused == true)
+        {
+            //Pause the script
+            savedMovementVel = rb.velocity;
+            rb.velocity = Vector2.zero;
+        }
+        else
+        {
+            rb.velocity = savedMovementVel;
         }
     }
 }

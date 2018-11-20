@@ -6,9 +6,20 @@ public class Bullet : MonoBehaviour {
 
     public float bulletSpeed = 7f;
 
-	// Update is called once per frame
-	void Update () {
-        transform.position += transform.up * bulletSpeed * Time.deltaTime;
+    TrailRenderer trail;
+
+    private void Start()
+    {
+        trail = GetComponent<TrailRenderer>();
+        PauseScript.OnPauseEvent.AddListener(OnPause);
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if (PauseScript.paused == false)
+        {
+            transform.position += transform.up * bulletSpeed * Time.deltaTime;
+        }
         if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position,transform.position) > 30)
         {
             Destroy(gameObject);
@@ -27,5 +38,21 @@ public class Bullet : MonoBehaviour {
 
         //Spawn in bullet removed particle
         Destroy(gameObject);
+    }
+
+    float trailLength;
+    void OnPause()
+    {
+        if (PauseScript.paused)
+        {
+            //pause the bullet
+            trailLength = trail.time;
+            trail.time = float.PositiveInfinity;
+        }
+        else
+        {
+            //unpause the bullet
+            trail.time = trailLength;
+        }
     }
 }
