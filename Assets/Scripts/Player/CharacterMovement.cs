@@ -89,7 +89,9 @@ public class CharacterMovement : MonoBehaviour {
                 }
 
                 Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, -90)), null);
-                ScreenShake.instance.shake = .2f;
+                //ScreenShake.instance.shake = .2f;
+                ScreenShake.shakeTime = .2f;
+                ScreenShake.shakeScreen.Invoke();
             }
         }
     }

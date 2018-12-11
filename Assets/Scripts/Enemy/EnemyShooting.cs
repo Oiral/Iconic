@@ -58,7 +58,9 @@ public class EnemyShooting : MonoBehaviour {
             //Spawn stuff
 
             Instantiate(bulletPrefab, transform.position + transform.up * 0.5f, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
-            ScreenShake.instance.shake = .2f;
+            //ScreenShake.instance.shake = .2f;
+            ScreenShake.shakeTime = .2f;
+            ScreenShake.shakeScreen.Invoke();
         }
 
     }

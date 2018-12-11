@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ScreenShake : MonoBehaviour {
 
     public Vector3 startingPos;
 
-    public static ScreenShake instance;
+    //public static ScreenShake instance;
+    public static UnityEvent shakeScreen = new UnityEvent();
+    
     private void Awake()
     {
+        /*
         if (instance == null)
         {
             instance = this;
@@ -16,21 +20,28 @@ public class ScreenShake : MonoBehaviour {
         else if (instance != this)
         {
             Destroy(gameObject);
-        }
+        }*/
         startingPos = transform.position;
+        shakeScreen.AddListener(StartShake);
     }
 
     public float shake = 0;
+    public static float shakeTime = 0.5f;
     public float shakeAmount = 0.1f;
     float decreaseFactor = 1f;
 
     
+    
+    public void StartShake()
+    {
+        shake = shakeTime;
+    }
 
     private void Update()
     {
         if (shake > 0)
         {
-            transform.localPosition = startingPos + (Random.insideUnitSphere * shakeAmount);
+            transform.position = startingPos + (Random.insideUnitSphere * shakeAmount);
             shake -= Time.deltaTime * decreaseFactor;
         }
         else

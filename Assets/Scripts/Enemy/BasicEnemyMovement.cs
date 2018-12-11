@@ -70,7 +70,9 @@ public class BasicEnemyMovement : MonoBehaviour {
             }
             Instantiate(deathParticle, transform.position, transform.rotation, null);
 
-            ScreenShake.instance.shake = 0.05f;
+            //ScreenShake.instance.shake = 0.05f;
+            ScreenShake.shakeTime = 0.05f;
+            ScreenShake.shakeScreen.Invoke();
 
             EnemyManager.instance.score += score;
 
