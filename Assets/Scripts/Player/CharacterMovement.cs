@@ -11,6 +11,9 @@ public class CharacterMovement : MonoBehaviour {
     public bool usingMouse = true;
     public bool touch = false;
 
+    private Vector2 mouseCurrentPosition;
+    private Vector2 mouseLastPosition;
+
     public FixedJoystick movementStick;
     public FixedJoystick aimStick;
 
@@ -113,6 +116,17 @@ public class CharacterMovement : MonoBehaviour {
         if (usingMouse && aimVect.magnitude > aimDeadZone)
         {
             usingMouse = false;
+        }
+        if (!usingMouse)
+        {
+            mouseCurrentPosition = Input.mousePosition;
+            Vector2 deltaPos = mouseCurrentPosition - mouseLastPosition;
+            mouseLastPosition = mouseCurrentPosition;
+
+            if (deltaPos.magnitude > aimDeadZone)
+            {
+                usingMouse = true;
+            }
         }
 
         if (movementVect.magnitude > moveDeadZone)

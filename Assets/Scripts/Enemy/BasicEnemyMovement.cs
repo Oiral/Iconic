@@ -16,6 +16,7 @@ public class BasicEnemyMovement : MonoBehaviour {
     // Use this for initialization
 
     public List<GameObject> powerUp;
+    public bool guaranteeDrop;
 
     public bool destroy;
 
@@ -64,7 +65,7 @@ public class BasicEnemyMovement : MonoBehaviour {
             EnemyManager.instance.enemiesAlive -= 1;
             EnemyManager.instance.enemiesKilled += 1;
             EnemyManager.instance.enemiesKilledText.text = EnemyManager.instance.enemiesKilled.ToString(); ;
-            if (Random.Range(0f, 1f) > 0.9f)
+            if (Random.Range(0f, 1f) > 0.9f || guaranteeDrop)
             {
                 Instantiate(powerUp[Random.Range(0, powerUp.Count)], transform.position, Quaternion.identity, null);
             }
