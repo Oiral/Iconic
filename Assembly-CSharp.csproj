@@ -81,11 +81,11 @@
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/845858107/Documents/Git/Top-Down-Shooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="XiaomiSupport">
-      <HintPath>D:/845858107/Documents/Git/Top-Down-Shooter/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
-    </Reference>
     <Reference Include="Editor">
       <HintPath>D:/845858107/Documents/Git/Top-Down-Shooter/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="XiaomiSupport">
+      <HintPath>D:/845858107/Documents/Git/Top-Down-Shooter/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
