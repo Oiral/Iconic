@@ -323,6 +323,8 @@
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\Enemy\HeavyEnemySpawn.cs" />
+    <Compile Include="Assets\Scripts\Enemy\LookAtPlayer.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MoveForward.cs" />
     <Compile Include="Assets\Scripts\Extras\ScreenShake.cs" />
     <Compile Include="Assets\Scripts\Extras\ShotPowerUp.cs" />
     <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
