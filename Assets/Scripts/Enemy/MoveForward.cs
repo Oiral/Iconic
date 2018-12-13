@@ -17,7 +17,7 @@ public class MoveForward : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Move the thingy forward
-        rb.velocity += (Vector2)transform.forward * accelerationSpeed * Time.deltaTime;
+        rb.velocity += (Vector2)transform.right * accelerationSpeed * Time.deltaTime;
 
         //Clamp the velocity to the max speed
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
