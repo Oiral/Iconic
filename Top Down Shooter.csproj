@@ -320,6 +320,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EnemyHealth.cs" />
+    <Compile Include="Assets\saveVelocityOnPause.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\Enemy\HeavyEnemySpawn.cs" />
@@ -332,6 +334,7 @@
     <Compile Include="Assets\Scripts\Managers\PauseScript.cs" />
     <Compile Include="Assets\Scripts\Player\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterMovement.cs" />
+    <Compile Include="Assets\TextManager.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\2D Example\Player2DExample.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\3D Example\Player3DExample.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Base\Joystick.cs" />

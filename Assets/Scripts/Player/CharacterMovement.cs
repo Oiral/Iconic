@@ -80,7 +80,7 @@ public class CharacterMovement : MonoBehaviour {
             {
                 shotTimer = 0;
                 //Spawn stuff
-                Debug.Log("Pew");
+                //Debug.Log("Pew");
                 for (int i = 0; i < multiShot - 1; i++)
                 {
                     float angle = Random.Range(0, (range / 2));

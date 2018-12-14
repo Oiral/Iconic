@@ -20,15 +20,29 @@ public class Bullet : MonoBehaviour {
         {
             transform.position += transform.up * bulletSpeed * Time.deltaTime;
         }
+        /*
         if (Vector3.Distance(GameObject.FindGameObjectWithTag("Player").transform.position,transform.position) > 30)
         {
             Destroy(gameObject);
+        }*/
+        /*
+        if (render.isVisible)
+        {
+            Debug.Log("Destroying bullet");
+            Destroy(gameObject);
         }
+        */
 	}
+
+    private void OnBecameInvisible()
+    {
+        //Debug.Log("Destroying bullet");
+        Destroy(gameObject);
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Boom");
+        //Debug.Log("Boom");
         GameObject collidedObject = collision.gameObject;
 
         if (collidedObject.tag == "Enemy")
