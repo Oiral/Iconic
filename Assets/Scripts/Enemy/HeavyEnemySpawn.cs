@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(EnemyHealth))]
 public class HeavyEnemySpawn : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        BasicEnemyMovement stats = GetComponent<BasicEnemyMovement>();
+        EnemyHealth stats = GetComponent<EnemyHealth>();
 
         CharacterMovement playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>();
 

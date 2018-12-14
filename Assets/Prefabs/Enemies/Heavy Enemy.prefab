@@ -19,10 +19,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4999114602217382}
-  - component: {fileID: 114843721127770914}
   - component: {fileID: 50147239761576974}
   - component: {fileID: 60665425516986026}
   - component: {fileID: 114439707979960752}
+  - component: {fileID: 114916577895701176}
+  - component: {fileID: 114629314302142198}
+  - component: {fileID: 114025966964705368}
+  - component: {fileID: 114289973562595930}
   m_Layer: 10
   m_Name: Heavy Enemy
   m_TagString: Enemy
@@ -52,13 +55,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862998656854736}
-  m_LocalRotation: {x: -0, y: -0, z: 0.70710576, w: 0.70710784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4999114602217382}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.00001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4999114602217382
 Transform:
   m_ObjectHideFlags: 1
@@ -117,12 +120,34 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.32058418, y: 0.3675413}
-      - {x: -0.31595522, y: -0.36249876}
-      - {x: 0.32310987, y: -0.0015201569}
-    - - {x: -0.23812585, y: -0.2179246}
-      - {x: -0.23679034, y: 0.22019553}
-      - {x: 0.15219572, y: -0.005125284}
+    - - {x: -0.35518456, y: -0.32370412}
+      - {x: 0.3500749, y: -0.31863976}
+      - {x: -0.008496011, y: 0.30621576}
+--- !u!114 &114025966964705368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317101449535394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270db7b5c47f389418d19768af741452, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!114 &114289973562595930
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317101449535394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6be6ea03507274cadb165684827a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accelerationSpeed: 5
+  maxSpeed: 2
 --- !u!114 &114439707979960752
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e63886a7ea2af4c8a08b4552df1cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114843721127770914
+--- !u!114 &114629314302142198
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -142,23 +167,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bf058f2b3b8d9f419b08faa42ab3510, type: 3}
+  m_Script: {fileID: 11500000, guid: c6955ed05c4c8364c877fffd7c41a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  accelerationSpeed: 5
-  maxSpeed: 2.5
-  health: 3
-  powerUp:
-  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
-  - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
-  - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
-  guaranteeDrop: 0
-  destroy: 0
+  health: 0
+  score: 4
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
-  aimAtPlayer: 1
-  score: 4
+--- !u!114 &114916577895701176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317101449535394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d428f304396494e4ba886fc739f9bf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
+  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
+  - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
+  guaranteeDrop: 0
+  dropChance: 0.1
 --- !u!212 &212688271371358712
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -47,7 +47,7 @@ public class Bullet : MonoBehaviour {
 
         if (collidedObject.tag == "Enemy")
         {
-            collidedObject.GetComponent<BasicEnemyMovement>().RemoveHealth(1);
+            collidedObject.GetComponent<EnemyHealth>().RemoveHealth(1);
         }
 
         //Spawn in bullet removed particle

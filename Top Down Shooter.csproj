@@ -320,6 +320,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DropPowerup.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
     <Compile Include="Assets\saveVelocityOnPause.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />

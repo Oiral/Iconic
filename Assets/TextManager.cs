@@ -56,14 +56,14 @@ public class TextManager : MonoBehaviour {
 
         powerupImage.gameObject.SetActive(true);
         powerupImage.sprite = powerUpSprites[(int)powerUpMessages[0]];
-        yield return StartCoroutine(ChangeTransparancyTo(powerupImage, 0, 1, 2));
+        yield return StartCoroutine(ChangeTransparancyTo(powerupImage, 0, 1, 2f));
         //messageText.rectTransform.localPosition = Vector3.zero;
 
         yield return new WaitForSeconds(1f);
         //messageText.text = null;
         powerUpMessages.RemoveAt(0);
 
-        yield return StartCoroutine(ChangeTransparancyTo(powerupImage, 1, 0, 2));
+        yield return StartCoroutine(ChangeTransparancyTo(powerupImage, 1, 0, 2f));
 
         yield return new WaitForSeconds(0.5f);
         powerupImage.gameObject.SetActive(false);
@@ -89,7 +89,7 @@ public class TextManager : MonoBehaviour {
     IEnumerator ChangeTransparancyTo(Image imageToChange, float a, float b, float speed)
     {
         Color col = imageToChange.color;
-        float step = (speed / (a - b)) * Time.fixedDeltaTime;
+        float step = (speed / Mathf.Abs(a - b)) * Time.fixedDeltaTime;
         float t = 0;
         while (t <= 1.0f)
         {

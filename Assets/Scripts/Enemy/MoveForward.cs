@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MoveForward : MonoBehaviour {
     
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     public float accelerationSpeed;
     public float maxSpeed;
 
@@ -17,7 +17,7 @@ public class MoveForward : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //Move the thingy forward
-        rb.velocity += (Vector2)transform.right * accelerationSpeed * Time.deltaTime;
+        rb.velocity += (Vector2)transform.up * accelerationSpeed * Time.deltaTime;
 
         //Clamp the velocity to the max speed
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);

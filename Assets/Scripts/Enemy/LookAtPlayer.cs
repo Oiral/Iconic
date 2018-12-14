@@ -20,6 +20,8 @@ public class LookAtPlayer : MonoBehaviour {
         {
             var dir = target.transform.position - transform.position;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            angle -= 90;
+
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
 	}

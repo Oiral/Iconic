@@ -20,9 +20,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4900837663874282}
   - component: {fileID: 212088653082552394}
-  - component: {fileID: 114751366642950378}
   - component: {fileID: 50010717115129344}
   - component: {fileID: 60388966226825140}
+  - component: {fileID: 114886524970489958}
+  - component: {fileID: 114170755389377868}
+  - component: {fileID: 114143762234196158}
+  - component: {fileID: 114659417438151268}
+  - component: {fileID: 114163001665523400}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -55,7 +59,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -79,7 +83,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 0.96, y: 0.95}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -87,13 +91,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.25, y: -0.31}
-      - {x: 0.06, y: 0}
-      - {x: -0.25, y: 0.31}
-      - {x: -0.15, y: 0.4}
-      - {x: 0.25, y: 0}
-      - {x: -0.15, y: -0.4}
---- !u!114 &114751366642950378
+    - - {x: 0.314713, y: -0.24668145}
+      - {x: 0.00012564659, y: 0.069054365}
+      - {x: -0.3187095, y: -0.24262571}
+      - {x: -0.408221, y: -0.15731668}
+      - {x: -0.0033707619, y: 0.25093174}
+      - {x: 0.40358448, y: -0.15635133}
+--- !u!114 &114143762234196158
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -101,23 +105,66 @@ MonoBehaviour:
   m_GameObject: {fileID: 1490664565516690}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2bf058f2b3b8d9f419b08faa42ab3510, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c6525c08b2b6484caa825f6d472fe11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114163001665523400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d428f304396494e4ba886fc739f9bf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
+  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
+  - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
+  guaranteeDrop: 0
+  dropChance: 0.1
+--- !u!114 &114170755389377868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6955ed05c4c8364c877fffd7c41a14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  score: 1
+  deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
+    type: 2}
+--- !u!114 &114659417438151268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d6be6ea03507274cadb165684827a61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  accelerationSpeed: 10
+  maxSpeed: 5
+--- !u!114 &114886524970489958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270db7b5c47f389418d19768af741452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  accelerationSpeed: 10
-  maxSpeed: 5
-  health: 1
-  powerUp:
-  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
-  - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
-  - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
-  guaranteeDrop: 0
-  destroy: 0
-  deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
-    type: 2}
-  aimAtPlayer: 1
-  score: 1
 --- !u!212 &212088653082552394
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -153,7 +200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fa2683d85484d5e499b966a95d7282e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d27421eea934f7d4187e31160d507064, type: 3}
   m_Color: {r: 0.85882354, g: 0.26666668, b: 0.21568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0

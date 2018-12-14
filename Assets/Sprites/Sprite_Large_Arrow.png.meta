@@ -137,9 +137,9 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline:
-    - - {x: -37, y: 32}
-      - {x: 0, y: -33}
-      - {x: 37, y: 32}
+    - - {x: -35.5, y: -32}
+      - {x: 36.5, y: -33}
+      - {x: -0.5, y: 31}
     physicsShape: []
     bones: []
     spriteID: 78e0b3d245dcf6746bd81b28f93c38ff

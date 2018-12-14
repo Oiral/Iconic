@@ -17,6 +17,8 @@ public class CharacterMovement : MonoBehaviour {
     public FixedJoystick movementStick;
     public FixedJoystick aimStick;
 
+    public float angleAfterLook = 90;
+
     [Header("Health")]
     public int health = 1;
     public int maxHealth = 1;
@@ -86,12 +88,12 @@ public class CharacterMovement : MonoBehaviour {
                     float angle = Random.Range(0, (range / 2));
                     angle = angle * RandomSign();
 
-                    angle -= 90;
+                    //angle -= 90;
 
                     Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
                 }
 
-                Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, -90)), null);
+                Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
                 //ScreenShake.instance.shake = .2f;
                 ScreenShake.shakeTime = .2f;
                 ScreenShake.shakeScreen.Invoke();
@@ -147,7 +149,7 @@ public class CharacterMovement : MonoBehaviour {
             // Get Angle in Degrees
             float AngleDeg = (180 / Mathf.PI) * AngleRad;
             // Rotate Object
-            this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+            this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg + angleAfterLook);
         }
         else
         {
@@ -155,7 +157,7 @@ public class CharacterMovement : MonoBehaviour {
             if (aimVect.magnitude > aimDeadZone)
             {
 
-                transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(aimVect.y, aimVect.x) * 180 / Mathf.PI);
+                transform.eulerAngles = new Vector3(0, 0, (Mathf.Atan2(aimVect.y, aimVect.x) * 180 / Mathf.PI) + angleAfterLook);
             }
         }
     }
@@ -209,7 +211,7 @@ public class CharacterMovement : MonoBehaviour {
             healthRegenTimer = 0;
             if (collision.gameObject.tag == "Enemy")
             {
-                collision.gameObject.GetComponent<BasicEnemyMovement>().RemoveHealth(99);
+                collision.gameObject.GetComponent<EnemyHealth>().RemoveHealth(collision.gameObject.GetComponent<EnemyHealth>().health);
             }
             else
             {
