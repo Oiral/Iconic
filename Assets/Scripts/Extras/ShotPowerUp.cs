@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PowerUpType { fireRate, multishot, speed}
+public enum PowerUpType { fireRate = 0, multishot = 1, speed = 2}
 
 public class ShotPowerUp : MonoBehaviour {
 
