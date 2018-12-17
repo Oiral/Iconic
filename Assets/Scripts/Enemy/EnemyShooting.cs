@@ -23,9 +23,12 @@ public class EnemyShooting : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Aim();
+        if (PauseScript.paused == false)
+        {
+            Aim();
 
-        Shoot();
+            Shoot();
+        }
     }
 
     void Aim()

@@ -322,6 +322,7 @@
   <ItemGroup>
     <Compile Include="Assets\DropPowerup.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
+    <Compile Include="Assets\PauseParticleOnPause.cs" />
     <Compile Include="Assets\saveVelocityOnPause.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
@@ -344,6 +345,7 @@
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\Alert.uxml" />
