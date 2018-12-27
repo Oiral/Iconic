@@ -322,7 +322,9 @@
   <ItemGroup>
     <Compile Include="Assets\DropPowerup.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
+    <Compile Include="Assets\LockToScreen.cs" />
     <Compile Include="Assets\PauseParticleOnPause.cs" />
+    <Compile Include="Assets\RandomDirection.cs" />
     <Compile Include="Assets\saveVelocityOnPause.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyShooting.cs" />
