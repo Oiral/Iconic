@@ -33,6 +33,7 @@ public class CharacterMovement : MonoBehaviour {
     public float range = 70;
     float shotTimer;
     public GameObject bulletPrefab;
+    public CustomSlider shotSlider;
 
     [Header("Power Ups")]
 
@@ -66,6 +67,8 @@ public class CharacterMovement : MonoBehaviour {
     {
         shotTimer += Time.deltaTime;
 
+        shotSlider.value = shotTimer / Mathf.Pow((1 / 1.3f), shotSpeed / 2);
+
         Vector2 aim;
         if (touch)
         {
@@ -78,7 +81,13 @@ public class CharacterMovement : MonoBehaviour {
 
         if (Input.GetButton("Fire1") || aim.magnitude > aimDeadZone)
         {
-            if (shotTimer >= (1/ (shotSpeed/2)))
+            //first iteration of shot timer
+            //(1/ (shotSpeed/2))
+
+            //second iteration of shot timer
+            //Mathf.Pow((1 / 1.3f), shotSpeed / 2)
+
+            if (shotTimer >= Mathf.Pow((1 / 1.3f), shotSpeed / 2))
             {
                 shotTimer = 0;
                 //Spawn stuff
