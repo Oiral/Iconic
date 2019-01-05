@@ -10,7 +10,7 @@ public class ShotCounter : MonoBehaviour {
 
     private void OnGUI()
     {
-        if (numberOfIcons < GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().multiShot)
+        if (numberOfIcons < GameObject.FindGameObjectWithTag("Player").GetComponent<Character>().multiShot)
         {
             Instantiate(image, this.transform);
             numberOfIcons += 1;

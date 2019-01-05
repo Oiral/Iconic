@@ -25,9 +25,11 @@ GameObject:
   - component: {fileID: 114056588321683296}
   - component: {fileID: 114292079966934978}
   - component: {fileID: 114093543969268258}
-  m_Layer: 0
+  - component: {fileID: 114367268734511896}
+  - component: {fileID: 114384633779614942}
+  m_Layer: 10
   m_Name: Random Pathing Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53dd6158d77fcf94abdecbc608a3aea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeTillNextTurn: 1
+  moveSpeed: 3
+  dir: {x: 0, y: 0, z: 0}
+  turnSpeed: 5
 --- !u!114 &114093543969268258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,13 +129,45 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1750660823908506}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d6be6ea03507274cadb165684827a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   accelerationSpeed: 10
   maxSpeed: 5
+--- !u!114 &114367268734511896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750660823908506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6955ed05c4c8364c877fffd7c41a14e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  score: 0
+  deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
+    type: 2}
+--- !u!114 &114384633779614942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750660823908506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d428f304396494e4ba886fc739f9bf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUps:
+  - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
+  - {fileID: 1873245503032602, guid: c88909607c6799a4b9780026f3261456, type: 2}
+  - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
+  guaranteeDrop: 0
+  dropChance: 0.1
 --- !u!212 &212558946151785752
 SpriteRenderer:
   m_ObjectHideFlags: 1

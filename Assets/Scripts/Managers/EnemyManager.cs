@@ -59,6 +59,10 @@ public class EnemyManager : MonoBehaviour {
                     {
                         num = 2;
                     }
+                    else if (value > 0.5f)
+                    {
+                        num = 3;
+                    }
 
                     if (waveCost >= enemyCosts[num])
                     {

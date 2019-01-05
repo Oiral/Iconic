@@ -19,6 +19,7 @@ public class EnemyShooting : MonoBehaviour {
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         renderer = GetComponent<SpriteRenderer>();
+        shotTimer = Random.Range(0, 1 / fireRate);
 	}
 	
 	// Update is called once per frame
