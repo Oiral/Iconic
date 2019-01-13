@@ -314,6 +314,10 @@
       <Project>{B2E402A9-DAB0-44FA-0EB3-EAC8D63ADBEE}</Project>
       <Name>Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ShaderGraph.Editor.csproj">
+      <Project>{097081EC-B172-781E-F676-D45E858A96D6}</Project>
+      <Name>Unity.ShaderGraph.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="XiaomiSupport.csproj">
       <Project>{A2A6A8B2-DDE1-D596-6008-90CE9610175C}</Project>
       <Name>XiaomiSupport</Name>
@@ -349,6 +353,8 @@
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GlassRefraction.shader" />
+    <None Include="Assets\NewSurfaceShader.shader" />
     <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Dark.uss" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Styles\Main_Light.uss" />
@@ -359,6 +365,48 @@
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageList.uxml" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageManagerWindow.uxml" />
     <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.package-manager-ui@1.8.8\Editor\Resources\Templates\PackageSearchFilterTabs.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Shaders\BlitNoAlpha.shader" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Shaders\Checkerboard.shader" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Blackboard.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\BooleanSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ChannelEnumControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ChannelEnumMaskControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ChannelMixerControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ColorControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ColorRGBASlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ColorRGBSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\CubemapSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\DielectricSpecularControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\EnumControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\EnumConversionControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\IntegerControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\MultiFloatControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\MultiFloatSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ScreenPositionSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\SliderControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\TextureSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\ToggleControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\Controls\UVSlotControlView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\GraphEditorView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\MasterPreviewView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\MaterialGraph.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\MaterialGraphView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\MaterialNodeView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\PixelCacheProfiler.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\PortInputView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\ShaderPort.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\Styles\ShaderPropertyView.uss" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\UXML\GraphView\Blackboard.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\UXML\GraphView\BlackboardField.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\UXML\GraphView\BlackboardRow.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\UXML\GraphView\BlackboardSection.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\Editor\Resources\UXML\PixelCacheProfiler.uxml" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\Functions.hlsl" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\GeometricTools.hlsl" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\ShaderConfig.cs.hlsl" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\ShaderVariables.hlsl" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\ShaderVariablesFunctions.hlsl" />
+    <None Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.shadergraph@1.1.9-preview\ShaderGraphLibrary\ShaderVariablesMatrixDefsLegacyUnity.hlsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

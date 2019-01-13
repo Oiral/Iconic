@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "com.unity.xiaomi": "1.0.3"
+    "com.unity.xiaomi": "1.0.3",
+    "com.unity.shadergraph": "1.1.9-preview"
   }
 }

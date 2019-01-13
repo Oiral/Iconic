@@ -14,7 +14,7 @@ public class PauseScript : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause") && EnemyManager.instance.gameOver == false)
         {
             TogglePause();
         }

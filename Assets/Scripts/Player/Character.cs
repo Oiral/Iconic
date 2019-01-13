@@ -268,16 +268,23 @@ public class Character : MonoBehaviour {
 
         deathScreen.SetActive(true);
         scoreText.text = EnemyManager.instance.score.ToString();
+        EnemyManager.instance.gameOver = true;
 
-        Destroy(EnemyManager.instance.gameObject);
+        
+        //Destroy(EnemyManager.instance.gameObject);
 
+        //remove all enemies in the game
         foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
         {
             Destroy(enemy);
         }
+        //remove all bullets in the game
         foreach (GameObject bullet in GameObject.FindGameObjectsWithTag("Bullet"))
         {
             Destroy(bullet);
         }
+
+        //Deactivate the player
+        gameObject.SetActive(false);
     }
 }
