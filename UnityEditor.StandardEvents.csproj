@@ -356,6 +356,8 @@
     <Compile Include="C:\Users\hamis\AppData\Local\Unity\cache\packages\packages.unity.com\com.unity.standardevents@1.0.13\Editor\Importer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\2DOutline\Resources\Mats\OutlineBufferShader.shader" />
+    <None Include="Assets\2DOutline\Resources\Mats\OutlineShader.shader" />
     <None Include="Assets\GlassRefraction.shader" />
     <None Include="Assets\NewSurfaceShader.shader" />
     <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />

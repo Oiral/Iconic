@@ -324,6 +324,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\2DOutline\Scripts\AlwaysRotate.cs" />
+    <Compile Include="Assets\2DOutline\Scripts\AnimateSprite.cs" />
+    <Compile Include="Assets\2DOutline\Scripts\demo1.cs" />
+    <Compile Include="Assets\2DOutline\Scripts\Outline.cs" />
+    <Compile Include="Assets\2DOutline\Scripts\OutlineManager.cs" />
     <Compile Include="Assets\CustomSlider.cs" />
     <Compile Include="Assets\DropPowerup.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
@@ -343,7 +348,10 @@
     <Compile Include="Assets\Scripts\Managers\PauseScript.cs" />
     <Compile Include="Assets\Scripts\Player\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player\Character.cs" />
+    <Compile Include="Assets\Scripts\Saving\SaveSystem.cs" />
+    <Compile Include="Assets\Scripts\Saving\ScoreData.cs" />
     <Compile Include="Assets\ShotCounter.cs" />
+    <Compile Include="Assets\TestingScript.cs" />
     <Compile Include="Assets\TextManager.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\2D Example\Player2DExample.cs" />
     <Compile Include="Assets\Virtual Joystick Pack\Examples\3D Example\Player3DExample.cs" />
@@ -353,6 +361,8 @@
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\2DOutline\Resources\Mats\OutlineBufferShader.shader" />
+    <None Include="Assets\2DOutline\Resources\Mats\OutlineShader.shader" />
     <None Include="Assets\GlassRefraction.shader" />
     <None Include="Assets\NewSurfaceShader.shader" />
     <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />
