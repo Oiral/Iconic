@@ -435,6 +435,10 @@ Prefab:
       propertyPath: m_Name
       value: Resume Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1738021226056534, guid: 27c118467cf1eb249b7a72fcde777ead, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27c118467cf1eb249b7a72fcde777ead, type: 2}
   m_IsPrefabParent: 0
@@ -1423,13 +1427,14 @@ GameObject:
   - component: {fileID: 378598774}
   - component: {fileID: 378598776}
   - component: {fileID: 378598775}
+  - component: {fileID: 378598777}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &378598774
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1485,6 +1490,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 378598773}
+--- !u!95 &378598777
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 378598773}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f58eaf7780730694f9bb6129cdd25e99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &388551165
 GameObject:
   m_ObjectHideFlags: 0
@@ -4135,6 +4158,10 @@ Prefab:
     - target: {fileID: 1738021226056534, guid: 27c118467cf1eb249b7a72fcde777ead, type: 2}
       propertyPath: m_Name
       value: Main Menu Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738021226056534, guid: 27c118467cf1eb249b7a72fcde777ead, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27c118467cf1eb249b7a72fcde777ead, type: 2}
