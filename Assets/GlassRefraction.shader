@@ -1,7 +1,7 @@
 ﻿Shader "Smkgames/GlassRefraction"
 {
     Properties{
-        _Refraction("Refraction",Float) = 0.05
+         _Refraction("Refraction",Float) = 0.05
         _Alpha("Alpha",Range(0,1)) = 1
     }
     SubShader

@@ -7,6 +7,7 @@ public class ScreenShake : MonoBehaviour {
 
     public Vector3 startingPos;
 
+    public bool moveZ = true;
     //public static ScreenShake instance;
     public static UnityEvent shakeScreen = new UnityEvent();
     
@@ -29,8 +30,6 @@ public class ScreenShake : MonoBehaviour {
     public static float shakeTime = 0.5f;
     public float shakeAmount = 0.1f;
     float decreaseFactor = 1f;
-
-    
     
     public void StartShake()
     {
@@ -41,7 +40,13 @@ public class ScreenShake : MonoBehaviour {
     {
         if (shake > 0)
         {
-            transform.position = startingPos + (Random.insideUnitSphere * shakeAmount);
+            Vector3 pos = startingPos + (Random.insideUnitSphere * shakeAmount);
+            if (moveZ == false)
+            {
+                pos.z = 0;
+            }
+            transform.position = pos;
+
             shake -= Time.deltaTime * decreaseFactor;
         }
         else
