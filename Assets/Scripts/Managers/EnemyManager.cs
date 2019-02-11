@@ -21,11 +21,11 @@ public class EnemyManager : MonoBehaviour {
     public List<GameObject> enemyPrefabs;
     public List<int> enemyCosts;
 
-    public int waveCost;
+    public int waveCost = 1;
 
     public float spawnRange = 5f;
 
-    public float waveNumber = 0;
+    public int waveNumber = 0;
 
     public float enemiesAlive = 0;
 
@@ -47,34 +47,8 @@ public class EnemyManager : MonoBehaviour {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
                 {
                     waveNumber += 1;
-                    waveCost = (int)waveNumber;
-
-                    while (waveCost > 0)
-                    {
-                        //pick a random thing
-                        int num = 0;
-
-                        float value = Random.value;
-
-                        if (value > 0.9f)
-                        {
-                            num = 1;
-                        }
-                        else if (value > 0.7f)
-                        {
-                            num = 2;
-                        }
-                        else if (value > 0.5f)
-                        {
-                            num = 3;
-                        }
-
-                        if (waveCost >= enemyCosts[num])
-                        {
-                            waveCost -= enemyCosts[num];
-                            SpawnEnemy(num);
-                        }
-                    }
+                    waveCost += waveNumber;
+                    SpawnWave(waveCost);
                 }
                 else
                 {
@@ -83,6 +57,36 @@ public class EnemyManager : MonoBehaviour {
             }
 
             scoreText.text = score.ToString();
+        }
+    }
+
+    public void SpawnWave(int budget)
+    {
+        while (budget > 0)
+        {
+            //pick a random thing
+            int num = 0;
+
+            float value = Random.value;
+
+            if (value > 0.9f)
+            {
+                num = 1;
+            }
+            else if (value > 0.7f)
+            {
+                num = 2;
+            }
+            else if (value > 0.5f)
+            {
+                num = 3;
+            }
+
+            if (budget >= enemyCosts[num])
+            {
+                budget -= enemyCosts[num];
+                SpawnEnemy(num);
+            }
         }
     }
 

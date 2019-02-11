@@ -1434,7 +1434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &378598774
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3026,8 +3026,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1015025834}
   - component: {fileID: 1015025835}
+  - component: {fileID: 1015025836}
   m_Layer: 0
-  m_Name: Enemy Spawner
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3072,6 +3073,18 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 1280064683}
   gameOver: 0
+--- !u!114 &1015025836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015025833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5710d44e3163754ea0dd1ed9cf965bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops: []
 --- !u!1 &1027303263
 GameObject:
   m_ObjectHideFlags: 0

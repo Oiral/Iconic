@@ -25,5 +25,10 @@ public class PauseScript : MonoBehaviour {
         paused = !paused;
         OnPauseEvent.Invoke();
         pauseMenu.SetActive(paused);
+        if (paused == true)
+        {
+            Debug.Log("Test Pause");
+            GetComponentInChildren<Animator>().SetTrigger("Play");
+        }
     }
 }
