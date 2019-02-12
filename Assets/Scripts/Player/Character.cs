@@ -46,9 +46,6 @@ public class Character : MonoBehaviour {
     public Text shotSpeedText;
     public Text multiShotText;
 
-    public GameObject inGameUI;
-    public GameObject deathScreen;
-    public Text scoreText;
 
 	// Update is called once per frame
 	void Update () {
@@ -265,29 +262,6 @@ public class Character : MonoBehaviour {
 
     public void Die()
     {
-        Time.timeScale = 1;
-
-        //inGameUI.SetActive(false);
-
-        deathScreen.SetActive(true);
-        scoreText.text = EnemyManager.instance.score.ToString();
-        EnemyManager.instance.gameOver = true;
-
-        
-        //Destroy(EnemyManager.instance.gameObject);
-
-        //remove all enemies in the game
-        foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("Enemy"))
-        {
-            Destroy(enemy);
-        }
-        //remove all bullets in the game
-        foreach (GameObject bullet in GameObject.FindGameObjectsWithTag("Bullet"))
-        {
-            Destroy(bullet);
-        }
-
-        //Deactivate the player
-        gameObject.SetActive(false);
+        GameManager.instance.StartGameOver();
     }
 }
