@@ -64,8 +64,6 @@
     <Compile Include="Assets\2DOutline\Scripts\demo1.cs" />
     <Compile Include="Assets\2DOutline\Scripts\Outline.cs" />
     <Compile Include="Assets\2DOutline\Scripts\OutlineManager.cs" />
-    <Compile Include="Assets\DestroySphere.cs" />
-    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\DropPowerup.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />
@@ -76,11 +74,13 @@
     <Compile Include="Assets\Scripts\Enemy\MoveForward.cs" />
     <Compile Include="Assets\Scripts\Enemy\RandomDirection.cs" />
     <Compile Include="Assets\Scripts\Enemy\saveVelocityOnPause.cs" />
+    <Compile Include="Assets\Scripts\Extras\DestroySphere.cs" />
     <Compile Include="Assets\Scripts\Extras\PauseParticleOnPause.cs" />
     <Compile Include="Assets\Scripts\Extras\ScreenShake.cs" />
     <Compile Include="Assets\Scripts\Extras\ShotPowerUp.cs" />
     <Compile Include="Assets\Scripts\Managers\DropManager.cs" />
     <Compile Include="Assets\Scripts\Managers\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\MenuFunctions.cs" />
     <Compile Include="Assets\Scripts\Managers\PauseScript.cs" />
     <Compile Include="Assets\Scripts\Managers\ShiftManager.cs" />
