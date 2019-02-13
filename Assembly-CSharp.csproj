@@ -103,20 +103,41 @@
     <None Include="Assets\GlassRefraction.shader" />
     <None Include="Assets\2DOutline\Resources\Mats\OutlineShader.shader" />
     <None Include="Assets\NewSurfaceShader.shader" />
+    <Reference Include="com.unity.render-pipelines.core.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.render-pipelines.core.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.render-pipelines.core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.render-pipelines.lightweight.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.render-pipelines.lightweight.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.postprocessing.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Editor">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.postprocessing.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="XiaomiSupport">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.render-pipelines.core.IncludePaths">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/com.unity.render-pipelines.core.IncludePaths.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.1.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

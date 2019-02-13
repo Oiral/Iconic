@@ -35,6 +35,13 @@ public class GameManager : MonoBehaviour {
     public GameObject deathScreen;
     public Text scoreText;
 
+    [Header("Reset")]
+    public float scoreSpinDownTime;
+    [Space]
+    public int shotSpeed;
+    public int fireRate;
+    public int MovementSpeed;
+
     private void Start()
     {
         enemyManager = GetComponent<EnemyManager>();
@@ -49,8 +56,6 @@ public class GameManager : MonoBehaviour {
         deathScreen.SetActive(true);
         scoreText.text = enemyManager.score.ToString();
         enemyManager.gameOver = true;
-
-
 
         //Deactivate the player
         player.SetActive(false);
@@ -96,9 +101,36 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void Restart()
+    public void RunRestart()
     {
-        //Set the player to active and move back to starting position
+        StartCoroutine(Restart());
+    }
 
+    IEnumerator Restart()
+    {
+        inGameUI.SetActive(true);
+        deathScreen.SetActive(false);
+
+        foreach (GameObject sphere in GameObject.FindGameObjectsWithTag("Death Sphere"))
+        {
+            Destroy(sphere);
+        }
+
+        int repeats = (int)scoreSpinDownTime / 10;
+
+        int scoreGaps = Mathf.RoundToInt(enemyManager.score / (scoreSpinDownTime * 10));
+
+        for (int i = 0; i < scoreSpinDownTime; i++)
+        {
+            yield return new WaitForSeconds(0.1f);
+            enemyManager.score -= scoreGaps;
+        }
+        enemyManager.score = 0;
+
+        //Set the player to active and move back to starting position
+        player.SetActive(true);
+        player.transform.position = Vector3.zero;
+
+        enemyManager.gameOver = false;
     }
 }
