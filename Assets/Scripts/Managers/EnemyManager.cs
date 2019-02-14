@@ -39,6 +39,7 @@ public class EnemyManager : MonoBehaviour {
 
     private void Update()
     {
+        scoreText.text = score.ToString();
         if (gameOver == false)
         {
             if (enemiesAlive <= 0)
@@ -56,7 +57,16 @@ public class EnemyManager : MonoBehaviour {
                 }
             }
 
-            scoreText.text = score.ToString();
+            
+        }
+    }
+
+
+    public void IncreaseScore(int amount)
+    {
+        if (gameOver == false)
+        {
+            score += amount;
         }
     }
 

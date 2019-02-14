@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour {
 
     [Header("Reset")]
     public float scoreSpinDownTime;
+    public int repeats;
     [Space]
     public int shotSpeed;
     public int fireRate;
@@ -116,21 +117,23 @@ public class GameManager : MonoBehaviour {
             Destroy(sphere);
         }
 
-        int repeats = (int)scoreSpinDownTime / 10;
+        //int repeats = (int)scoreSpinDownTime / 10;
+
+        //int scoreGaps = Mathf.RoundToInt(enemyManager.score / (scoreSpinDownTime * 10));
 
         int scoreGaps = Mathf.RoundToInt(enemyManager.score / (scoreSpinDownTime * 10));
-
-        for (int i = 0; i < scoreSpinDownTime; i++)
+        Debug.Log(scoreGaps);
+        for (int i = 0; i < scoreSpinDownTime * 10; i++)
         {
             yield return new WaitForSeconds(0.1f);
-            enemyManager.score -= scoreGaps;
+            enemyManager.score = (int)Mathf.Clamp(enemyManager.score - scoreGaps, 0, 9999999999);
         }
         enemyManager.score = 0;
 
         //Set the player to active and move back to starting position
         player.SetActive(true);
         player.transform.position = Vector3.zero;
-
         enemyManager.gameOver = false;
+
     }
 }

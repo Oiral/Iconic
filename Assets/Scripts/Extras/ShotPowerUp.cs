@@ -32,7 +32,7 @@ public class ShotPowerUp : MonoBehaviour {
                     break;
             }
 
-            EnemyManager.instance.score += score;
+            EnemyManager.instance.IncreaseScore(score);
             Destroy(gameObject);
         }
     }

@@ -28,7 +28,7 @@ public class EnemyHealth : MonoBehaviour {
             ScreenShake.shakeTime = 0.05f;
             ScreenShake.shakeScreen.Invoke();
 
-            EnemyManager.instance.score += score;
+            EnemyManager.instance.IncreaseScore(score);
 
             if (GetComponent<DropPowerup>())
             {

@@ -89,6 +89,7 @@ public class DestroySphere : MonoBehaviour {
         }
         odd.Reverse();
         even.AddRange(odd);
+        
 
         Vector3[] reorderedVerts = even.ToArray();
         
