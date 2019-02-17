@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}</ProjectGuid>
+    <ProjectGuid>{340BB6D7-DA72-373D-62B9-31C6BBA84A2E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -103,43 +103,44 @@
     <None Include="Assets\2DOutline\Resources\Mats\OutlineBufferShader.shader" />
     <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />
     <None Include="Assets\GlassRefraction.shader" />
+    <None Include="Assets\Shaders\Blur2.shader" />
     <None Include="Assets\2DOutline\Resources\Mats\OutlineShader.shader" />
     <None Include="Assets\NewSurfaceShader.shader" />
-    <Reference Include="com.unity.render-pipelines.core.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.render-pipelines.core.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.render-pipelines.core.Runtime">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.render-pipelines.core.Runtime.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.render-pipelines.lightweight.Runtime">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Runtime.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.render-pipelines.lightweight.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.render-pipelines.lightweight.Editor.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.postprocessing.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.postprocessing.Editor.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.postprocessing.Runtime">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.postprocessing.Runtime.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="com.unity.render-pipelines.core.IncludePaths">
-      <HintPath>C:/Users/845858107/New Unity Project/Library/ScriptAssemblies/com.unity.render-pipelines.core.IncludePaths.dll</HintPath>
+    <Reference Include="Unity.RenderPipelines.Core.IncludePaths">
+      <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Core.IncludePaths.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

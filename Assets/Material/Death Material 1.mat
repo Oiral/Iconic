@@ -4,7 +4,7 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Death Material 1
   m_Shader: {fileID: 4800000, guid: 40bf11dbe6e4f134bb6e2dafc9594e8c, type: 3}
@@ -18,6 +18,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_E5FD6597:
+        m_Texture: {fileID: 2800000, guid: 1cecaa6651d11cc41be5d994ce04ec51, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F50D33E7:
+        m_Texture: {fileID: 2800000, guid: a2a8d164f8ce99d4984b5cea20932452, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture_E5FD6597:
         m_Texture: {fileID: 2800000, guid: 1cecaa6651d11cc41be5d994ce04ec51, type: 3}
         m_Scale: {x: 1, y: 1}
