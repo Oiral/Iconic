@@ -128,12 +128,27 @@ public class GameManager : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
             enemyManager.score = (int)Mathf.Clamp(enemyManager.score - scoreGaps, 0, 9999999999);
         }
+        //Reset wave count
+        enemyManager.waveCost = 0;
         enemyManager.score = 0;
+        enemyManager.waveNumber = 0;
+
+        enemyManager.gameOver = false;
+
+        //Spawn in the starting enemy
+
 
         //Set the player to active and move back to starting position
         player.SetActive(true);
         player.transform.position = Vector3.zero;
-        enemyManager.gameOver = false;
+
+        //Reset stats and wave count
+        Character playerScript = player.GetComponent<Character>();
+        playerScript.multiShot = 1;
+        playerScript.shotSpeed = 1;
+        playerScript.moveSpeed = 5;
+
+        
 
     }
 }

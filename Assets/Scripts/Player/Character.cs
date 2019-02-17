@@ -183,7 +183,7 @@ public class Character : MonoBehaviour {
     {
         if (invulnerableTimer > 0)
         {
-            ShiftManager.instance.UpdateShift(1);
+            //ShiftManager.instance.UpdateShift(1);
             invulnerableTimer -= Time.deltaTime;
             Time.timeScale = Mathf.Abs( 1 - (invulnerableTimer / 2));
         }
@@ -198,13 +198,13 @@ public class Character : MonoBehaviour {
     {
         if (invulnerableTimer == 0 && health < maxHealth)
         {
-            ShiftManager.instance.UpdateShift(1 - (healthRegenTimer/healthRegenTime));
+            //ShiftManager.instance.UpdateShift(1 - (healthRegenTimer/healthRegenTime));
             healthRegenTimer += Time.deltaTime;
             if (healthRegenTimer > healthRegenTime)
             {
                 healthRegenTimer = 0;
                 health += 1;
-                ShiftManager.instance.UpdateShift(0);
+                //ShiftManager.instance.UpdateShift(0);
                 if (health > maxHealth)
                 {
                     health = maxHealth;
