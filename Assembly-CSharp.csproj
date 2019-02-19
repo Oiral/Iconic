@@ -102,10 +102,10 @@
     <Compile Include="Assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <None Include="Assets\2DOutline\Resources\Mats\OutlineBufferShader.shader" />
     <None Include="Assets\Shaders\SimpleGrabPassBlur.shader" />
-    <None Include="Assets\GlassRefraction.shader" />
+    <None Include="Assets\Shaders\GlassRefraction.shader" />
     <None Include="Assets\Shaders\Blur2.shader" />
     <None Include="Assets\2DOutline\Resources\Mats\OutlineShader.shader" />
-    <None Include="Assets\NewSurfaceShader.shader" />
+    <None Include="Assets\Shaders\NewSurfaceShader.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>D:/845858107/Documents/GitHub/Top-Down-Shooter/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
