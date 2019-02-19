@@ -30,6 +30,8 @@ public class Character : MonoBehaviour {
     public float healthRegenTime;
 
     public Animator healthAnimator;
+    public AudioSource shieldAudio;
+
 
     [Header("Shooting")]
     public float range = 70;
@@ -232,6 +234,9 @@ public class Character : MonoBehaviour {
         {
             //Play shield particls
             GetComponent<ParticleSystem>().Play();
+
+            //Play shield sound
+            shieldAudio.Play();
 
             invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
