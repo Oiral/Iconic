@@ -29,6 +29,8 @@ public class Character : MonoBehaviour {
     float healthRegenTimer;
     public float healthRegenTime;
 
+    public Animator healthAnimator;
+
     [Header("Shooting")]
     public float range = 70;
     float shotTimer;
@@ -196,7 +198,7 @@ public class Character : MonoBehaviour {
 
     public void HealthRegen()
     {
-        if (invulnerableTimer == 0 && health < maxHealth)
+        if (/*invulnerableTimer == 0 &&*/ health < maxHealth)
         {
             //ShiftManager.instance.UpdateShift(1 - (healthRegenTimer/healthRegenTime));
             healthRegenTimer += Time.deltaTime;
@@ -210,6 +212,7 @@ public class Character : MonoBehaviour {
                     health = maxHealth;
                 }
             }
+            healthAnimator.SetFloat("HealthAmount", healthRegenTimer/healthRegenTime);
         }
     }
 
