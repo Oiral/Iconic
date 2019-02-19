@@ -230,6 +230,9 @@ public class Character : MonoBehaviour {
         
         if (health > 0)
         {
+            //Play shield particls
+            GetComponent<ParticleSystem>().Play();
+
             invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
             if (collision.gameObject.tag == "Enemy")

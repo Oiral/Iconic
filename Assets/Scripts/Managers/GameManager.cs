@@ -121,7 +121,7 @@ public class GameManager : MonoBehaviour {
 
         //int scoreGaps = Mathf.RoundToInt(enemyManager.score / (scoreSpinDownTime * 10));
 
-        int scoreGaps = Mathf.RoundToInt(enemyManager.score / (scoreSpinDownTime * 10));
+        float scoreGaps = enemyManager.score / (scoreSpinDownTime * 10);
         Debug.Log(scoreGaps);
         for (int i = 0; i < scoreSpinDownTime * 10; i++)
         {
@@ -147,6 +147,7 @@ public class GameManager : MonoBehaviour {
         playerScript.multiShot = 1;
         playerScript.shotSpeed = 1;
         playerScript.moveSpeed = 5;
+        playerScript.health = 1;
 
         
 
