@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
@@ -59,5 +60,15 @@ public static class SaveSystem {
 
         formatter.Serialize(stream, data);
         stream.Close();
+    }
+
+    public static void DebugList(List<int> list)
+    {
+        string debugString = "";
+        for (int i = 0; i < list.Count; i++)
+        {
+            debugString += list[i].ToString() + " | ";
+        }
+        Debug.Log(debugString);
     }
 }

@@ -8,24 +8,14 @@ public class TestingScript : MonoBehaviour {
 
     private void Start()
     {
-        SaveSystem.ClearScores();
+        //SaveSystem.ClearScores();
     }
 
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            ScoreData data = SaveSystem.LoadScores();
-            if (data.highScores != null)
-            {
-                data.highScores.Add(testScore);
-                SaveSystem.SaveScore(data);
-            }
-            else
-            {
-                Debug.Log("Creating new save");
-                SaveSystem.SaveScore(testScore);
-            }
+            SaveSystem.ClearScores();
             DebugList(SaveSystem.LoadScores().highScores);
 
         }

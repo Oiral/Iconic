@@ -58,6 +58,17 @@ public class GameManager : MonoBehaviour {
         scoreText.text = enemyManager.score.ToString();
         enemyManager.gameOver = true;
 
+        //Save the players score
+        ScoreData data = SaveSystem.LoadScores();
+        data.highScores.Add(enemyManager.score);
+        data.highScores.Sort();
+
+        SaveSystem.SaveScore(data);
+
+        //Debug the current scores
+        SaveSystem.DebugList(data.highScores);
+        Debug.Log("High Score | " + data.highScores[data.highScores.Count -1]);
+
         //Deactivate the player
         player.SetActive(false);
 
