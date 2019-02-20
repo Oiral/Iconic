@@ -10,6 +10,8 @@ public class ShotPowerUp : MonoBehaviour {
 
     public int score;
 
+    public GameObject explosionCircle;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
