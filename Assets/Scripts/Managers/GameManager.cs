@@ -56,27 +56,30 @@ public class GameManager : MonoBehaviour {
 
     public void StartGameOver()
     {
-        Time.timeScale = 1;
-        Debug.Log("Time Scale Set [1]", gameObject);
-
-        inGameUI.SetActive(false);
         deathScreen.SetActive(true);
         scoreText.text = enemyManager.score.ToString();
-        enemyManager.gameOver = true;
-
+        
         SaveSetScore();
 
         //Send analytics
         GetComponent<AnalyticsEventTracker>().TriggerEvent();
-        
 
-        //Deactivate the player
-        player.SetActive(false);
-
-        Instantiate(deathSpherePrefab, player.transform.position, Quaternion.identity, null);
+        DisableGamePlay();
 
         StartCoroutine(GameOver());
         //Set the player to not active
+    }
+
+    void DisableGamePlay()
+    {
+        enemyManager.gameOver = true;
+        inGameUI.SetActive(false);
+        //Deactivate the player
+        player.SetActive(false);
+        Instantiate(deathSpherePrefab, player.transform.position, Quaternion.identity, null);
+
+        Time.timeScale = 1;
+        Debug.Log("Time Scale Set [1]", gameObject);
     }
 
     void SaveSetScore()
@@ -162,6 +165,10 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator StartGame()
     {
+        foreach (GameObject sphere in GameObject.FindGameObjectsWithTag("Death Sphere"))
+        {
+            Destroy(sphere);
+        }
         //Reset stats
         Character playerScript = player.GetComponent<Character>();
         playerScript.multiShot = 1;
@@ -189,5 +196,20 @@ public class GameManager : MonoBehaviour {
         Instantiate(startingEnemyPrefab, startingEnemyPosition, Quaternion.identity, null);
 
         enemyManager.gameOver = false;
+    }
+
+    public void CallMainMenu()
+    {
+        if (PauseScript.paused)
+        {
+            PauseScript.instance.TogglePause();
+        }
+        DisableGamePlay();
+        MenuFunctions.instance.MainMenu();
+    }
+
+    public void CallMainMenuFromEndScreen()
+    {
+        MenuFunctions.instance.MainMenu();
     }
 }

@@ -18,7 +18,6 @@ public class ShotCounter : MonoBehaviour {
 
             if (player != null)
             {
-                Debug.Log("GUI UPDATE");
                 if (blocks.Count < player.multiShot)
                 {
                     blocks.Add(Instantiate(image, this.transform));

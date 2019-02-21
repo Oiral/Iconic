@@ -218,7 +218,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 7.9299927, y: 7.7001038}
+  m_AnchoredPosition: {x: 7.9299927, y: 7.7000732}
   m_SizeDelta: {x: 232.40002, y: 43.800003}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &52212834
@@ -422,9 +422,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1760690374}
-        m_MethodName: MainMenu
+      - m_Target: {fileID: 1015025837}
+        m_MethodName: CallMainMenuFromEndScreen
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1568898278}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3454,7 +3465,7 @@ Transform:
   m_LocalScale: {x: 4.501421, y: 4.5014205, z: 4.5014205}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244590596
 GameObject:
@@ -3877,7 +3888,7 @@ Transform:
   m_LocalScale: {x: 5.2102, y: 5.2102, z: 5.2102}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1476644635
 GameObject:
@@ -4671,60 +4682,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1689542785}
   m_CullTransparentMesh: 0
---- !u!1 &1760690373
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1760690375}
-  - component: {fileID: 1760690374}
-  - component: {fileID: 1760690376}
-  m_Layer: 0
-  m_Name: Extra Functions
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1760690374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760690373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b0fb72178de90e45890cbcfb97c973c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 0}
---- !u!4 &1760690375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760690373}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09056931, y: -2.7455132, z: 0.31856835}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760690376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1760690373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b30e3b6cb362c824a99d8b48d800676b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testScore: 100
 --- !u!1001 &1786747309
 Prefab:
   m_ObjectHideFlags: 0
@@ -4826,7 +4783,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1760690374}
+      objectReference: {fileID: 1015025837}
     - target: {fileID: 114476147391361516, guid: e15839938d248844dba4f466d4d45902,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4917,6 +4874,11 @@ Prefab:
         type: 2}
       propertyPath: m_Color.a
       value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 114996552471265520, guid: e15839938d248844dba4f466d4d45902,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CallMainMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e15839938d248844dba4f466d4d45902, type: 2}
