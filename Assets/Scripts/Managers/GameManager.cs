@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
 
 public class GameManager : MonoBehaviour {
 
@@ -58,6 +59,23 @@ public class GameManager : MonoBehaviour {
         scoreText.text = enemyManager.score.ToString();
         enemyManager.gameOver = true;
 
+        SaveSetScore();
+
+        //Send analytics
+        GetComponent<AnalyticsEventTracker>().TriggerEvent();
+        
+
+        //Deactivate the player
+        player.SetActive(false);
+
+        Instantiate(deathSpherePrefab, player.transform.position, Quaternion.identity, null);
+
+        StartCoroutine(GameOver());
+        //Set the player to not active
+    }
+
+    void SaveSetScore()
+    {
         //Save the players score
         ScoreData data = SaveSystem.LoadScores();
         data.highScores.Add(enemyManager.score);
@@ -67,15 +85,7 @@ public class GameManager : MonoBehaviour {
 
         //Debug the current scores
         SaveSystem.DebugList(data.highScores);
-        Debug.Log("High Score | " + data.highScores[data.highScores.Count -1]);
-
-        //Deactivate the player
-        player.SetActive(false);
-
-        Instantiate(deathSpherePrefab, player.transform.position, Quaternion.identity, null);
-
-        StartCoroutine(GameOver());
-        //Set the player to not active
+        Debug.Log("High Score | " + data.highScores[data.highScores.Count - 1]);
     }
 
     IEnumerator GameOver()

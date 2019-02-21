@@ -20,7 +20,16 @@ public class ShotCounter : MonoBehaviour {
                 {
                     Instantiate(image, this.transform);
                     numberOfIcons += 1;
+                }else if (numberOfIcons > player.multiShot)
+                {
+                    //Remove a bar
+                    Transform[] transforms = GetComponentsInChildren<Transform>();
+
+                    Destroy(transforms[transforms.Length - 1].gameObject);
+
+                    numberOfIcons -= 1;
                 }
+                
             }
         }
     }
