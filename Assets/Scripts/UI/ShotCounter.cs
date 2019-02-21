@@ -7,26 +7,26 @@ public class ShotCounter : MonoBehaviour {
     public GameObject image;
     public float numberOfIcons;
 
+    public List<GameObject> blocks;
 
     private void OnGUI()
     {
+        
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             Character player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
 
             if (player != null)
             {
-                if (numberOfIcons < player.multiShot)
+                Debug.Log("GUI UPDATE");
+                if (blocks.Count < player.multiShot)
                 {
-                    Instantiate(image, this.transform);
+                    blocks.Add(Instantiate(image, this.transform));
                     numberOfIcons += 1;
-                }else if (numberOfIcons > player.multiShot)
+                }else if (blocks.Count > player.multiShot)
                 {
-                    //Remove a bar
-                    Transform[] transforms = GetComponentsInChildren<Transform>();
-
-                    Destroy(transforms[transforms.Length - 1].gameObject);
-
+                    Destroy(blocks[blocks.Count - 1]);
+                    blocks.RemoveAt(blocks.Count - 1);
                     numberOfIcons -= 1;
                 }
                 

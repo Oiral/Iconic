@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -43,10 +44,14 @@ public class GameManager : MonoBehaviour {
     public int shotSpeed;
     public int fireRate;
     public int MovementSpeed;
+    [Space]
+    public GameObject startingEnemyPrefab;
+    public Vector3 startingEnemyPosition;
 
     private void Start()
     {
         enemyManager = GetComponent<EnemyManager>();
+        SceneManager.LoadScene("Main Menu", LoadSceneMode.Additive);
     }
 
     public void StartGameOver()
@@ -149,28 +154,40 @@ public class GameManager : MonoBehaviour {
             yield return new WaitForSeconds(0.1f);
             enemyManager.score = (int)Mathf.Clamp(enemyManager.score - scoreGaps, 0, 9999999999);
         }
-        //Reset wave count
-        enemyManager.waveCost = 0;
-        enemyManager.score = 0;
-        enemyManager.waveNumber = 0;
-
-        enemyManager.gameOver = false;
 
         //Spawn in the starting enemy
+        StartCoroutine(StartGame());
 
+    }
 
-        //Set the player to active and move back to starting position
-        player.SetActive(true);
-        player.transform.position = Vector3.zero;
-
-        //Reset stats and wave count
+    public IEnumerator StartGame()
+    {
+        //Reset stats
         Character playerScript = player.GetComponent<Character>();
         playerScript.multiShot = 1;
         playerScript.shotSpeed = 1;
         playerScript.moveSpeed = 5;
         playerScript.health = 1;
 
-        
+        //Reset Enemy Manager
+        //Reset wave count
+        enemyManager.waveCost = 0;
+        enemyManager.score = 0;
+        enemyManager.waveNumber = 0;
 
+        yield return new WaitForSeconds(0.5f);
+        //Turn the player on
+        player.SetActive(true);
+        player.transform.position = Vector3.zero;
+
+        yield return new WaitForSeconds(0.5f);
+        //Turn on the UI
+        inGameUI.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        //Create the initial Enemy
+        Instantiate(startingEnemyPrefab, startingEnemyPosition, Quaternion.identity, null);
+
+        enemyManager.gameOver = false;
     }
 }

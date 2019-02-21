@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MenuFunctions : MonoBehaviour {
 
-	public void Restart()
+    public Animator animator;
+
+    private void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        animator = GetComponent<Animator>();
     }
 
     public void Quit()
@@ -17,11 +19,15 @@ public class MenuFunctions : MonoBehaviour {
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        //SceneManager.LoadScene(0);
+        Debug.Log("Load menu");
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(1);
+        Debug.Log("Start Game");
+        animator.SetTrigger("Close Menu");
+        StartCoroutine(GameManager.instance.StartGame());
     }
 }
