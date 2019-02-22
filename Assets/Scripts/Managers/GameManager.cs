@@ -45,6 +45,9 @@ public class GameManager : MonoBehaviour {
     public int fireRate;
     public int MovementSpeed;
     [Space]
+    public int startingWaveNumber;
+    public int startingWavePoints;
+    [Space]
     public GameObject startingEnemyPrefab;
     public Vector3 startingEnemyPosition;
 
@@ -86,10 +89,17 @@ public class GameManager : MonoBehaviour {
     {
         //Save the players score
         ScoreData data = SaveSystem.LoadScores();
-        data.highScores.Add(enemyManager.score);
-        data.highScores.Sort();
+        if (data != null)
+        {
+            data.highScores.Add(enemyManager.score);
+            data.highScores.Sort();
 
-        SaveSystem.SaveScore(data);
+            SaveSystem.SaveScore(data);
+        }
+        else
+        {
+            SaveSystem.SaveScore(enemyManager.score);
+        }
 
         //Debug the current scores
         SaveSystem.DebugList(data.highScores);
@@ -178,9 +188,9 @@ public class GameManager : MonoBehaviour {
 
         //Reset Enemy Manager
         //Reset wave count
-        enemyManager.waveCost = 0;
+        enemyManager.waveCost = startingWavePoints;
         enemyManager.score = 0;
-        enemyManager.waveNumber = 0;
+        enemyManager.waveNumber = startingWaveNumber;
 
         yield return new WaitForSeconds(0.5f);
         //Turn the player on
