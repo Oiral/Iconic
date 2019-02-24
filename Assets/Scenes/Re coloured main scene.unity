@@ -5648,6 +5648,7 @@ GameObject:
   - component: {fileID: 2013865671}
   - component: {fileID: 2013865672}
   - component: {fileID: 2013865674}
+  - component: {fileID: 2013865675}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -10655,6 +10656,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2013865675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013865665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7faed470241c2a748a9192377dcb1c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 0}
+  FireRate: 0
+  MultiShot: 0
 --- !u!1 &2068629862
 GameObject:
   m_ObjectHideFlags: 0
