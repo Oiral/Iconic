@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour {
     public GameObject inGameUI;
     public GameObject deathScreen;
     public Text scoreText;
+    public Text highScoreText;
 
     [Header("Reset")]
     public float scoreSpinDownTime;
@@ -104,6 +105,7 @@ public class GameManager : MonoBehaviour {
         //Debug the current scores
         SaveSystem.DebugList(data.highScores);
         Debug.Log("High Score | " + data.highScores[data.highScores.Count - 1]);
+        highScoreText.text = data.highScores[data.highScores.Count - 1].ToString();
     }
 
     IEnumerator GameOver()
