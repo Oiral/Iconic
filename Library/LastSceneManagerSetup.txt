@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Re coloured main scene.unity
-  isLoaded: 1
-  isActive: 1
