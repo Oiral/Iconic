@@ -10667,10 +10667,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7faed470241c2a748a9192377dcb1c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedWeapon: 0
+  selectedWeapon: 2
   bulletPrefab: {fileID: 1631492202599202, guid: 0c3df158ff717824ea84cddd919272e4,
     type: 2}
-  trackingPrefab: {fileID: 0}
+  trackingPrefab: {fileID: 1631492202599202, guid: e8a56ca0c97c0d749bdf81f3f41107b3,
+    type: 2}
   chargePrefab: {fileID: 0}
   explosivePrefab: {fileID: 0}
   fireRate: 1

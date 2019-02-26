@@ -6,12 +6,19 @@ public class Bullet : MonoBehaviour {
 
     public float bulletSpeed = 7f;
 
+    public weaponType bulletType = weaponType.normal;
+
     TrailRenderer trail;
+
+    float trailLength;
+
+    float randomDistance;
 
     private void Start()
     {
         trail = GetComponent<TrailRenderer>();
         PauseScript.OnPauseEvent.AddListener(OnPause);
+        randomDistance = Random.Range(0.5f, 1.5f);
     }
 
     // Update is called once per frame
@@ -32,6 +39,31 @@ public class Bullet : MonoBehaviour {
             Destroy(gameObject);
         }
         */
+        if (bulletType == weaponType.tracking)
+        {
+            Vector3 camPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+            //Aim at the mouse
+            float AngleRad = Mathf.Atan2(camPoint.y - transform.position.y, camPoint.x - transform.position.x);
+            // Get Angle in Degrees
+            float AngleDeg = (180 / Mathf.PI) * AngleRad;
+            // Rotate Object
+
+            camPoint.z = 0;
+
+            if (Vector3.Distance(camPoint, transform.position) > randomDistance)
+            {
+                this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg - 90);
+            }
+            else
+            {
+                this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+            }
+
+            //Debug.Log(Vector3.Distance(camPoint, transform.position));
+            
+        }
+
 	}
 
     private void OnBecameInvisible()
@@ -53,8 +85,7 @@ public class Bullet : MonoBehaviour {
         //Spawn in bullet removed particle
         Destroy(gameObject);
     }
-
-    float trailLength;
+    
     void OnPause()
     {
         if (PauseScript.paused)

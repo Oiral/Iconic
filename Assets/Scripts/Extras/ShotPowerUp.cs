@@ -19,11 +19,11 @@ public class ShotPowerUp : MonoBehaviour {
             switch (type)
             {
                 case PowerUpType.fireRate:
-                    collision.gameObject.GetComponent<Character>().shotSpeed += 1;
+                    collision.gameObject.GetComponent<PlayerWeapon>().fireRate += 1;
                     TextManager.messages.Add("Fire Rate Up");
                     break;
                 case PowerUpType.multishot:
-                    collision.gameObject.GetComponent<Character>().multiShot += 1;
+                    collision.gameObject.GetComponent<PlayerWeapon>().multiShot += 1;
                     TextManager.messages.Add("Shot Count Up");
                     break;
                 case PowerUpType.speed:

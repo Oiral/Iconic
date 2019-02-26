@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour {
 
     public void StartGameOver()
     {
+        DisableGamePlay();
         deathScreen.SetActive(true);
         scoreText.text = enemyManager.score.ToString();
         
@@ -68,7 +69,7 @@ public class GameManager : MonoBehaviour {
         //Send analytics
         GetComponent<AnalyticsEventTracker>().TriggerEvent();
 
-        DisableGamePlay();
+        
 
         StartCoroutine(GameOver());
         //Set the player to not active
@@ -183,8 +184,9 @@ public class GameManager : MonoBehaviour {
         }
         //Reset stats
         Character playerScript = player.GetComponent<Character>();
-        playerScript.multiShot = 1;
-        playerScript.shotSpeed = 1;
+        PlayerWeapon weaponScript = player.GetComponent<PlayerWeapon>();
+        weaponScript.multiShot = 1;
+        weaponScript.fireRate = 1;
         playerScript.moveSpeed = 5;
         playerScript.health = 1;
 

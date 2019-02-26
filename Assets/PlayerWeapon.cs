@@ -56,11 +56,9 @@ public class PlayerWeapon : MonoBehaviour {
                     //Debug.Log("Pew");
                     Shoot();
                 }
-                if (Input.GetButtonUp("Fire1"))
-                {
-                    Debug.Log("Test");
-                }
             }
+
+
             if (selectedWeapon == weaponType.charge && Input.GetButtonUp("Fire1"))
             {
                 Debug.Log("Fire Charge");
@@ -70,14 +68,7 @@ public class PlayerWeapon : MonoBehaviour {
 
     private void Shoot()
     {
-        for (int i = 0; i < multiShot - 1; i++)
-        {
-            float angle = Random.Range(-(range/2), (range / 2));
-
-            //angle -= 90;
-
-            Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
-        }
+        
 
         GameObject prefabToSpawn = bulletPrefab;
 
@@ -85,10 +76,19 @@ public class PlayerWeapon : MonoBehaviour {
         {
             case weaponType.normal:
                 prefabToSpawn = bulletPrefab;
+                for (int i = 0; i < multiShot - 1; i++)
+                {
+                    float angle = Random.Range(-(range / 2), (range / 2));
+
+                    //angle -= 90;
+
+                    Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
+                }
                 break;
             case weaponType.explosive:
                 break;
             case weaponType.tracking:
+                prefabToSpawn = trackingPrefab;
                 break;
             case weaponType.charge:
                 break;

@@ -27,6 +27,10 @@ Prefab:
       propertyPath: m_TagString
       value: Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: bulletType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1631492202599202}
@@ -44,7 +48,7 @@ GameObject:
   - component: {fileID: 60014140029284680}
   - component: {fileID: 96006462733646208}
   m_Layer: 9
-  m_Name: Bullet
+  m_Name: Tracking Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 7
+  bulletType: 2
 --- !u!212 &212728520815345214
 SpriteRenderer:
   m_ObjectHideFlags: 1
