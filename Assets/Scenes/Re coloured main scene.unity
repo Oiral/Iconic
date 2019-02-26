@@ -5642,13 +5642,13 @@ GameObject:
   - component: {fileID: 2013865668}
   - component: {fileID: 2013865667}
   - component: {fileID: 2013865666}
+  - component: {fileID: 2013865675}
   - component: {fileID: 2013865670}
   - component: {fileID: 2013865669}
   - component: {fileID: 2013865673}
   - component: {fileID: 2013865671}
   - component: {fileID: 2013865672}
   - component: {fileID: 2013865674}
-  - component: {fileID: 2013865675}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -10667,9 +10667,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7faed470241c2a748a9192377dcb1c4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  FireRate: 0
-  MultiShot: 0
+  selectedWeapon: 0
+  bulletPrefab: {fileID: 1631492202599202, guid: 0c3df158ff717824ea84cddd919272e4,
+    type: 2}
+  trackingPrefab: {fileID: 0}
+  chargePrefab: {fileID: 0}
+  explosivePrefab: {fileID: 0}
+  fireRate: 1
+  multiShot: 1
+  aimDeadZone: 0
+  range: 70
+  shotSlider: {fileID: 1522820055}
+  shootingAudioSource: {fileID: 2013865671}
 --- !u!1 &2068629862
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,7 +56,7 @@ public class Character : MonoBehaviour {
         if (PauseScript.paused == false)
         {
             Movement();
-            Firing();
+            //Aim();
             InvulnerabilityTimer();
             HealthRegen();
             UpdateUI();
@@ -64,8 +64,8 @@ public class Character : MonoBehaviour {
 
         ClampToScreen(0.01f,0.99f);
     }
-
-    public void Firing()
+    /*
+    public void Aim()
     {
         shotTimer += Time.deltaTime;
 
@@ -97,8 +97,9 @@ public class Character : MonoBehaviour {
                 Shoot();
             }
         }
-    }
+    }*/
 
+    /*
     void Shoot()
     {
         for (int i = 0; i < multiShot - 1; i++)
@@ -120,7 +121,7 @@ public class Character : MonoBehaviour {
         {
             shootingAudioSource.Play();
         }
-    }
+    }*/
 
     public void Movement()
     {
