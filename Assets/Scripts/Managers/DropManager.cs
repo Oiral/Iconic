@@ -23,9 +23,22 @@ public class DropManager : MonoBehaviour {
 
     public List<GameObject> drops = new List<GameObject>();
 
+    public GameObject guaranteedDrop;
+
+    [Range(0, 1)]
+    public float dropChance;
+
     public void DropPowerUp(Vector3 pos)
     {
+        if (Random.Range(0f, 1f) < dropChance)
+        {
+            Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity, null);
+        }
+    }
 
+    public void DropGuaranteed(Vector3 pos)
+    {
+        Instantiate(guaranteedDrop, transform.position, Quaternion.identity, null);
     }
 
     public GameObject PickDrop()
