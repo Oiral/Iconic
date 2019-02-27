@@ -17,6 +17,7 @@ public class PlayerWeapon : MonoBehaviour {
     [Header("Stats")]
     public int fireRate;
     public int multiShot;
+    public float bulletLifeTime;
 
     [Header("Input")]
     public float aimDeadZone;
@@ -68,14 +69,10 @@ public class PlayerWeapon : MonoBehaviour {
 
     private void Shoot()
     {
-        
-
-        GameObject prefabToSpawn = bulletPrefab;
 
         switch (selectedWeapon)
         {
             case weaponType.normal:
-                prefabToSpawn = bulletPrefab;
                 for (int i = 0; i < multiShot - 1; i++)
                 {
                     float angle = Random.Range(-(range / 2), (range / 2));
@@ -84,18 +81,22 @@ public class PlayerWeapon : MonoBehaviour {
 
                     Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
                 }
+                Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
                 break;
             case weaponType.explosive:
                 break;
             case weaponType.tracking:
-                prefabToSpawn = trackingPrefab;
+                GameObject bullet = Instantiate(trackingPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
+                bullet.GetComponent<TimedDestroy>().destroyTimer = bulletLifeTime;
                 break;
             case weaponType.charge:
                 break;
             default:
                 break;
         }
-        Instantiate(prefabToSpawn, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
+
+
+        
 
 
         //ScreenShake.instance.shake = .2f;

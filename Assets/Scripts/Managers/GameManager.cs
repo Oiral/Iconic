@@ -42,9 +42,10 @@ public class GameManager : MonoBehaviour {
     public float scoreSpinDownTime;
     public int repeats;
     [Space]
-    public int shotSpeed;
-    public int fireRate;
-    public int MovementSpeed;
+    public int multishot = 1;
+    public int fireRate = 1;
+    public int MovementSpeed = 5;
+    public int bulletLifetime = 2;
     [Space]
     public int startingWaveNumber;
     public int startingWavePoints;
@@ -185,9 +186,10 @@ public class GameManager : MonoBehaviour {
         //Reset stats
         Character playerScript = player.GetComponent<Character>();
         PlayerWeapon weaponScript = player.GetComponent<PlayerWeapon>();
-        weaponScript.multiShot = 1;
-        weaponScript.fireRate = 1;
-        playerScript.moveSpeed = 5;
+        weaponScript.multiShot = multishot;
+        weaponScript.fireRate = fireRate;
+        weaponScript.bulletLifeTime = bulletLifetime;
+        playerScript.moveSpeed = MovementSpeed;
         playerScript.health = 1;
 
         //Reset Enemy Manager

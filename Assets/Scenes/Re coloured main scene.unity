@@ -2728,9 +2728,10 @@ MonoBehaviour:
   highScoreText: {fileID: 1888683980}
   scoreSpinDownTime: 1.5
   repeats: 0
-  shotSpeed: 0
-  fireRate: 0
-  MovementSpeed: 0
+  multishot: 1
+  fireRate: 1
+  MovementSpeed: 5
+  bulletLifetime: 2
   startingWaveNumber: 0
   startingWavePoints: 0
   startingEnemyPrefab: {fileID: 1756149312463966, guid: 10f73d683562c6a4c8e4619dc70178e4,
@@ -10676,6 +10677,7 @@ MonoBehaviour:
   explosivePrefab: {fileID: 0}
   fireRate: 1
   multiShot: 1
+  bulletLifeTime: 0
   aimDeadZone: 0
   range: 70
   shotSlider: {fileID: 1522820055}

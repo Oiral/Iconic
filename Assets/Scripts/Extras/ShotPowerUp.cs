@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum PowerUpType { fireRate = 0, multishot = 1, speed = 2}
+public enum PowerUpType { fireRate = 0, multishot = 1, speed = 2,lifetimeUp = 3}
 
 public class ShotPowerUp : MonoBehaviour {
 
@@ -29,6 +29,9 @@ public class ShotPowerUp : MonoBehaviour {
                 case PowerUpType.speed:
                     collision.gameObject.GetComponent<Character>().moveSpeed += 0.1f;
                     TextManager.messages.Add("Movement Speed Up");
+                    break;
+                case PowerUpType.lifetimeUp:
+                    collision.gameObject.GetComponent<PlayerWeapon>().bulletLifeTime += 0.2f;
                     break;
                 default:
                     break;
