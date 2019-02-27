@@ -36,7 +36,7 @@ public class PlayerWeapon : MonoBehaviour {
         if (PauseScript.paused == false)
         {
             shotTimer += Time.deltaTime;
-            //shotSlider.value = shotTimer / Mathf.Pow((1 / 1.3f), fireRate / 2);
+            shotSlider.value = shotTimer / Mathf.Pow((1 / 1.3f), fireRate / 2);
 
             Vector2 aim;
 

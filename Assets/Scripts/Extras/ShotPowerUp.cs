@@ -32,6 +32,7 @@ public class ShotPowerUp : MonoBehaviour {
                     break;
                 case PowerUpType.lifetimeUp:
                     collision.gameObject.GetComponent<PlayerWeapon>().bulletLifeTime += 0.2f;
+                    TextManager.messages.Add("Bullet Lifetime Up");
                     break;
                 default:
                     break;

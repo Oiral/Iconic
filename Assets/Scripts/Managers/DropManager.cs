@@ -32,13 +32,13 @@ public class DropManager : MonoBehaviour {
     {
         if (Random.Range(0f, 1f) < dropChance)
         {
-            Instantiate(drops[Random.Range(0, drops.Count)], transform.position, Quaternion.identity, null);
+            Instantiate(PickDrop(), pos, Quaternion.identity, null);
         }
     }
 
     public void DropGuaranteed(Vector3 pos)
     {
-        Instantiate(guaranteedDrop, transform.position, Quaternion.identity, null);
+        Instantiate(guaranteedDrop, pos, Quaternion.identity, null);
     }
 
     public GameObject PickDrop()

@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour {
 
     public GameObject deathSpherePrefab;
 
+    [Header("Weapon")]
+    public weaponType selectedWeapon;
+    public WeaponDrops normalDrops;
+    public WeaponDrops trackingDrops;
+
     [Header("Managers")]
     EnemyManager enemyManager;
 
@@ -191,6 +196,32 @@ public class GameManager : MonoBehaviour {
         weaponScript.bulletLifeTime = bulletLifetime;
         playerScript.moveSpeed = MovementSpeed;
         playerScript.health = 1;
+
+        WeaponDrops dropData = normalDrops;
+        switch (selectedWeapon)
+        {
+            case weaponType.normal:
+                dropData = normalDrops;
+                break;
+            case weaponType.explosive:
+                break;
+            case weaponType.tracking:
+                dropData = trackingDrops;
+                break;
+            case weaponType.charge:
+                break;
+            default:
+                dropData = normalDrops;
+                break;
+        }
+
+        //Set the drops for the game
+        DropManager dropMan = DropManager.instance;
+        dropMan.drops = dropData.pickups;
+        dropMan.guaranteedDrop = dropData.guaranteeDrop;
+        //Set the player weapon
+        weaponScript.selectedWeapon = dropData.weapon;
+
 
         //Reset Enemy Manager
         //Reset wave count

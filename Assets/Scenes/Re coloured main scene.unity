@@ -2713,7 +2713,7 @@ MonoBehaviour:
   - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
   guaranteedDrop: {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95,
     type: 2}
-  dropChance: 0
+  dropChance: 0.1
 --- !u!114 &1015025837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2728,6 +2728,9 @@ MonoBehaviour:
   player: {fileID: 2013865665}
   deathSpherePrefab: {fileID: 1926239044608968, guid: d37fd84e1184ec14d844825f4cff19c9,
     type: 2}
+  selectedWeapon: 2
+  normalDrops: {fileID: 11400000, guid: 5c93f5c9646ae43489435b9540701898, type: 2}
+  trackingDrops: {fileID: 11400000, guid: 1977bcb5166d7754a82f694c6fba65b5, type: 2}
   inGameUI: {fileID: 1574795473}
   deathScreen: {fileID: 1568898278}
   scoreText: {fileID: 802878604}
@@ -10683,7 +10686,7 @@ MonoBehaviour:
   explosivePrefab: {fileID: 0}
   fireRate: 1
   multiShot: 1
-  bulletLifeTime: 0
+  bulletLifeTime: 2
   aimDeadZone: 0
   range: 70
   shotSlider: {fileID: 1522820055}
