@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}" SchemaVersion="89">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{9F5FBACF-751C-407C-958D-7BD613E29A84}" WorkUnitID="{DA48BE53-2201-4A2A-8885-B6A85188E9E3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect3">
+									<Custom>
+										<Effect Name="Wwise Gain (Custom)" ID="{A571B3A8-66DA-43D3-86A2-8AC86AF2F666}" ShortID="574257707" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

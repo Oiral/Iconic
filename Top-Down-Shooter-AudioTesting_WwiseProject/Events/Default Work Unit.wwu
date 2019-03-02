@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}" SchemaVersion="89">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MusicOn" ID="{657CB280-8F0D-42E1-AAD6-132F3F1D4A55}">
+					<ChildrenList>
+						<Action Name="" ID="{9AA71AD2-829C-4B1F-97F9-02E059183D58}" ShortID="640948865">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Fires_Normal" ID="{D3A089DF-AB86-4BB7-B803-09B769F2C2C9}">
+					<ChildrenList>
+						<Action Name="" ID="{587DA6AA-5696-4896-A16A-C4308EFA0819}" ShortID="960874471">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Laser" ID="{33D31C3C-5C51-408C-A895-1EB128FCE5FE}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_Explodes" ID="{53D396A4-CA3C-47CE-BC1C-01B857F4C1B6}">
+					<ChildrenList>
+						<Action Name="" ID="{34160F91-ED8C-4522-B400-5045D97522FE}" ShortID="663277035">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boom" ID="{CB1D7C89-17F3-4B97-B072-6B37448F85D1}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_Shoots" ID="{4E8E07B4-082F-40BA-8467-C2E9852F60AF}">
+					<ChildrenList>
+						<Action Name="" ID="{49F79CEA-331C-45DC-AB77-0ABEF9359B5F}" ShortID="811081316">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fire_Laser" ID="{33D31C3C-5C51-408C-A895-1EB128FCE5FE}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Enemy_Explodes" ID="{3327DC68-AC1A-4DC6-9F30-300AAB37D043}">
+					<ChildrenList>
+						<Action Name="" ID="{1F26750A-2AA0-4D83-BBF1-39ED2A4924FF}" ShortID="591653634">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boom" ID="{CB1D7C89-17F3-4B97-B072-6B37448F85D1}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

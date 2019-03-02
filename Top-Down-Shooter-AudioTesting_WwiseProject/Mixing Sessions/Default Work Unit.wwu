@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{293A74F0-85F8-4AAC-886B-87BCCD67CE2E}" SchemaVersion="89">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{293A74F0-85F8-4AAC-886B-87BCCD67CE2E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Music" ID="{D5E91784-E953-4DA5-8E9F-09B09BF49B09}">
+					<ObjectList>
+						<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

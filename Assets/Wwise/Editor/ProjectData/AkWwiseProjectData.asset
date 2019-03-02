@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c07874b5a9c6d42a8c02971d479e57, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: ba55ea18495ea241bca4159cc3a5fc50
+    m_lastTime: -8586509977379114417
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 0c91585a89b2ea4d81da3ec3762c55c9
+    m_lastTime: -8586501364134495995
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 281e7a30ccb8d1429098c0b4cc5c225b
+    m_lastTime: -8586500914558411801
+    List:
+    - name: SB_Music
+      guid: 247ecd5a0b81b34cadb8d3c09844193b
+      id: 779753582
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SB_Music
+        ObjectType: 7
+      Path: Default Work Unit\SB_Music
+    - name: SFX
+      guid: fcd533621f08e5428b608afc35e6c9b0
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      Path: Default Work Unit\SFX
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c0b4dd6cc83ba144b8cf44e38fa4ca82
+    m_lastTime: -8586501364134365982
+    List:
+    - name: Enemy_Explodes
+      guid: 68dc27331aacc64d9f30300aab37d043
+      id: 187567512
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemy_Explodes
+        ObjectType: 3
+      Path: Default Work Unit\Enemy_Explodes
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Enemy_Shoots
+      guid: b4078e4e2f08ba408467c2e9852f60af
+      id: 3478727910
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Enemy_Shoots
+        ObjectType: 3
+      Path: Default Work Unit\Enemy_Shoots
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MusicOn
+      guid: 80b27c650d8fe142aad6132f3f1d4a55
+      id: 3998479257
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicOn
+        ObjectType: 3
+      Path: Default Work Unit\MusicOn
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Player_Explodes
+      guid: a496d3533ccace47bc1c01b857f4c1b6
+      id: 2629526263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Explodes
+        ObjectType: 3
+      Path: Default Work Unit\Player_Explodes
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Player_Fires_Normal
+      guid: df89a0d386abb74bb80309b769f2c2c9
+      id: 4275433146
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player_Fires_Normal
+        ObjectType: 3
+      Path: Default Work Unit\Player_Fires_Normal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 37d13195fa27054b903979131d7b8a16
+    m_lastTime: -8586509977379814487
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bc3e4853e34ae3458a90c226b6112f5c
+    m_lastTime: -8586505476486549048
+    List:
+    - name: Alive
+      guid: 9b86821fa2b39d42bddf92b8e05e160a
+      id: 655265632
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Alive
+        ObjectType: 9
+      Path: Default Work Unit\Alive
+      values:
+      - name: None
+        guid: ed0e782a19f75d4386abfcf15988cb0a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+    - name: Dead
+      guid: c692d5da10d709438635dc99c4367541
+      id: 2044049779
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dead
+        ObjectType: 9
+      Path: Default Work Unit\Dead
+      values:
+      - name: None
+        guid: c28c911a459d0f43b8cdf9aaa1828c14
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: b5facb6d1d36c34e9500225698f7b4c3
+    m_lastTime: -8586509977379164422
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: d6966f018d1ada4b89e084c4f36866aa
+    m_lastTime: -8586509977379084414
+    List: []
+  ExpandedItems:
+  - /Top-Down-Shooter-AudioTesting_WwiseProject
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Events
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Events/Default Work Unit
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

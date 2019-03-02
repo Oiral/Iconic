@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	187567512	Enemy_Explodes			\Default Work Unit\Enemy_Explodes	
+	2629526263	Player_Explodes			\Default Work Unit\Player_Explodes	
+	3478727910	Enemy_Shoots			\Default Work Unit\Enemy_Shoots	
+	4275433146	Player_Fires_Normal			\Default Work Unit\Player_Fires_Normal	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	488687489	Fire_Laser	C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\zap_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\Fire_Laser		93988
+	717144871	boom	C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\boom_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\boom		242100
+

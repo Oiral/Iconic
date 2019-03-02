@@ -1,0 +1,20 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	655265632	Alive			\Default Work Unit\Alive	
+	2044049779	Dead			\Default Work Unit\Dead	
+
+State	ID	Name	State Group			Notes
+	0	None	Alive			
+	0	None	Dead			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3127962312	Music Bus			\Default Work Unit\Master Audio Bus\Music Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	574257707	Wwise Gain (Custom)	Wwise Gain			
+	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
