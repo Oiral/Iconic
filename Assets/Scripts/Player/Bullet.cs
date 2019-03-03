@@ -14,11 +14,16 @@ public class Bullet : MonoBehaviour {
 
     float randomDistance;
 
+    public bool lerpToTarget;
+    [Range(0,10)]
+    public float lerpAmount = 0.5f;
+
     private void Start()
     {
         trail = GetComponent<TrailRenderer>();
         PauseScript.OnPauseEvent.AddListener(OnPause);
         randomDistance = Random.Range(0.5f, 1.5f);
+        randomDistance = 0;
     }
 
     // Update is called once per frame
@@ -51,13 +56,25 @@ public class Bullet : MonoBehaviour {
 
             camPoint.z = 0;
 
+            Quaternion targetRot = Quaternion.identity;
+
             if (Vector3.Distance(camPoint, transform.position) > randomDistance)
             {
-                this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg - 90);
+                targetRot = Quaternion.Euler(0, 0, AngleDeg - 90);
             }
             else
             {
-                this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg);
+                targetRot = Quaternion.Euler(0, 0, AngleDeg);
+            }
+
+            if (lerpToTarget == true)
+            {
+                //Lerp to the target Rotation
+                this.transform.rotation = Quaternion.Lerp(this.transform.rotation, targetRot, lerpAmount * Time.deltaTime);
+            }
+            else
+            {
+                this.transform.rotation = targetRot;
             }
 
             //Debug.Log(Vector3.Distance(camPoint, transform.position));

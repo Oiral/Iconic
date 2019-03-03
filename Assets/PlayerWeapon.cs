@@ -70,10 +70,14 @@ public class PlayerWeapon : MonoBehaviour {
     private void Shoot()
     {
 
+        GameObject prefab = bulletPrefab;
+
+        float angleMultiplier = 1;
+
         switch (selectedWeapon)
         {
             case weaponType.normal:
-                for (int i = 0; i < multiShot - 1; i++)
+                /*for (int i = 0; i < multiShot - 1; i++)
                 {
                     float angle = Random.Range(-(range / 2), (range / 2));
 
@@ -81,13 +85,17 @@ public class PlayerWeapon : MonoBehaviour {
 
                     Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, angle)), null);
                 }
-                Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
+                Instantiate(bulletPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);*/
+                prefab = bulletPrefab;
+                angleMultiplier = 1;
                 break;
             case weaponType.explosive:
                 break;
             case weaponType.tracking:
-                GameObject bullet = Instantiate(trackingPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
-                bullet.GetComponent<TimedDestroy>().destroyTimer = bulletLifeTime;
+                //GameObject bullet = Instantiate(trackingPrefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
+                //bullet.GetComponent<TimedDestroy>().destroyTimer = bulletLifeTime;
+                prefab = trackingPrefab;
+                angleMultiplier = 3;
                 break;
             case weaponType.charge:
                 break;
@@ -95,9 +103,16 @@ public class PlayerWeapon : MonoBehaviour {
                 break;
         }
 
+        SpawnBullet(prefab);
 
-        
+        for (int i = 0; i < multiShot - 1; i++)
+        {
+            float angle = Random.Range(-(range / 2), (range / 2));
 
+            //angle -= 90;
+
+            SpawnBullet(prefab,angle * angleMultiplier);
+        }
 
         //ScreenShake.instance.shake = .2f;
         ScreenShake.shakeTime = .2f;
@@ -106,6 +121,37 @@ public class PlayerWeapon : MonoBehaviour {
         if (shootingAudioSource != null)
         {
             shootingAudioSource.Play();
+        }
+    }
+
+    public void SpawnBullet(GameObject prefab)
+    {
+        GameObject bullet = Instantiate(prefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, 0)), null);
+        /*
+        switch (selectedWeapon)
+        {
+            case weaponType.tracking:
+                bullet.GetComponent<TimedDestroy>().destroyTimer = bulletLifeTime;
+                bullet.transform.rotation = Quaternion.Inverse(bullet.transform.rotation);
+                break;
+            default:
+                break;
+        }*/
+    }
+
+    public void SpawnBullet(GameObject prefab, float extraRotation)
+    {
+        GameObject bullet = Instantiate(prefab, transform.position, (transform.rotation * Quaternion.Euler(0, 0, extraRotation)), null);
+
+        
+        switch (selectedWeapon)
+        {
+            case weaponType.tracking:
+                bullet.GetComponent<TimedDestroy>().destroyTimer = bulletLifeTime;
+                bullet.transform.rotation = Quaternion.Inverse(bullet.transform.rotation);
+                break;
+            default:
+                break;
         }
     }
 }

@@ -206,6 +206,7 @@ public class GameManager : MonoBehaviour {
             case weaponType.explosive:
                 break;
             case weaponType.tracking:
+                weaponScript.multiShot = 5;
                 dropData = trackingDrops;
                 break;
             case weaponType.charge:

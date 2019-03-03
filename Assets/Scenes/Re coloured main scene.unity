@@ -4412,7 +4412,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1183896380420226, guid: e15839938d248844dba4f466d4d45902,
     type: 2}
   m_PrefabInternal: {fileID: 1786747309}
---- !u!114 &1526121198
+--- !u!114 &1526121201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4469,7 +4469,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1568898278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b0fb72178de90e45890cbcfb97c973c, type: 3}
   m_Name: 
@@ -5661,7 +5661,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1531334105444446, guid: e15839938d248844dba4f466d4d45902,
     type: 2}
   m_PrefabInternal: {fileID: 1786747309}
---- !u!114 &1975546374
+--- !u!114 &1975546377
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10752,7 +10752,7 @@ MonoBehaviour:
   chargePrefab: {fileID: 0}
   explosivePrefab: {fileID: 0}
   fireRate: 1
-  multiShot: 1
+  multiShot: 3
   bulletLifeTime: 2
   aimDeadZone: 0
   range: 70
