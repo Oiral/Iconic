@@ -207,7 +207,7 @@ MonoBehaviour:
   bulletSpeed: 7
   bulletType: 2
   lerpToTarget: 1
-  lerpAmount: 0.1
+  lerpAmount: 2.79
 --- !u!212 &212755515985658780
 SpriteRenderer:
   m_ObjectHideFlags: 1

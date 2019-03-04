@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour {
 
     [Header("Managers")]
     EnemyManager enemyManager;
+    public Animator cameraAnimator;
 
     [Header("UI")]
     public GameObject inGameUI;
@@ -184,6 +185,8 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator StartGame()
     {
+        cameraAnimator.SetTrigger("Move");
+
         foreach (GameObject sphere in GameObject.FindGameObjectsWithTag("Death Sphere"))
         {
             Destroy(sphere);

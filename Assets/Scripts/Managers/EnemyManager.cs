@@ -7,6 +7,27 @@ public class EnemyManager : MonoBehaviour {
 
     public static EnemyManager instance;
     
+    [System.Serializable]
+    public class Wave
+    {
+        public string name;
+        
+        [System.Serializable]
+        public class EnemySpawns
+        {
+            public string name;
+            public GameObject enemyPrefab;
+            public int amount;
+        }
+
+        public EnemySpawns[] enemies;
+
+        public float rate;
+
+    }
+
+    public Wave[] waves;
+
     private void Awake()
     {
         if (instance == null)
@@ -60,7 +81,6 @@ public class EnemyManager : MonoBehaviour {
             
         }
     }
-
 
     public void IncreaseScore(int amount)
     {

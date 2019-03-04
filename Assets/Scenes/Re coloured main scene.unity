@@ -997,7 +997,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282840810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -2681,6 +2681,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834bb92a1f3512a4290f334f5a3b55a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves:
+  - name: Wave 1
+    enemies:
+    - name: Basic Enemy
+      enemyPrefab: {fileID: 1490664565516690, guid: a116573c18beb8b4f9796c6cf5697545,
+        type: 2}
+      amount: 1
+    rate: 1
   enemyPrefabs:
   - {fileID: 1490664565516690, guid: a116573c18beb8b4f9796c6cf5697545, type: 2}
   - {fileID: 1317101449535394, guid: 81c6c98ec6a6f414c9ddd65a4391e17a, type: 2}
@@ -2731,6 +2739,7 @@ MonoBehaviour:
   selectedWeapon: 2
   normalDrops: {fileID: 11400000, guid: 5c93f5c9646ae43489435b9540701898, type: 2}
   trackingDrops: {fileID: 11400000, guid: 1977bcb5166d7754a82f694c6fba65b5, type: 2}
+  cameraAnimator: {fileID: 0}
   inGameUI: {fileID: 1574795473}
   deathScreen: {fileID: 1568898278}
   scoreText: {fileID: 802878604}
