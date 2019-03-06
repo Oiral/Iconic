@@ -8,15 +8,15 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
+  m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1317101449535394}
-  m_IsPrefabParent: 1
+  m_IsPrefabAsset: 1
 --- !u!1 &1317101449535394
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4999114602217382}
   - component: {fileID: 50147239761576974}
@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114025966964705368}
   - component: {fileID: 114289973562595930}
   - component: {fileID: 114402648208308948}
+  - component: {fileID: 114472609627526920}
   m_Layer: 10
   m_Name: Heavy Enemy
   m_TagString: Enemy
@@ -37,9 +38,9 @@ GameObject:
 --- !u!1 &1862998656854736
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 6
   m_Component:
   - component: {fileID: 4094193403827212}
   - component: {fileID: 212688271371358712}
@@ -53,7 +54,7 @@ GameObject:
 --- !u!4 &4094193403827212
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862998656854736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -66,7 +67,7 @@ Transform:
 --- !u!4 &4999114602217382
 Transform:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -81,7 +82,7 @@ Transform:
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_BodyType: 0
@@ -100,7 +101,7 @@ Rigidbody2D:
 --- !u!60 &60665425516986026
 PolygonCollider2D:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -127,7 +128,7 @@ PolygonCollider2D:
 --- !u!114 &114025966964705368
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -139,7 +140,7 @@ MonoBehaviour:
 --- !u!114 &114289973562595930
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -152,7 +153,7 @@ MonoBehaviour:
 --- !u!114 &114402648208308948
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -163,7 +164,7 @@ MonoBehaviour:
 --- !u!114 &114439707979960752
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -171,10 +172,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e63886a7ea2af4c8a08b4552df1cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  multiplier: 2
+--- !u!114 &114472609627526920
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1317101449535394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc9c68110d3f924589a5144b8107738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - name: Tier 1
+    score: 0
+    health: 0
+    healthMultiplier: 2
+    movementSpeed: 5
+    image: {fileID: 21300000, guid: c80be8fbf4660bc47a9b72358edb38e4, type: 3}
+  - name: Tier 2
+    score: 500
+    health: 1
+    healthMultiplier: 4
+    movementSpeed: 7
+    image: {fileID: 21300000, guid: be32d9ce5c31cf5459eb2eae20ef846a, type: 3}
+  - name: Tier 2
+    score: 800
+    health: 1
+    healthMultiplier: 6
+    movementSpeed: 8
+    image: {fileID: 21300000, guid: 54b21f88346a76d489450b673bb8abbc, type: 3}
 --- !u!114 &114629314302142198
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -189,7 +221,7 @@ MonoBehaviour:
 --- !u!114 &114916577895701176
 MonoBehaviour:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317101449535394}
   m_Enabled: 1
@@ -206,7 +238,7 @@ MonoBehaviour:
 --- !u!212 &212688271371358712
 SpriteRenderer:
   m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1862998656854736}
   m_Enabled: 1
@@ -248,3 +280,4 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

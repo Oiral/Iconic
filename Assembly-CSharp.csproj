@@ -70,6 +70,7 @@
     <Compile Include="Assets\Data\Weapon Type Drops\WeaponDrops.cs" />
     <Compile Include="Assets\LevelUpSpawn.cs" />
     <Compile Include="Assets\PlayerWeapon.cs" />
+    <Compile Include="Assets\ScreenMoveBack.cs" />
     <Compile Include="Assets\Scripts\Enemy\BasicEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\Enemy\DropPowerup.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHealth.cs" />

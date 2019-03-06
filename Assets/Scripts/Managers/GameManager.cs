@@ -44,6 +44,8 @@ public class GameManager : MonoBehaviour {
     public Text scoreText;
     public Text highScoreText;
 
+    public int scoresToKeep = 3;
+
     [Header("Reset")]
     public float scoreSpinDownTime;
     public int repeats;
@@ -103,6 +105,12 @@ public class GameManager : MonoBehaviour {
             data.highScores.Add(enemyManager.score);
             data.highScores.Sort();
 
+            if (data.highScores.Count > scoresToKeep)
+            {
+                data.highScores.RemoveRange(0, data.highScores.Count - scoresToKeep);
+            }
+
+            
             SaveSystem.SaveScore(data);
         }
         else

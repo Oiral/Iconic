@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 282840813}
   - component: {fileID: 282840811}
   - component: {fileID: 282840812}
+  - component: {fileID: 282840815}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1004,6 +1005,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282840815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282840810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ade93fc6314e37d46a8ec9c8f1d0fb60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &304950461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,7 +2708,7 @@ MonoBehaviour:
   - {fileID: 1750660823908506, guid: 1a6443b5eb189904b892acfff0d5d909, type: 2}
   enemyCosts: 01000000030000000200000002000000
   waveCost: 1
-  spawnRange: 15
+  spawnRange: 0.5
   waveNumber: 0
   enemiesAlive: 0
   enemiesKilled: 0
@@ -2736,13 +2748,14 @@ MonoBehaviour:
   player: {fileID: 2013865665}
   deathSpherePrefab: {fileID: 1926239044608968, guid: d37fd84e1184ec14d844825f4cff19c9,
     type: 2}
-  selectedWeapon: 2
+  selectedWeapon: 0
   normalDrops: {fileID: 11400000, guid: 5c93f5c9646ae43489435b9540701898, type: 2}
   trackingDrops: {fileID: 11400000, guid: 1977bcb5166d7754a82f694c6fba65b5, type: 2}
   inGameUI: {fileID: 1574795473}
   deathScreen: {fileID: 1568898278}
   scoreText: {fileID: 802878604}
   highScoreText: {fileID: 1888683980}
+  scoresToKeep: 3
   scoreSpinDownTime: 1.5
   repeats: 0
   multishot: 1
@@ -4736,6 +4749,56 @@ Prefab:
     - target: {fileID: 4854906967299880, guid: 6766ec7a57692c543be65da7fec17560, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[2].time
+      value: 0.4970836
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[1].value
+      value: 0.6621622
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[2].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[3].value
+      value: 0.6621622
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[1].time
+      value: 0.26081878
+      objectReference: {fileID: 0}
+    - target: {fileID: 198985270947876190, guid: 6766ec7a57692c543be65da7fec17560,
+        type: 2}
+      propertyPath: SizeModule.curve.minCurve.m_Curve.Array.data[3].time
+      value: 0.72785217
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6766ec7a57692c543be65da7fec17560, type: 2}
