@@ -7,6 +7,27 @@ public class EnemyManager : MonoBehaviour {
 
     public static EnemyManager instance;
     
+    [System.Serializable]
+    public class Wave
+    {
+        public string name;
+        
+        [System.Serializable]
+        public class EnemySpawns
+        {
+            public string name;
+            public GameObject enemyPrefab;
+            public int amount;
+        }
+
+        public EnemySpawns[] enemies;
+
+        public float rate;
+
+    }
+
+    public Wave[] waves;
+
     private void Awake()
     {
         if (instance == null)
@@ -23,7 +44,8 @@ public class EnemyManager : MonoBehaviour {
 
     public int waveCost = 1;
 
-    public float spawnRange = 5f;
+    [Range(0.1f,1f)]
+    public float spawnRange = 1f;
 
     public int waveNumber = 0;
 
@@ -48,7 +70,7 @@ public class EnemyManager : MonoBehaviour {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
                 {
                     waveNumber += 1;
-                    waveCost += waveNumber;
+                    waveCost += Mathf.RoundToInt(waveNumber * 0.7f);
                     SpawnWave(waveCost);
                 }
                 else
@@ -60,7 +82,6 @@ public class EnemyManager : MonoBehaviour {
             
         }
     }
-
 
     public void IncreaseScore(int amount)
     {
@@ -103,9 +124,32 @@ public class EnemyManager : MonoBehaviour {
     public void SpawnEnemy(int enemyToSpawn)
     {
         enemiesAlive += 1;
+        //Vector3 v3Pos = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, 0.5f, 10.0f));
 
-        Vector2 randomPoint = Random.insideUnitCircle.normalized;
-        randomPoint *= spawnRange + Random.Range(1,10);
-        Instantiate(enemyPrefabs[enemyToSpawn], randomPoint, Quaternion.identity,null);
+        Vector3 pos = new Vector3();
+        // Select random side
+        switch (Random.Range((int)0,4))
+        {
+            case 0:
+                //Right Side
+                pos = Camera.main.ViewportToWorldPoint(new Vector3(1f + Random.Range(0.1f, spawnRange), Random.Range(-0.2f, 1.2f)));
+                break;
+            case 1:
+                //Left Side
+                pos = Camera.main.ViewportToWorldPoint(new Vector3( -(Random.Range(0.1f, spawnRange)), Random.Range(-0.2f, 1.2f)));
+                break;
+            case 2:
+                //Top Side
+                pos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(-0.2f, 1.2f), 1f + Random.Range(0.1f, spawnRange)));
+                break;
+            case 3:
+                //Bottom Side
+                pos = Camera.main.ViewportToWorldPoint(new Vector3(Random.Range(-0.2f, 1.2f), -(Random.Range(0.1f, spawnRange))));
+                break;
+        }
+
+        pos.z = 0;
+
+        Instantiate(enemyPrefabs[enemyToSpawn], pos, Quaternion.identity,null);
     }
 }

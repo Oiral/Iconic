@@ -14,9 +14,13 @@ public class DropPowerup : MonoBehaviour {
 
     public void DropPowerUp()
     {
-        if (Random.Range(0f, 1f) < dropChance || guaranteeDrop)
+        if (guaranteeDrop == true)
         {
-            Instantiate(powerUps[Random.Range(0, powerUps.Count)], transform.position, Quaternion.identity, null);
+            DropManager.instance.DropGuaranteed(transform.position);
+        }
+        else
+        {
+            DropManager.instance.DropPowerUp(transform.position);
         }
     }
 }

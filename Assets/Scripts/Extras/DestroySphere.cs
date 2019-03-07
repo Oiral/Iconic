@@ -32,7 +32,7 @@ public class DestroySphere : MonoBehaviour {
         {
             currentSize += (Time.deltaTime * growRate);
 
-            if (transform.localScale.x > maxSize)
+            if (currentSize > maxSize)
             {
                 Destroy(gameObject);
             }

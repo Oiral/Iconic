@@ -29,6 +29,10 @@ public class Character : MonoBehaviour {
     float healthRegenTimer;
     public float healthRegenTime;
 
+    public Animator healthAnimator;
+    public AudioSource shieldAudio;
+
+
     [Header("Shooting")]
     public float range = 70;
     float shotTimer;
@@ -52,7 +56,7 @@ public class Character : MonoBehaviour {
         if (PauseScript.paused == false)
         {
             Movement();
-            Firing();
+            //Aim();
             InvulnerabilityTimer();
             HealthRegen();
             UpdateUI();
@@ -60,8 +64,8 @@ public class Character : MonoBehaviour {
 
         ClampToScreen(0.01f,0.99f);
     }
-
-    public void Firing()
+    /*
+    public void Aim()
     {
         shotTimer += Time.deltaTime;
 
@@ -93,8 +97,9 @@ public class Character : MonoBehaviour {
                 Shoot();
             }
         }
-    }
+    }*/
 
+    /*
     void Shoot()
     {
         for (int i = 0; i < multiShot - 1; i++)
@@ -116,7 +121,7 @@ public class Character : MonoBehaviour {
         {
             shootingAudioSource.Play();
         }
-    }
+    }*/
 
     public void Movement()
     {
@@ -196,7 +201,7 @@ public class Character : MonoBehaviour {
 
     public void HealthRegen()
     {
-        if (invulnerableTimer == 0 && health < maxHealth)
+        if (/*invulnerableTimer == 0 &&*/ health < maxHealth)
         {
             //ShiftManager.instance.UpdateShift(1 - (healthRegenTimer/healthRegenTime));
             healthRegenTimer += Time.deltaTime;
@@ -210,6 +215,7 @@ public class Character : MonoBehaviour {
                     health = maxHealth;
                 }
             }
+            healthAnimator.SetFloat("HealthAmount", healthRegenTimer/healthRegenTime);
         }
     }
 
@@ -227,6 +233,12 @@ public class Character : MonoBehaviour {
         
         if (health > 0)
         {
+            //Play shield particls
+            GetComponent<ParticleSystem>().Play();
+
+            //Play shield sound
+            shieldAudio.Play();
+
             invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
             if (collision.gameObject.tag == "Enemy")

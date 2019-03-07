@@ -6,6 +6,25 @@ using UnityEngine.Events;
 
 public class PauseScript : MonoBehaviour {
 
+    #region Singleton
+
+    public static PauseScript instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Debug.Log("An Extra pause script, Deleting", gameObject);
+            Destroy(this);
+        }
+    }
+
+    #endregion
+
     public static UnityEvent OnPauseEvent = new UnityEvent();
 
     public static bool paused = false;

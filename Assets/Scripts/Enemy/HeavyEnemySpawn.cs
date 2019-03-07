@@ -5,13 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyHealth))]
 public class HeavyEnemySpawn : MonoBehaviour {
 
+    public int multiplier = 2;
+
 	// Use this for initialization
 	void Start () {
         EnemyHealth stats = GetComponent<EnemyHealth>();
 
-        Character playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+        PlayerWeapon playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerWeapon>();
 
-        stats.health = playerStats.multiShot * 2;
+        stats.health = playerStats.multiShot * multiplier;
 
         Destroy(this);
 	}
