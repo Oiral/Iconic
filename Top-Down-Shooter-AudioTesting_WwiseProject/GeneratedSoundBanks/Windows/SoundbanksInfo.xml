@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,9 +22,21 @@
 				<Event Id="4275433146" Name="Player_Fires_Normal" ObjectPath="\Events\Default Work Unit\Player_Fires_Normal"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="76113811" Language="SFX">
+					<ShortName>powerup.wav</ShortName>
+					<Path>SFX\powerup_56D34C19.wem</Path>
+				</File>
+				<File Id="100964240" Language="SFX">
+					<ShortName>slam.wav</ShortName>
+					<Path>SFX\slam_56D34C19.wem</Path>
+				</File>
 				<File Id="488687489" Language="SFX">
 					<ShortName>zap.wav</ShortName>
 					<Path>SFX\zap_56D34C19.wem</Path>
+				</File>
+				<File Id="635160145" Language="SFX">
+					<ShortName>siren.wav</ShortName>
+					<Path>SFX\siren_56D34C19.wem</Path>
 				</File>
 				<File Id="717144871" Language="SFX">
 					<ShortName>boom.wav</ShortName>

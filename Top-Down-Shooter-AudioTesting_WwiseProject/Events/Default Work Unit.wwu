@@ -11,7 +11,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+									<ObjectRef Name="SB_MSwitchCon" ID="{31614098-13D9-462D-BCE8-99CC8BA308E5}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

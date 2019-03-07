@@ -5,6 +5,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	4275433146	Player_Fires_Normal			\Default Work Unit\Player_Fires_Normal	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	488687489	Fire_Laser	C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\zap_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\Fire_Laser		93988
-	717144871	boom	C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\boom_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\boom		242100
+	76113811	powerup	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\powerup_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\powerup		481152
+	100964240	slam	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\slam_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\slam		655644
+	488687489	Fire_Laser	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\zap_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\Fire_Laser		105040
+	635160145	siren	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\siren_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\siren		745388
+	717144871	boom	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\boom_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\boom		145448
 

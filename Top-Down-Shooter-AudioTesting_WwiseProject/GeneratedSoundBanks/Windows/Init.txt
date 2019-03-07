@@ -1,10 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	655265632	Alive			\Default Work Unit\Alive	
-	2044049779	Dead			\Default Work Unit\Dead	
+	3826569560	Music_State			\Default Work Unit\MusicWU\Music_State	
 
 State	ID	Name	State Group			Notes
-	0	None	Alive			
-	0	None	Dead			
+	0	None	Music_State			
+	2607556080	Menu	Music_State			
+	2764240573	Combat	Music_State			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3127962312	Music Bus			\Default Work Unit\Master Audio Bus\Music Bus	

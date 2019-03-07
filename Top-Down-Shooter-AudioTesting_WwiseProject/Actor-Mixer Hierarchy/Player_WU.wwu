@@ -4,6 +4,13 @@
 		<WorkUnit Name="Player_WU" ID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" OwnerID="{20D23E04-35EC-4986-91DA-60D9FAB2493C}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="Fire_Laser" ID="{33D31C3C-5C51-408C-A895-1EB128FCE5FE}" ShortID="846254334">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-330</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
@@ -39,6 +46,63 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="boom" ID="{89B7D2BB-B7E8-401F-8505-733F68BF907D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="siren" ID="{9A213E52-F668-4791-87D7-0BC338A3621A}" ShortID="1064016604">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="siren" ID="{62CE3BC4-E8E9-4505-83FF-AD2573496DA7}" ShortID="635160145">
+							<Language>SFX</Language>
+							<AudioFile>siren.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="siren" ID="{62CE3BC4-E8E9-4505-83FF-AD2573496DA7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="powerup" ID="{BE15DFC9-CDFC-4B9E-B10A-62E04CB3A821}" ShortID="819551952">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="powerup" ID="{FF248950-794B-4E1B-886E-187D8F6705E4}" ShortID="76113811">
+							<Language>SFX</Language>
+							<AudioFile>powerup.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="powerup" ID="{FF248950-794B-4E1B-886E-187D8F6705E4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="slam" ID="{F33AD520-A829-4DA5-8EA6-17B4F12F1C9C}" ShortID="107946096">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="slam" ID="{51AD2EEF-326B-45B9-BAA0-B05E17CB24FC}" ShortID="100964240">
+							<Language>SFX</Language>
+							<AudioFile>slam.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="slam" ID="{51AD2EEF-326B-45B9-BAA0-B05E17CB24FC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

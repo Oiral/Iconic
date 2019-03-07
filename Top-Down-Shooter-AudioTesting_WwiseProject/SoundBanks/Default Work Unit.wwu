@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="SB_Music" ID="{5ACD7E24-810B-4CB3-ADB8-D3C09844193B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MusicOn" ID="{657CB280-8F0D-42E1-AAD6-132F3F1D4A55}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

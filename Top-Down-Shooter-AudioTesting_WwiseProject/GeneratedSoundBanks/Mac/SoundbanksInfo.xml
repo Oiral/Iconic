@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="187567512" Name="Enemy_Explodes" ObjectPath="\Events\Default Work Unit\Enemy_Explodes"/>
+				<Event Id="3478727910" Name="Enemy_Shoots" ObjectPath="\Events\Default Work Unit\Enemy_Shoots"/>
+				<Event Id="2629526263" Name="Player_Explodes" ObjectPath="\Events\Default Work Unit\Player_Explodes"/>
+				<Event Id="4275433146" Name="Player_Fires_Normal" ObjectPath="\Events\Default Work Unit\Player_Fires_Normal"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="76113811" Language="SFX">
+					<ShortName>powerup.wav</ShortName>
+					<Path>SFX\powerup_56D34C19.wem</Path>
+				</File>
+				<File Id="100964240" Language="SFX">
+					<ShortName>slam.wav</ShortName>
+					<Path>SFX\slam_56D34C19.wem</Path>
+				</File>
+				<File Id="488687489" Language="SFX">
+					<ShortName>zap.wav</ShortName>
+					<Path>SFX\zap_56D34C19.wem</Path>
+				</File>
+				<File Id="635160145" Language="SFX">
+					<ShortName>siren.wav</ShortName>
+					<Path>SFX\siren_56D34C19.wem</Path>
+				</File>
+				<File Id="717144871" Language="SFX">
+					<ShortName>boom.wav</ShortName>
+					<Path>SFX\boom_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="779753582" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_Music</ObjectPath>
+			<ShortName>SB_Music</ShortName>
+			<Path>SB_Music.bnk</Path>
+			<IncludedMemoryFiles>
+				<File Id="14965856" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\BASS 2 - ARP_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\BASS 2 - ARP_01_8956FC97.wem</Path>
+				</File>
+				<File Id="20186660" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\BASS SAW LOW.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\BASS SAW LOW_8956FC97.wem</Path>
+				</File>
+				<File Id="123973977" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\kick 2_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\kick 2_01_8956FC97.wem</Path>
+				</File>
+				<File Id="167529570" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\ARP 2_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\ARP 2_01_8956FC97.wem</Path>
+				</File>
+				<File Id="229778766" Language="SFX">
+					<ShortName>PAD 1_01.wav</ShortName>
+					<Path>SFX\PAD 1_01_8956FC97.wem</Path>
+				</File>
+				<File Id="281332334" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\BASS SAW HIGH_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\BASS SAW HIGH_01_8956FC97.wem</Path>
+				</File>
+				<File Id="316158718" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\high tom_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\high tom_01_8956FC97.wem</Path>
+				</File>
+				<File Id="334277405" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\BASS SUB_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\BASS SUB_01_8956FC97.wem</Path>
+				</File>
+				<File Id="370486553" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\ARP 3 SOUNDS_LIKE_ARP2_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\ARP 3 SOUNDS_LIKE_ARP2_01_8956FC97.wem</Path>
+				</File>
+				<File Id="406023419" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\SNARE REVERB_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\SNARE REVERB_01_8956FC97.wem</Path>
+				</File>
+				<File Id="505087614" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\kick 1_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\kick 1_01_8956FC97.wem</Path>
+				</File>
+				<File Id="624821922" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\snare_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\snare_01_8956FC97.wem</Path>
+				</File>
+				<File Id="661796596" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\ARP 1.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\ARP 1_8956FC97.wem</Path>
+				</File>
+				<File Id="695765181" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\BASS 1 - ARP_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\BASS 1 - ARP_01_8956FC97.wem</Path>
+				</File>
+				<File Id="864252994" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\mid tom_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\mid tom_01_8956FC97.wem</Path>
+				</File>
+				<File Id="882146806" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\PAD 2_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\PAD 2_01_8956FC97.wem</Path>
+				</File>
+				<File Id="902506330" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\ARP 1_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\ARP 1_01_8956FC97.wem</Path>
+				</File>
+				<File Id="972190448" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\low tom_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\low tom_01_8956FC97.wem</Path>
+				</File>
+				<File Id="1030922557" Language="SFX">
+					<ShortName>SB Oiral 11-11 iv\hi hat_01.wav</ShortName>
+					<Path>SFX\SB Oiral 11-11 iv\hi hat_01_8956FC97.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

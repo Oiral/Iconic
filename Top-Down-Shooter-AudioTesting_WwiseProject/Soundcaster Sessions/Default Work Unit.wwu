@@ -4,8 +4,24 @@
 		<WorkUnit Name="Default Work Unit" ID="{592C7FF1-42BB-4907-A118-05AE50522E74}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="music" ID="{1CEF5C3E-A14C-4920-8E8D-2ACE75EDC89E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MusicOn" ID="{657CB280-8F0D-42E1-AAD6-132F3F1D4A55}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Combat" ID="{3F53FE93-94F7-48A6-BA98-D919308EF730}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>

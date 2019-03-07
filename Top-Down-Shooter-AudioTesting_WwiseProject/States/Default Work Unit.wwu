@@ -3,16 +3,7 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{53483EBC-4AE3-45E3-8A90-C226B6112F5C}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="Alive" ID="{1F82869B-B3A2-429D-BDDF-92B8E05E160A}">
-					<ChildrenList>
-						<State Name="None" ID="{2A780EED-F719-435D-86AB-FCF15988CB0A}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="Dead" ID="{DAD592C6-D710-4309-8635-DC99C4367541}">
-					<ChildrenList>
-						<State Name="None" ID="{1A918CC2-9D45-430F-B8CD-F9AAA1828C14}"/>
-					</ChildrenList>
-				</StateGroup>
+				<WorkUnit Name="MusicWU" ID="{4599F327-D433-4299-97F0-CE913C59932D}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

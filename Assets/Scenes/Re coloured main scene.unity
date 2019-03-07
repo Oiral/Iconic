@@ -1988,6 +1988,7 @@ GameObject:
   - component: {fileID: 634845166}
   - component: {fileID: 634845165}
   - component: {fileID: 634845164}
+  - component: {fileID: 634845167}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2132,6 +2133,26 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &634845167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634845159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea3b030977ab6342be45d5ef6b7f55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    valueGuid: 
+    groupGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: c9edc50c66310c448a18ab43b34c5c43,
+      type: 2}
+  valueGuid: 
+  groupGuid: 
 --- !u!1 &639056827
 GameObject:
   m_ObjectHideFlags: 0

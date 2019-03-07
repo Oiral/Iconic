@@ -27,7 +27,7 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 281e7a30ccb8d1429098c0b4cc5c225b
-    m_lastTime: -8586500914558411801
+    m_lastTime: -8586496906741276746
     List:
     - name: SB_Music
       guid: 247ecd5a0b81b34cadb8d3c09844193b
@@ -51,7 +51,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c0b4dd6cc83ba144b8cf44e38fa4ca82
-    m_lastTime: -8586501364134365982
+    m_lastTime: -8586497086736445779
     List:
     - name: Enemy_Explodes
       guid: 68dc27331aacc64d9f30300aab37d043
@@ -123,36 +123,39 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bc3e4853e34ae3458a90c226b6112f5c
-    m_lastTime: -8586505476486549048
+    m_lastTime: -8586497086736335768
+    List: []
+  - PhysicalPath: States\MusicWU.wwu
+    ParentPhysicalPath: States\Default Work Unit.wwu
+    guid: 27f3994533d4994297f0ce913c59932d
+    m_lastTime: -8586497086735295664
     List:
-    - name: Alive
-      guid: 9b86821fa2b39d42bddf92b8e05e160a
-      id: 655265632
+    - name: Music_State
+      guid: 9884331a507ea943b7e04685fad9d5b1
+      id: 3826569560
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Alive
+      - ElementName: MusicWU
+        ObjectType: 12
+      - ElementName: Music_State
         ObjectType: 9
-      Path: Default Work Unit\Alive
+      Path: Default Work Unit\MusicWU\Music_State
       values:
-      - name: None
-        guid: ed0e782a19f75d4386abfcf15988cb0a
-        id: 748895195
+      - name: Combat
+        guid: 93fe533ff794a648ba98d919308ef730
+        id: 2764240573
         PathAndIcons:
-        - ElementName: None
+        - ElementName: Combat
           ObjectType: 8
-    - name: Dead
-      guid: c692d5da10d709438635dc99c4367541
-      id: 2044049779
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Dead
-        ObjectType: 9
-      Path: Default Work Unit\Dead
-      values:
+      - name: Menu
+        guid: 2d052ab93fe5034b9c747db9cd4185d4
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: Menu
+          ObjectType: 8
       - name: None
-        guid: c28c911a459d0f43b8cdf9aaa1828c14
+        guid: 56893188079bb845aa3094152c70cf99
         id: 748895195
         PathAndIcons:
         - ElementName: None
