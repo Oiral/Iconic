@@ -70,7 +70,7 @@ public class EnemyManager : MonoBehaviour {
                 if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
                 {
                     waveNumber += 1;
-                    waveCost += waveNumber;
+                    waveCost += Mathf.RoundToInt(waveNumber * 0.7f);
                     SpawnWave(waveCost);
                 }
                 else
