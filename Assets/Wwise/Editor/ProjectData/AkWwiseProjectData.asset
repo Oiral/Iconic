@@ -51,7 +51,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c0b4dd6cc83ba144b8cf44e38fa4ca82
-    m_lastTime: -8586497086736445779
+    m_lastTime: -8586496188750791916
     List:
     - name: Enemy_Explodes
       guid: 68dc27331aacc64d9f30300aab37d043
@@ -110,6 +110,18 @@ MonoBehaviour:
       - ElementName: Player_Fires_Normal
         ObjectType: 3
       Path: Default Work Unit\Player_Fires_Normal
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Power_Up
+      guid: cd5e6efaebf5bc4ba24cd4446627e8e5
+      id: 2455846824
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Power_Up
+        ObjectType: 3
+      Path: Default Work Unit\Power_Up
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

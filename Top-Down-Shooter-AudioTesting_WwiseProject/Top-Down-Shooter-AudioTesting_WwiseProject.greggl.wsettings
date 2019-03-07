@@ -9,6 +9,7 @@
 				<Property Name="Event Action List\{53D396A4-CA3C-47CE-BC1C-01B857F4C1B6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{657CB280-8F0D-42E1-AAD6-132F3F1D4A55}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D3A089DF-AB86-4BB7-B803-09B769F2C2C9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FA6E5ECD-F5EB-4BBC-A24C-D4446627E8E5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -59,7 +60,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{D5E91784-E953-4DA5-8E9F-09B09BF49B09}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
-				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAAAAAAAAAAAAAAAAAAYAUGxheWVyAGeKEgAAAAAAAAAAAAAAAAAAAAAAAAAA0BguAAAAAABjHNHL/gcAAJhnihIAAAAA0Mmwy/4HAAACAAAAAAAAAAIAAAAAAAAAuGZMEgAAAADulrXe/gcAAAIAAAAAAAAAAAAAAAAAAAAADR8SAAAAABEAAAAAAAAAEAAAAAAAAAABKQ3M/gcAAA=="/>
+				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAAAAAAAAAAAAAAAAAAYAUGxheWVyAOYcAgAAAAAAAAAAAAAAAAAAAAAAAAAA0BgyAAAAAABjHLfD/gcAADDmHAIAAAAA0MmWw/4HAAACAAAAAAAAAAIAAAAAAAAASOZQDwAAAADulr/d/gcAAAIAAAAAAAAAAAAAAAAAAAAAX3UPAAAAABEAAAAAAAAAEAAAAAAAAAABKRi6/gcAAA=="/>
 				<Property Name="Music Transition List\{007CAF83-7C03-4D0A-BDAD-0818748459C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{02DCACF9-7908-495C-8AC6-E0C26779C6B3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{04D0A630-74AE-4221-B1CA-49F31FF9C78A}\x64_Expand States" Type="string" Value=""/>

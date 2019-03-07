@@ -53,7 +53,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fire_Laser" ID="{33D31C3C-5C51-408C-A895-1EB128FCE5FE}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+									<ObjectRef Name="zap" ID="{D3E7FA34-AC0E-42F8-9611-86C6815179CB}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -68,6 +68,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="boom" ID="{CB1D7C89-17F3-4B97-B072-6B37448F85D1}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Power_Up" ID="{FA6E5ECD-F5EB-4BBC-A24C-D4446627E8E5}">
+					<ChildrenList>
+						<Action Name="" ID="{5C79766B-527F-42A2-9D72-39B0CD1EC4CC}" ShortID="335669034">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerup" ID="{BE15DFC9-CDFC-4B9E-B10A-62E04CB3A821}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
