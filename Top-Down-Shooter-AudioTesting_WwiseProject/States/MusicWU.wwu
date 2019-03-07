@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4599F327-D433-4299-97F0-CE913C59932D}" SchemaVersion="89" RootDocumentID="{53483EBC-4AE3-45E3-8A90-C226B6112F5C}">
+	<States>
+		<WorkUnit Name="MusicWU" ID="{4599F327-D433-4299-97F0-CE913C59932D}" OwnerID="{53483EBC-4AE3-45E3-8A90-C226B6112F5C}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Music_State" ID="{1A338498-7E50-43A9-B7E0-4685FAD9D5B1}">
+					<ChildrenList>
+						<State Name="None" ID="{88318956-9B07-45B8-AA30-94152C70CF99}"/>
+						<State Name="Menu" ID="{B92A052D-E53F-4B03-9C74-7DB9CD4185D4}"/>
+						<State Name="Combat" ID="{3F53FE93-94F7-48A6-BA98-D919308EF730}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

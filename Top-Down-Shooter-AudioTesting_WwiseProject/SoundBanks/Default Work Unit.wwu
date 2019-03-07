@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{307A1E28-B8CC-42D1-9098-C0B4CC5C225B}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{307A1E28-B8CC-42D1-9098-C0B4CC5C225B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SB_Music" ID="{5ACD7E24-810B-4CB3-ADB8-D3C09844193B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MusicOn" ID="{657CB280-8F0D-42E1-AAD6-132F3F1D4A55}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX" ID="{6233D5FC-081F-42E5-8B60-8AFC35E6C9B0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Player_WU" ID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

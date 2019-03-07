@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" SchemaVersion="89" RootDocumentID="{20D23E04-35EC-4986-91DA-60D9FAB2493C}">
+	<AudioObjects>
+		<WorkUnit Name="Enemy_WU" ID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" OwnerID="{20D23E04-35EC-4986-91DA-60D9FAB2493C}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="boom" ID="{62ADAADD-4BBD-4195-BCC2-A7409DEB1A65}" ShortID="703093268">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="boom" ID="{B7DF3094-A2A8-4B07-850E-1EA17E3B5FB3}" ShortID="549611166">
+							<Language>SFX</Language>
+							<AudioFile>boom.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="717144871"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="boom" ID="{B7DF3094-A2A8-4B07-850E-1EA17E3B5FB3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="boom2" ID="{29F8517D-2921-4173-A4F7-DF6387EDF593}" ShortID="122455082">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="boom2" ID="{918207A8-5B5B-4ACC-BA7D-F624B98A02E9}" ShortID="1063086504">
+							<Language>SFX</Language>
+							<AudioFile>boom2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="boom2" ID="{918207A8-5B5B-4ACC-BA7D-F624B98A02E9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="zap" ID="{D3E7FA34-AC0E-42F8-9611-86C6815179CB}" ShortID="160683278">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>280</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="zap" ID="{070E9352-6ED8-431C-B896-59B02DECF1AE}" ShortID="939602077">
+							<Language>SFX</Language>
+							<AudioFile>zap.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="488687489"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="zap" ID="{070E9352-6ED8-431C-B896-59B02DECF1AE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

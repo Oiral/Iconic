@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="89">
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1547175131" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Attenuations\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Audio Devices\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Conversion Settings\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory Auro Headphone.wwu" DateLow="1547175149" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory Convolution Reverb Effects Ambisonics.wwu" DateLow="1547175162" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory Convolution Reverb Effects Stereo.wwu" DateLow="1547175163" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory Effects.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Box Modeler.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Delay.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Dynamics.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Filters.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1547175148" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Effects\Factory McDSP Effects.wwu" DateLow="1547175133" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Events\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Game Parameters\Factory Motion.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1547175131" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Modulators\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Presets\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Queries\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Queries\Factory Queries.wwu" DateLow="1547175130" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\States\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Switches\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Top_Down_Shooter_Wwise.wproj" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Triggers\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\Greggl\Desktop\Top-Down-Shooter-AudioTesting\Top_Down_Shooter_Wwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1550607715" DateHigh="0"/>
+</ValidationCache>
