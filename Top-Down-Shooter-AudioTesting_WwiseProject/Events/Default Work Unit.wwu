@@ -87,6 +87,75 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Mute_Music_On" ID="{55210053-1023-4D4F-88DC-FA380E45D0C3}">
+					<ChildrenList>
+						<Action Name="" ID="{746BDD74-DA76-4C10-98F4-F4EEF25A0266}" ShortID="705094811">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Vol_Slider" ID="{BEDC5260-A515-4441-BD76-3C128741B594}">
+					<ChildrenList>
+						<Action Name="" ID="{D5A32BFA-45C9-42E9-9395-9E2975770E8B}" ShortID="722938231">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Switch_Mute_Music" ID="{308B413F-7766-4141-80C0-351451401A37}">
+					<ChildrenList>
+						<Action Name="" ID="{C135FAE7-FAC7-46EB-9D16-C84DEC3E0928}" ShortID="279344941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DB6A6BAA-7386-438D-AAC1-8BF28D86F6DE}" ShortID="59375841">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Mute_Music_Off" ID="{42EAB1CB-BB48-446C-8BC3-06257C5894D1}">
+					<ChildrenList>
+						<Action Name="" ID="{628F5E01-921A-4DBC-91C7-14B478CEA7A2}" ShortID="305302737">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

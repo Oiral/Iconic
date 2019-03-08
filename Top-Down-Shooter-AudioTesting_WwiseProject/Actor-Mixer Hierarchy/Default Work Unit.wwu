@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="Player_WU" ID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" PersistMode="Reference"/>
 				<WorkUnit Name="Enemy_WU" ID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" PersistMode="Reference"/>
+				<WorkUnit Name="Music_Control_WU" ID="{EB683AF0-4C97-4086-B8E6-C41CB3E9D7EF}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

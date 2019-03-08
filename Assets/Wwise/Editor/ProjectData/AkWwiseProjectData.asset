@@ -51,7 +51,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: c0b4dd6cc83ba144b8cf44e38fa4ca82
-    m_lastTime: -8586496188750791916
+    m_lastTime: -8586496027727739717
     List:
     - name: Enemy_Explodes
       guid: 68dc27331aacc64d9f30300aab37d043
@@ -77,6 +77,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Music_Vol_Slider
+      guid: 6052dcbe15a54144bd763c128741b594
+      id: 356142996
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Vol_Slider
+        ObjectType: 3
+      Path: Default Work Unit\Music_Vol_Slider
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: MusicOn
       guid: 80b27c650d8fe142aad6132f3f1d4a55
       id: 3998479257
@@ -86,6 +98,18 @@ MonoBehaviour:
       - ElementName: MusicOn
         ObjectType: 3
       Path: Default Work Unit\MusicOn
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Mute_Pressed
+      guid: 5300215523104f4d88dcfa380e45d0c3
+      id: 2441119985
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Mute_Pressed
+        ObjectType: 3
+      Path: Default Work Unit\Mute_Pressed
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -125,12 +149,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Set_Switch_Mute_Music
+      guid: 3f418b306677414180c0351451401a37
+      id: 1431009870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Switch_Mute_Music
+        ObjectType: 3
+      Path: Default Work Unit\Set_Switch_Mute_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 37d13195fa27054b903979131d7b8a16
-    m_lastTime: -8586509977379814487
+    m_lastTime: -8586496082938369270
     List: []
+  - PhysicalPath: Game Parameters\Music_GP_WU.wwu
+    ParentPhysicalPath: Game Parameters\Default Work Unit.wwu
+    guid: 3cb0a0bfc490b946a58bae4cd5fc2114
+    m_lastTime: -8586496082937969510
+    List:
+    - name: Music_GP
+      guid: 6900a989a89e3b41a5333a3b4ea92cc8
+      id: 2661322192
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_GP_WU
+        ObjectType: 12
+      - ElementName: Music_GP
+        ObjectType: 13
+      Path: Default Work Unit\Music_GP_WU\Music_GP
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -140,7 +192,7 @@ MonoBehaviour:
   - PhysicalPath: States\MusicWU.wwu
     ParentPhysicalPath: States\Default Work Unit.wwu
     guid: 27f3994533d4994297f0ce913c59932d
-    m_lastTime: -8586497086735295664
+    m_lastTime: -8586496082938429234
     List:
     - name: Music_State
       guid: 9884331a507ea943b7e04685fad9d5b1
@@ -176,8 +228,37 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: b5facb6d1d36c34e9500225698f7b4c3
-    m_lastTime: -8586509977379164422
+    m_lastTime: -8586496082938479204
     List: []
+  - PhysicalPath: Switches\Music_Switch.wwu
+    ParentPhysicalPath: Switches\Default Work Unit.wwu
+    guid: b9590e7432884e429aa554486a5aca54
+    m_lastTime: -8586496063458062392
+    List:
+    - name: Mute_Switch_Group
+      guid: 4d09f2c6a41ec0458309ffaef4e42250
+      id: 2576487653
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music_Switch
+        ObjectType: 12
+      - ElementName: Mute_Switch_Group
+        ObjectType: 11
+      Path: Default Work Unit\Music_Switch\Mute_Switch_Group
+      values:
+      - name: Mute_Music_Off
+        guid: 964381fc378e2c45b5cba105ab73cc69
+        id: 3371218424
+        PathAndIcons:
+        - ElementName: Mute_Music_Off
+          ObjectType: 10
+      - name: Mute_Music_On
+        guid: 5e2ca2c27f20d1449c0712e352e5f047
+        id: 4232310434
+        PathAndIcons:
+        - ElementName: Mute_Music_On
+          ObjectType: 10
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -188,5 +269,13 @@ MonoBehaviour:
   - /Top-Down-Shooter-AudioTesting_WwiseProject
   - /Top-Down-Shooter-AudioTesting_WwiseProject/Events
   - /Top-Down-Shooter-AudioTesting_WwiseProject/Events/Default Work Unit
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/States
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/States/Default Work Unit
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/States/Default Work Unit/MusicWU
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/States/Default Work Unit/MusicWU/Music_State
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Switches
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Switches/Default Work Unit
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Switches/Default Work Unit/Music_Switch
+  - /Top-Down-Shooter-AudioTesting_WwiseProject/Switches/Default Work Unit/Music_Switch/Mute_Switch_Group
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

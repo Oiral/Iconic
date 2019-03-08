@@ -10,19 +10,42 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Mute_Music_On" ID="{55210053-1023-4D4F-88DC-FA380E45D0C3}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Mute_Music_Off" ID="{42EAB1CB-BB48-446C-8BC3-06257C5894D1}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 							<Position X="2" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Music_Vol_Slider" ID="{BEDC5260-A515-4441-BD76-3C128741B594}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Switch_Mute_Music" ID="{308B413F-7766-4141-80C0-351451401A37}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Music_GP" ID="{89A90069-9EA8-413B-A533-3A3B4EA92CC8}"/>
+							<Value>-44</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Combat" ID="{3F53FE93-94F7-48A6-BA98-D919308EF730}"/>
+						<CurrentStateRef Name="Menu" ID="{B92A052D-E53F-4B03-9C74-7DB9CD4185D4}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Mute_Music_On" ID="{C2A22C5E-207F-44D1-9C07-12E352E5F047}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

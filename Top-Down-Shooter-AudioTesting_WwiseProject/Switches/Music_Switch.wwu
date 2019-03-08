@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{740E59B9-8832-424E-9AA5-54486A5ACA54}" SchemaVersion="89" RootDocumentID="{6DCBFAB5-361D-4EC3-9500-225698F7B4C3}">
+	<Switches>
+		<WorkUnit Name="Music_Switch" ID="{740E59B9-8832-424E-9AA5-54486A5ACA54}" OwnerID="{6DCBFAB5-361D-4EC3-9500-225698F7B4C3}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Mute_Switch_Group" ID="{C6F2094D-1EA4-45C0-8309-FFAEF4E42250}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Mute_Music_On" ID="{C2A22C5E-207F-44D1-9C07-12E352E5F047}"/>
+						<Switch Name="Mute_Music_Off" ID="{FC814396-8E37-452C-B5CB-A105AB73CC69}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Music_GP" ID="{89A90069-9EA8-413B-A533-3A3B4EA92CC8}"/>
+						<Curve Name="" ID="{9A264C40-B6A0-4C5E-8A67-94C7EAC16014}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>-96</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

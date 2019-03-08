@@ -50,4 +50,17 @@ public class MenuFunctions : MonoBehaviour {
         animator.SetTrigger("Close Menu");
         StartCoroutine(GameManager.instance.StartGame());
     }
+
+	public void Toggle_Changed(bool MuteValue)
+	{
+		//Toggle switch on menu to mute/ unmute music
+		Debug.Log ("Music Toggle");
+		if (MuteValue) {
+			//Mute Music Audio bus
+			//NOT public AK.Wwise.Event Mute;
+		} else {
+			//Unmute Music audio bus
+			//NOT public AK.Wwise.Event Unmute;
+		}
+	}
 }

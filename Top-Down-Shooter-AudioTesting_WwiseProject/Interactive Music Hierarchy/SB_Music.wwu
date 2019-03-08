@@ -2371,6 +2371,17 @@
 									</ReferenceList>
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{A91ADBD4-BBD5-4544-9C3A-4C95928D5EBE}">
+									<PropertyList>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo/>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>

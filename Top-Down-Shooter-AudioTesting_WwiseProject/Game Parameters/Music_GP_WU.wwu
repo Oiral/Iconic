@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BFA0B03C-90C4-46B9-A58B-AE4CD5FC2114}" SchemaVersion="89" RootDocumentID="{9531D137-27FA-4B05-9039-79131D7B8A16}">
+	<GameParameters>
+		<WorkUnit Name="Music_GP_WU" ID="{BFA0B03C-90C4-46B9-A58B-AE4CD5FC2114}" OwnerID="{9531D137-27FA-4B05-9039-79131D7B8A16}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="Music_GP" ID="{89A90069-9EA8-413B-A533-3A3B4EA92CC8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-96"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
