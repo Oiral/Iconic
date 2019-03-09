@@ -64,7 +64,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{D5E91784-E953-4DA5-8E9F-09B09BF49B09}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
-				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAAAAAAAAAAAAAAAAAAYAUGxheWVyAENCAgAAAAAAAAAAAAAAAAAAAAAAAAAA8BBPAAAAAABjHNPL/gcAANhDQgIAAAAA0Mmyy/4HAAACAAAAAAAAAAIAAAAAAAAAyEWGDgAAAADulsDX/gcAAAIAAAAAAAAAAAAAAAAAAAAAkrsOAAAAABEAAAAAAAAAEAAAAAAAAAABKZLK/gcAAA=="/>
+				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAK0CAAAAAAAAAAAAAAYAUGxheWVyADuO0q0CAADg99/ErQIAAAAAAAAAAAAA4PffxK0CAABjHND3/X8AANA7jtKtAgAA0Mmv9/1/AAACAAAAAAAAAAIAAAAAAAAAODdB0q0CAADunOL4/X8AAAIAAAAAAAAAAgAAAAAAAAA4N0HSrQIAAAAAAAAAAAAAEAAAAAAAAAABKc/1/X8AAA=="/>
 				<Property Name="Music Transition List\{007CAF83-7C03-4D0A-BDAD-0818748459C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{02DCACF9-7908-495C-8AC6-E0C26779C6B3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{04D0A630-74AE-4221-B1CA-49F31FF9C78A}\x64_Expand States" Type="string" Value=""/>
