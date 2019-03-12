@@ -17,7 +17,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Player_Fires_Normal" ID="{D3A089DF-AB86-4BB7-B803-09B769F2C2C9}">
+				<Event Name="Player_Shoots" ID="{D3A089DF-AB86-4BB7-B803-09B769F2C2C9}">
 					<ChildrenList>
 						<Action Name="" ID="{587DA6AA-5696-4896-A16A-C4308EFA0819}" ShortID="960874471">
 							<PropertyList>
@@ -156,6 +156,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Engine1" ID="{19C700F6-BBB3-409D-8BD3-15D0023B3990}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

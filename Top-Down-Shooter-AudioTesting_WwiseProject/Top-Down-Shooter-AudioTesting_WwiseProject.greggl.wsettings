@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{7D9C47B5-18A2-401D-9BCB-D8F8595EADD6}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Greggl\Desktop\Bounce Oiral 11-11\SB Oiral 11-11 iv"/>
+				<Property Name="Event Action List\{19C700F6-BBB3-409D-8BD3-15D0023B3990}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{308B413F-7766-4141-80C0-351451401A37}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3327DC68-AC1A-4DC6-9F30-300AAB37D043}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{42EAB1CB-BB48-446C-8BC3-06257C5894D1}\x64_Expand States" Type="string" Value=""/>
@@ -64,7 +65,7 @@
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{D5E91784-E953-4DA5-8E9F-09B09BF49B09}"/>
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="6"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
-				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAK0CAAAAAAAAAAAAAAYAUGxheWVyADuO0q0CAADg99/ErQIAAAAAAAAAAAAA4PffxK0CAABjHND3/X8AANA7jtKtAgAA0Mmv9/1/AAACAAAAAAAAAAIAAAAAAAAAODdB0q0CAADunOL4/X8AAAIAAAAAAAAAAgAAAAAAAAA4N0HSrQIAAAAAAAAAAAAAEAAAAAAAAAABKc/1/X8AAA=="/>
+				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value="AAAAAAAAAAAAAAAAAAAAAAYAUGxheWVyAG5/EgAAAAAAAAAAAAAAAAAAAAAAAAAA8BgXAAAAAABjHAnH/gcAAABufxIAAAAA0Mnoxv4HAAACAAAAAAAAAAIAAAAAAAAASNdcEgAAAADulmDJ/gcAAAIAAAAAAAAAAAAAAAAAAAAA0sMSAAAAABEAAAAAAAAAEAAAAAAAAAABKWbH/gcAAA=="/>
 				<Property Name="Music Transition List\{007CAF83-7C03-4D0A-BDAD-0818748459C7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{02DCACF9-7908-495C-8AC6-E0C26779C6B3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{04D0A630-74AE-4221-B1CA-49F31FF9C78A}\x64_Expand States" Type="string" Value=""/>
