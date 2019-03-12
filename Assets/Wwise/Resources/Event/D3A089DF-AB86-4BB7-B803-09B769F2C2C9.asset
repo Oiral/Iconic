@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06a76b60a35d8f84b882417280fce439, type: 3}
   m_Name: D3A089DF-AB86-4BB7-B803-09B769F2C2C9
   m_EditorClassIdentifier: 
-  objectName: Player_Fires_Normal
-  id: 4275433146
+  objectName: Player_Shoots
+  id: 2108129981
   guid: D3A089DF-AB86-4BB7-B803-09B769F2C2C9
