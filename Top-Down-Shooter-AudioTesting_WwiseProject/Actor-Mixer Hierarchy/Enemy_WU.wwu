@@ -48,7 +48,7 @@
 					<PropertyList>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>280</Value>
+								<Value>350</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

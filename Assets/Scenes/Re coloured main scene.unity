@@ -1876,6 +1876,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   score: 1
+  EExplodeAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
 --- !u!114 &632410494
@@ -2034,6 +2038,7 @@ GameObject:
   - component: {fileID: 634845165}
   - component: {fileID: 634845164}
   - component: {fileID: 634845167}
+  - component: {fileID: 634845168}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -2194,10 +2199,32 @@ MonoBehaviour:
   data:
     valueGuid: 
     groupGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: c9edc50c66310c448a18ab43b34c5c43,
+    WwiseObjectReference: {fileID: 11400000, guid: 262eaffdaa70d9c4f80cadae55b1ccce,
       type: 2}
   valueGuid: 
   groupGuid: 
+--- !u!114 &634845168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 634845159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cbac528243328842be4906dd5c98850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: fe81e0a1f9097424cafa46f4407f2ee0,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  valueGuid: 
 --- !u!1 &639056827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,6 +6210,7 @@ GameObject:
   - component: {fileID: 2013865671}
   - component: {fileID: 2013865672}
   - component: {fileID: 2013865674}
+  - component: {fileID: 2013865676}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -6214,14 +6242,28 @@ MonoBehaviour:
   invulnerableTime: 1
   healthRegenTime: 3
   healthAnimator: {fileID: 52212836}
-  shieldAudio: {fileID: 2013865674}
+  shieldAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 913c3305f12cb494a960a96aad9256db,
+      type: 2}
+  ExplodeAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8a4cee886a1b724fbb3a1f028f6d341,
+      type: 2}
   range: 70
   bulletPrefab: {fileID: 1631492202599202, guid: 0c3df158ff717824ea84cddd919272e4,
     type: 2}
   shotSlider: {fileID: 1522820055}
-  shootingAudioSource: {fileID: 0}
+  ShootAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: abbd411a3fa99664a8f9c0ced0f7e2b1,
+      type: 2}
   shotSpeed: 1
   multiShot: 1
+  PowerUpAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2f84e7bd51ffbcf47b78fd42aae81a02,
+      type: 2}
   speedText: {fileID: 2068629864}
   shotSpeedText: {fileID: 1032888027}
   multiShotText: {fileID: 1440197157}
@@ -11214,7 +11256,30 @@ MonoBehaviour:
   aimDeadZone: 0
   range: 70
   shotSlider: {fileID: 1522820055}
-  shootingAudioSource: {fileID: 2013865671}
+  PlayerShoots:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: abbd411a3fa99664a8f9c0ced0f7e2b1,
+      type: 2}
+--- !u!114 &2013865676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013865665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea3b030977ab6342be45d5ef6b7f55a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c958ca0ea
+  useOtherObject: 0
+  data:
+    valueGuid: 
+    groupGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 262eaffdaa70d9c4f80cadae55b1ccce,
+      type: 2}
+  valueGuid: 
+  groupGuid: 
 --- !u!1 &2068629862
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,13 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
 	187567512	Enemy_Explodes			\Default Work Unit\Enemy_Explodes	
+	663803017	Player_Shields			\Default Work Unit\Player_Shields	
+	2108129981	Player_Shoots			\Default Work Unit\Player_Shoots	
+	2455846824	Power_Up			\Default Work Unit\Power_Up	
 	2629526263	Player_Explodes			\Default Work Unit\Player_Explodes	
 	3478727910	Enemy_Shoots			\Default Work Unit\Enemy_Shoots	
-	4275433146	Player_Fires_Normal			\Default Work Unit\Player_Fires_Normal	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	18005470	engine1	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\engine1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy_WU\engine1		385468
 	76113811	powerup	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\powerup_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\powerup		481152
 	100964240	slam	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\slam_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\slam		655644
 	488687489	Fire_Laser	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\zap_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\Fire_Laser		105040
-	635160145	siren	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\siren_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\siren		745388
+	513757403	engine2	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\engine2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy_WU\engine2		356228
+	635160145	siren	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\siren_A3ED6C9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\siren		397244
 	717144871	boom	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\boom_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_WU\boom		145448
+	882627490	engine3	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\engine3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy_WU\engine3		332928
+	1063086504	boom2	C:\Users\Greggl\Documents\GitHub\Top-Down-Shooter\Top-Down-Shooter-AudioTesting_WwiseProject\.cache\Windows\SFX\boom2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy_WU\boom2		207248
 

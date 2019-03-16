@@ -59,6 +59,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="siren" ID="{62CE3BC4-E8E9-4505-83FF-AD2573496DA7}" ShortID="635160145">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="1.38777878078145E-17"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.05166529916059"/>
+								<Property Name="TrimEnd" Type="Real64" Value="2.25158297529538"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>siren.wav</AudioFile>
 						</AudioFileSource>

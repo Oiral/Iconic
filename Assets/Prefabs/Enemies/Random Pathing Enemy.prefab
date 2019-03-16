@@ -150,6 +150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   score: 3
+  EExplodeAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
 --- !u!114 &114384633779614942

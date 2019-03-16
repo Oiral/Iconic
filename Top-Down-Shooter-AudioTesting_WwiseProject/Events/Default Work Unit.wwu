@@ -157,6 +157,20 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Engine1" ID="{19C700F6-BBB3-409D-8BD3-15D0023B3990}"/>
+				<Event Name="Player_Shields" ID="{3C15BD3A-8C75-4126-B6BC-6BEE4ECB8D0F}">
+					<ChildrenList>
+						<Action Name="" ID="{07FD2C24-8C5C-491C-BCFE-65C7F96FFA3D}" ShortID="822782266">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="siren" ID="{9A213E52-F668-4791-87D7-0BC338A3621A}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

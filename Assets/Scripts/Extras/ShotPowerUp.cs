@@ -8,6 +8,8 @@ public class ShotPowerUp : MonoBehaviour {
 
     public PowerUpType type = PowerUpType.fireRate;
 
+	public AK.Wwise.Event PowerUpAudio;
+
     public int score;
 
     public GameObject explosionCircle;
@@ -16,7 +18,8 @@ public class ShotPowerUp : MonoBehaviour {
     {
         if (collision.tag == "Player")
         {
-            switch (type)
+			PowerUpAudio.Post (gameObject);
+			switch (type)
             {
                 case PowerUpType.fireRate:
                     collision.gameObject.GetComponent<PlayerWeapon>().fireRate += 1;

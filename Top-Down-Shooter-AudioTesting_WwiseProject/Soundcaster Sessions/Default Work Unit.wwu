@@ -14,6 +14,10 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Player_Shoots" ID="{D3A089DF-AB86-4BB7-B803-09B769F2C2C9}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -32,6 +36,10 @@
 						<Module>
 							<ObjectRef Name="Set_Switch_Mute_Music" ID="{308B413F-7766-4141-80C0-351451401A37}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
 							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Shields" ID="{3C15BD3A-8C75-4126-B6BC-6BEE4ECB8D0F}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

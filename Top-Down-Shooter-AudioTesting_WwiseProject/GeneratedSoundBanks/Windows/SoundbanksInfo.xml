@@ -19,9 +19,15 @@
 				<Event Id="187567512" Name="Enemy_Explodes" ObjectPath="\Events\Default Work Unit\Enemy_Explodes"/>
 				<Event Id="3478727910" Name="Enemy_Shoots" ObjectPath="\Events\Default Work Unit\Enemy_Shoots"/>
 				<Event Id="2629526263" Name="Player_Explodes" ObjectPath="\Events\Default Work Unit\Player_Explodes"/>
-				<Event Id="4275433146" Name="Player_Fires_Normal" ObjectPath="\Events\Default Work Unit\Player_Fires_Normal"/>
+				<Event Id="663803017" Name="Player_Shields" ObjectPath="\Events\Default Work Unit\Player_Shields"/>
+				<Event Id="2108129981" Name="Player_Shoots" ObjectPath="\Events\Default Work Unit\Player_Shoots"/>
+				<Event Id="2455846824" Name="Power_Up" ObjectPath="\Events\Default Work Unit\Power_Up"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="18005470" Language="SFX">
+					<ShortName>engine1.wav</ShortName>
+					<Path>SFX\engine1_56D34C19.wem</Path>
+				</File>
 				<File Id="76113811" Language="SFX">
 					<ShortName>powerup.wav</ShortName>
 					<Path>SFX\powerup_56D34C19.wem</Path>
@@ -34,13 +40,25 @@
 					<ShortName>zap.wav</ShortName>
 					<Path>SFX\zap_56D34C19.wem</Path>
 				</File>
+				<File Id="513757403" Language="SFX">
+					<ShortName>engine2.wav</ShortName>
+					<Path>SFX\engine2_56D34C19.wem</Path>
+				</File>
 				<File Id="635160145" Language="SFX">
 					<ShortName>siren.wav</ShortName>
-					<Path>SFX\siren_56D34C19.wem</Path>
+					<Path>SFX\siren_A3ED6C9B.wem</Path>
 				</File>
 				<File Id="717144871" Language="SFX">
 					<ShortName>boom.wav</ShortName>
 					<Path>SFX\boom_56D34C19.wem</Path>
+				</File>
+				<File Id="882627490" Language="SFX">
+					<ShortName>engine3.wav</ShortName>
+					<Path>SFX\engine3_56D34C19.wem</Path>
+				</File>
+				<File Id="1063086504" Language="SFX">
+					<ShortName>boom2.wav</ShortName>
+					<Path>SFX\boom2_56D34C19.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -59,10 +77,6 @@
 				<File Id="20186660" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\BASS SAW LOW.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\BASS SAW LOW_8956FC97.wem</Path>
-				</File>
-				<File Id="123973977" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\kick 2_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\kick 2_01_8956FC97.wem</Path>
 				</File>
 				<File Id="167529570" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\ARP 2_01.wav</ShortName>
@@ -88,18 +102,6 @@
 					<ShortName>SB Oiral 11-11 iv\ARP 3 SOUNDS_LIKE_ARP2_01.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\ARP 3 SOUNDS_LIKE_ARP2_01_8956FC97.wem</Path>
 				</File>
-				<File Id="406023419" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\SNARE REVERB_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\SNARE REVERB_01_8956FC97.wem</Path>
-				</File>
-				<File Id="505087614" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\kick 1_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\kick 1_01_8956FC97.wem</Path>
-				</File>
-				<File Id="624821922" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\snare_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\snare_01_8956FC97.wem</Path>
-				</File>
 				<File Id="661796596" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\ARP 1.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\ARP 1_8956FC97.wem</Path>
@@ -108,13 +110,13 @@
 					<ShortName>SB Oiral 11-11 iv\BASS 1 - ARP_01.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\BASS 1 - ARP_01_8956FC97.wem</Path>
 				</File>
+				<File Id="827315680" Language="SFX">
+					<ShortName>loop mixdown.wav</ShortName>
+					<Path>SFX\loop mixdown_8956FC97.wem</Path>
+				</File>
 				<File Id="864252994" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\mid tom_01.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\mid tom_01_8956FC97.wem</Path>
-				</File>
-				<File Id="882146806" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\PAD 2_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\PAD 2_01_8956FC97.wem</Path>
 				</File>
 				<File Id="902506330" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\ARP 1_01.wav</ShortName>
@@ -123,10 +125,6 @@
 				<File Id="972190448" Language="SFX">
 					<ShortName>SB Oiral 11-11 iv\low tom_01.wav</ShortName>
 					<Path>SFX\SB Oiral 11-11 iv\low tom_01_8956FC97.wem</Path>
-				</File>
-				<File Id="1030922557" Language="SFX">
-					<ShortName>SB Oiral 11-11 iv\hi hat_01.wav</ShortName>
-					<Path>SFX\SB Oiral 11-11 iv\hi hat_01_8956FC97.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

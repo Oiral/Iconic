@@ -13,6 +13,7 @@
 				<SoundBank Name="SFX" ID="{6233D5FC-081F-42E5-8B60-8AFC35E6C9B0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Player_WU" ID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Enemy_WU" ID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

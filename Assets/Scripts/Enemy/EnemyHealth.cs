@@ -10,6 +10,7 @@ public class EnemyHealth : MonoBehaviour {
 
     public int score;
 
+	public AK.Wwise.Event EExplodeAudio;
     public GameObject deathParticle;
 
     public void RemoveHealth(int damage)
@@ -23,6 +24,7 @@ public class EnemyHealth : MonoBehaviour {
             EnemyManager.instance.enemiesKilledText.text = EnemyManager.instance.enemiesKilled.ToString(); ;
             
             Instantiate(deathParticle, transform.position, transform.rotation, null);
+			EExplodeAudio.Post (gameObject);
 
             //Call screen shake
             ScreenShake.shakeTime = 0.05f;

@@ -139,6 +139,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   score: 1
+  EExplodeAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
 --- !u!114 &114659417438151268
@@ -169,21 +173,25 @@ MonoBehaviour:
   - name: Tier 1
     score: 0
     health: 1
+    healthMultiplier: 0
     movementSpeed: 10
     image: {fileID: 21300000, guid: d27421eea934f7d4187e31160d507064, type: 3}
   - name: Tier 2
     score: 300
     health: 2
+    healthMultiplier: 0
     movementSpeed: 12
     image: {fileID: 21300000, guid: a0bc1ce3dcb21584b9af3d5e726fc424, type: 3}
   - name: Tier 3
     score: 600
     health: 4
+    healthMultiplier: 0
     movementSpeed: 15
     image: {fileID: 21300000, guid: 2056f1af262e94744a5e5f09e9c286cb, type: 3}
   - name: Tier 4
     score: 1000
     health: 7
+    healthMultiplier: 0
     movementSpeed: 20
     image: {fileID: 21300000, guid: 7bc9e194415b52046bf5244585a37e83, type: 3}
 --- !u!114 &114886524970489958

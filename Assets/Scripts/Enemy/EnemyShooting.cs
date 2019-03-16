@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyShooting : MonoBehaviour {
 
     public List<Sprite> sprites;
+	public AK.Wwise.Event EShootAudio;
 
     SpriteRenderer renderer;
 
@@ -65,6 +66,8 @@ public class EnemyShooting : MonoBehaviour {
             //ScreenShake.instance.shake = .2f;
             ScreenShake.shakeTime = .2f;
             ScreenShake.shakeScreen.Invoke();
+			//Sound
+			EShootAudio.Post(gameObject);
         }
 
     }

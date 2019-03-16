@@ -1,3 +1,10 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2576487653	Mute_Switch_Group			\Default Work Unit\Music_Switch\Mute_Switch_Group	
+
+Switch	ID	Name	Switch Group			Notes
+	3371218424	Mute_Music_Off	Mute_Switch_Group			
+	4232310434	Mute_Music_On	Mute_Switch_Group			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	3826569560	Music_State			\Default Work Unit\MusicWU\Music_State	
 

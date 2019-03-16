@@ -28,8 +28,8 @@ public class PlayerWeapon : MonoBehaviour {
 
     [Header("Misc shooting stuffs")]
     public CustomSlider shotSlider;
-    public AudioSource shootingAudioSource;
-
+    //public AudioSource shootingAudioSource;
+	public AK.Wwise.Event PlayerShoots;
 
     private void Update()
     {
@@ -118,10 +118,12 @@ public class PlayerWeapon : MonoBehaviour {
         ScreenShake.shakeTime = .2f;
         ScreenShake.shakeScreen.Invoke();
 
-        if (shootingAudioSource != null)
-        {
-            shootingAudioSource.Play();
-        }
+        //if (shootingAudioSource != null)
+        //{
+        //    shootingAudioSource.Play();
+        //}
+		PlayerShoots.Post(gameObject);
+	
     }
 
     public void SpawnBullet(GameObject prefab)

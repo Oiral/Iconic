@@ -59,6 +59,27 @@
 														<File ID="902506330"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
+												<AudioFileSource Name="loop mixdown" ID="{4D3B1BC7-A8D5-4C6C-84D2-57F56B3FC1C2}" ShortID="43373190">
+													<Language>SFX</Language>
+													<AudioFile>loop mixdown.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="827315680"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="loop mixdown_01" ID="{9B048915-D816-414C-ACF4-4DB02712ED31}" ShortID="842156594">
+													<Language>SFX</Language>
+													<AudioFile>loop mixdown.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="827315680"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="loop mixdown_02" ID="{7AD244AA-CEF3-4B8C-9BD7-10A668D8D0CF}" ShortID="275007044">
+													<Language>SFX</Language>
+													<AudioFile>loop mixdown.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="827315680"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
 												<MusicTransition Name="Root" ID="{29493560-151A-4BDA-8228-03028715EE9E}">
@@ -78,6 +99,207 @@
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
 															<AudioSourceRef Name="ARP 1_01" ID="{5D6D6879-6264-4D8B-9DA2-BB624BA1C343}"/>
+														</MusicClip>
+														<MusicClip Name="loop mixdown" ID="{C6597AC2-C40B-4C0C-9EB9-7DAB82B98386}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="loop mixdown" ID="{4D3B1BC7-A8D5-4C6C-84D2-57F56B3FC1C2}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{E65B1AC1-2ECD-4A35-AD4B-7D3783DAAE20}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{9A6F1111-AF70-4C40-B478-BD1B9FC362F4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{38B0EEBC-FAD2-4BA9-9857-573B5EE13433}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+														<MusicClip Name="loop mixdown_01" ID="{20708BFF-2C8E-4F71-A920-87D0517EF92C}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="loop mixdown_01" ID="{9B048915-D816-414C-ACF4-4DB02712ED31}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{5750AADC-A1BC-43DD-A016-CD941A841176}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{1F23675D-96A2-469A-AFBA-0798F02DB980}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{14DC945D-934D-4CC6-BE7A-D9DE23BFABFF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+														<MusicClip Name="loop mixdown_02" ID="{917C5E2B-1345-4802-8E95-61148F239AEA}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="loop mixdown_02" ID="{7AD244AA-CEF3-4B8C-9BD7-10A668D8D0CF}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{0E3ECFEA-F4A1-46E8-A19A-6D25A35F8F3B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{EA1C100E-72A4-448D-A53E-6E0ABDEE402A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{40B47A58-6157-43B1-A8D3-6B3D854179B5}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -252,302 +474,6 @@
 												<MusicTrackSequence Name="" ID="{D9773DFB-A843-4239-91E8-770284B88603}"/>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="BASS SAW HIGH_01" ID="{246AD56B-27CD-4317-B973-E40B44F04B38}" ShortID="1058812364">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SAW HIGH_01" ID="{9C1F1B54-449E-4516-AB28-26B106D27A70}" ShortID="884474017">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SAW HIGH_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="281332334"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{FC124E51-8038-4BAF-A882-40B12614BC4F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{B98864EA-4F6C-44E2-8940-C8B115F19086}">
-													<ClipList>
-														<MusicClip Name="BASS SAW HIGH_01" ID="{02A33089-3004-4730-A37A-F48B40C64316}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18988.7528344671"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SAW HIGH_01" ID="{9C1F1B54-449E-4516-AB28-26B106D27A70}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="BASS SAW LOW" ID="{1CB18852-F60A-4F76-BE95-933C1DD383CB}" ShortID="519521567">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SAW LOW" ID="{188EB533-E823-4BE2-A1DE-A438C654AA18}" ShortID="800011815">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SAW LOW.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="20186660"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{A6EBF06A-C71A-4852-9BE0-A3C7381110CC}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{07D697E2-B22D-4093-B2E0-34199F923BB8}">
-													<ClipList>
-														<MusicClip Name="BASS SAW LOW" ID="{9D4B3C31-9BF5-4A82-94FF-B39E044B3FFA}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="87272.7272727271"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="113454.557823129"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-87272.7272727271"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SAW LOW" ID="{188EB533-E823-4BE2-A1DE-A438C654AA18}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{1351F5C0-852E-4FFB-AF8D-3C32F51C0A2E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{FDE72457-ECB6-4438-AAD2-682EE8016DC4}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{43A56959-F417-476C-97E0-7A3F39C504DE}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="BASS SUB_01" ID="{F1C0709E-B91C-491D-8693-DD7E5D93A7B8}" ShortID="340560329">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SUB_01" ID="{F3ABFE25-E9C8-4F7D-97B7-FA49AA53DE38}" ShortID="900431071">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SUB_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="334277405"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{AD116A39-ABFF-470D-BE33-B79B3BA638DC}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{1CD6F0CC-2516-4BDB-8362-B9C9011BD22D}">
-													<ClipList>
-														<MusicClip Name="BASS SUB_01" ID="{651DF2E3-8531-46B4-A07A-4C36A444A681}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SUB_01" ID="{F3ABFE25-E9C8-4F7D-97B7-FA49AA53DE38}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="hi hat_01" ID="{E5CAD25A-9D29-43B2-A831-54E5DA06C078}" ShortID="511584849">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="hi hat_01" ID="{5E435772-CC18-4CC9-8398-594B7E422712}" ShortID="561123795">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\hi hat_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1030922557"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{8EAD24B9-5318-4315-85E9-5AAF5FC6A287}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{524DBDB0-BC58-420A-9CFC-4732EBF29491}">
-													<ClipList>
-														<MusicClip Name="hi hat_01" ID="{B39DBD21-43BA-4619-98C0-8E42E29EC581}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="hi hat_01" ID="{5E435772-CC18-4CC9-8398-594B7E422712}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="kick 1_01" ID="{E266BD50-1595-4F64-AFED-1B8B7C698727}" ShortID="1043247297">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="kick 1_01" ID="{5B89BDDF-4085-49DD-ADF3-B14BFBEA88DB}" ShortID="643204039">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\kick 1_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="505087614"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{5A73FB91-6829-441F-9A14-33D1B43CD1C8}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{3C0AA430-488B-4A13-9F44-92AB0F14C893}">
-													<ClipList>
-														<MusicClip Name="kick 1_01" ID="{9B4082C9-F749-45C0-ABB7-0EE8726C04C9}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="kick 1_01" ID="{5B89BDDF-4085-49DD-ADF3-B14BFBEA88DB}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="kick 2_01" ID="{9B7D9942-917F-46F9-BA24-7FF7BF0B707A}" ShortID="770487899">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="kick 2_01" ID="{9E294890-A6BB-412B-B90E-1ADFDED7A867}" ShortID="52626854">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\kick 2_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="123973977"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{7CDD4D92-3CC1-4557-A387-3E1B69D586A0}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{EA7A920D-D3D8-4B84-BF0C-FA52EF852467}">
-													<ClipList>
-														<MusicClip Name="kick 2_01" ID="{03B920DB-AEAC-4E92-81D9-99D20365823D}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="17454.5578231293"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="kick 2_01" ID="{9E294890-A6BB-412B-B90E-1ADFDED7A867}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
 										<MusicTrack Name="PAD 1_01" ID="{DB234750-94ED-467C-A003-CF4EB02C57B5}" ShortID="851380367">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
@@ -664,23 +590,23 @@
 												</MusicTrackSequence>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="PAD 2_01" ID="{85A1B75B-695D-41C2-A222-1DAA2B89EE01}" ShortID="210993305">
+										<MusicTrack Name="loop mixdown_01" ID="{9BDDCE93-4F5C-4560-A88B-08AC6AB3F3C5}" ShortID="940502977">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="PAD 2_01" ID="{BD4D04E8-0B2B-4E4E-96A3-BCE6F56A9A53}" ShortID="852728054">
+												<AudioFileSource Name="loop mixdown" ID="{AE8B35E2-1718-43AF-9199-16F3FF29802A}" ShortID="936525517">
 													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\PAD 2_01.wav</AudioFile>
+													<AudioFile>loop mixdown.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="882146806"/>
+														<File ID="827315680"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<TransitionList>
-												<MusicTransition Name="Root" ID="{C74A07BD-A2C0-4A58-82AE-44F531C68453}">
+												<MusicTransition Name="Root" ID="{57A500A2-488A-4C9E-A1AE-E6C2C71EB8AD}">
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
@@ -688,91 +614,74 @@
 												</MusicTransition>
 											</TransitionList>
 											<SequenceList>
-												<MusicTrackSequence Name="" ID="{34655FE5-3E01-4DF9-AEC1-9C0643855832}">
+												<MusicTrackSequence Name="" ID="{6E048257-5DD3-4CA1-9979-691C0B7C7E4C}">
 													<ClipList>
-														<MusicClip Name="PAD 2_01" ID="{B97CA358-1870-4198-B1C2-CCDA337744C3}">
+														<MusicClip Name="loop mixdown" ID="{5E2C52A0-272F-4F1D-936B-6BF7A8DCEFC4}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="20900.2040816327"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
-															<AudioSourceRef Name="PAD 2_01" ID="{BD4D04E8-0B2B-4E4E-96A3-BCE6F56A9A53}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="SNARE REVERB_01" ID="{17491D33-95B2-4CD7-9401-AF4D3CEEE684}" ShortID="998551422">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SNARE REVERB_01" ID="{00B115EB-632D-4753-B7AC-641CEF47D8B3}" ShortID="514346916">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\SNARE REVERB_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="406023419"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{C2F29C60-4906-4F75-BE15-2A4531078D56}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{505B01F5-AF99-4632-A021-DAF248FFC069}">
-													<ClipList>
-														<MusicClip Name="SNARE REVERB_01" ID="{9675DF07-C580-4E96-B6D4-81BCCDDAE3E5}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="SNARE REVERB_01" ID="{00B115EB-632D-4753-B7AC-641CEF47D8B3}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="snare_01" ID="{E460A04D-3BA1-4BAD-8102-E7D2A93B17C1}" ShortID="786988654">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="snare_01" ID="{CFAAFE08-2E97-4777-BAA8-ADEFB4E275D1}" ShortID="902183796">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\snare_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="624821922"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{7BE4A0C3-912A-4628-AE83-07306AC36435}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{EE03E2AF-3548-4005-825E-FDB953EC5272}">
-													<ClipList>
-														<MusicClip Name="snare_01" ID="{E2B8C008-152E-4C7E-BA89-370C97F368EB}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18988.7528344671"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="snare_01" ID="{CFAAFE08-2E97-4777-BAA8-ADEFB4E275D1}"/>
+															<AudioSourceRef Name="loop mixdown" ID="{AE8B35E2-1718-43AF-9199-16F3FF29802A}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{5A33B7D0-E1B1-4406-B196-B77B718672B2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{AB501EBF-D459-4D2F-BDBF-98FF0071DF0E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{35F8D7A9-FADB-482D-B623-D3CC9A9938D2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -1008,302 +917,6 @@
 												<MusicTrackSequence Name="" ID="{B018977C-994D-4807-B17B-0405A8C33084}"/>
 											</SequenceList>
 										</MusicTrack>
-										<MusicTrack Name="BASS SAW HIGH_01" ID="{5FA2CBD8-9396-4A24-8635-4CF3356B32E1}" ShortID="81692805">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SAW HIGH_01" ID="{CC0FACED-4BE7-4F28-BF5C-614EDAE3B1FB}" ShortID="489257932">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SAW HIGH_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="281332334"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{110DED2E-18CB-4B00-9415-1982ACCD788E}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{89AE19B0-9118-44DB-965B-FB0A56836239}">
-													<ClipList>
-														<MusicClip Name="BASS SAW HIGH_01" ID="{C5D2D60E-DAC9-47AE-921C-5E9AFB9112BB}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18988.7528344671"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SAW HIGH_01" ID="{CC0FACED-4BE7-4F28-BF5C-614EDAE3B1FB}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="BASS SAW LOW" ID="{77CDDE1E-F307-4B8C-B142-3AD8A4AEEE23}" ShortID="336400972">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SAW LOW" ID="{78F3650B-8C60-4677-B4C8-BDEAF0E1B186}" ShortID="786810936">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SAW LOW.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="20186660"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{EF26889E-34DC-4B67-BD6D-275924450766}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{A48E37EC-6EB2-4BB3-AAE6-9BAE77187B05}">
-													<ClipList>
-														<MusicClip Name="BASS SAW LOW" ID="{503F725C-CC6F-419C-B33F-0583688C4E45}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="87272.7272727271"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="113454.557823129"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-87272.7272727271"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SAW LOW" ID="{78F3650B-8C60-4677-B4C8-BDEAF0E1B186}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{E355C370-8AB7-4075-8300-5CDF9B2532B1}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{65AA50CD-A7AC-48A7-9754-E28F2C1E317C}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{0C1F4872-48E8-4013-8180-B096CA6388F2}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>87.27273</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>113.454557823129</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="BASS SUB_01" ID="{BA6B12FC-FC52-4E9C-9E05-F4537D246CB9}" ShortID="343005682">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="BASS SUB_01" ID="{9FB53E22-349F-4B61-92DF-FED6C978F789}" ShortID="269962232">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\BASS SUB_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="334277405"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{9D5CF5C3-D4CE-45FC-B2AE-D36DD5BBA02A}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{0F59DC0F-A3F0-488D-9FE8-7A6AEE3ABF4D}">
-													<ClipList>
-														<MusicClip Name="BASS SUB_01" ID="{489314C7-00F7-48C0-8654-CEA06F2DC4EA}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="BASS SUB_01" ID="{9FB53E22-349F-4B61-92DF-FED6C978F789}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="hi hat_01" ID="{DD8885B5-43E9-40E9-9199-994C9F7C14EB}" ShortID="242122584">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>2</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="hi hat_01" ID="{EF592EC2-D4F8-43D9-8BAE-195E8DE7641D}" ShortID="750695013">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\hi hat_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="1030922557"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{F385F5CB-D814-4BC5-B0CB-7B11C6DCE502}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{AD9E4EB7-6C52-4C72-AE26-920D102A3371}">
-													<ClipList>
-														<MusicClip Name="hi hat_01" ID="{9D032D26-F3E6-4CD2-9827-C5A0BD84A7E8}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="hi hat_01" ID="{EF592EC2-D4F8-43D9-8BAE-195E8DE7641D}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="kick 1_01" ID="{C0C28B4D-1C44-4CA8-A7F3-963AA176B4A4}" ShortID="767008615">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="kick 1_01" ID="{80629B91-F552-4C57-B9A5-474DED820812}" ShortID="968939415">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\kick 1_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="505087614"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{FD12D565-E2EE-4240-AF2F-A1E5E79DF58C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{4AC94196-8852-4945-910B-2CDE5F4E6AB2}">
-													<ClipList>
-														<MusicClip Name="kick 1_01" ID="{1810DB75-D636-46E7-9C48-044EC64D29EE}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="kick 1_01" ID="{80629B91-F552-4C57-B9A5-474DED820812}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="kick 2_01" ID="{6378C934-CBE1-4992-83F1-1623F57787C8}" ShortID="1064204818">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="kick 2_01" ID="{440155E5-4997-4076-AA74-1A356D446956}" ShortID="734014037">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\kick 2_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="123973977"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{7B41A994-8FF1-453A-8F05-3C9790AC7620}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{BFBD432C-258C-47CF-90AD-10F27A9EF083}">
-													<ClipList>
-														<MusicClip Name="kick 2_01" ID="{AC5DB53E-5C24-48AC-B314-C223FAE7A725}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="17454.5578231293"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="kick 2_01" ID="{440155E5-4997-4076-AA74-1A356D446956}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
 										<MusicTrack Name="PAD 1_01" ID="{68400CBF-B3ED-43A8-9534-99E3DAF98B71}" ShortID="1016073977">
 											<PropertyList>
 												<Property Name="MusicTrackType" Type="int16" Value="2"/>
@@ -1413,120 +1026,6 @@
 																<Property Name="PlayAt" Type="Real64" Value="-17454.5454545455"/>
 															</PropertyList>
 															<AudioSourceRef Name="PAD 1_01" ID="{1B8F618E-F334-4472-BD0F-309D741E229B}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="PAD 2_01" ID="{8797F0E0-AA5E-4BCE-9AF5-E04ED0705232}" ShortID="245383904">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="PAD 2_01" ID="{18D35104-617A-44E7-942F-CF78718923CF}" ShortID="172376551">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\PAD 2_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="882146806"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{18FB052E-844B-4D17-8737-8D7D87DA1AA0}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{951B9DCB-D70C-46A4-8964-386F0EA4846F}">
-													<ClipList>
-														<MusicClip Name="PAD 2_01" ID="{4304841E-B057-4E1F-A83A-42A75725B737}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="20900.2040816327"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="PAD 2_01" ID="{18D35104-617A-44E7-942F-CF78718923CF}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="SNARE REVERB_01" ID="{0F864D76-BD46-40C2-908D-C623F6FF8824}" ShortID="283449957">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SNARE REVERB_01" ID="{72D80B9B-FA31-412B-B93F-061CEBE0CF5B}" ShortID="406389444">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\SNARE REVERB_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="406023419"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{1A15CA4A-0BC5-43CF-A49E-DCF5E0C1932C}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{6A736D7E-ECA4-4076-9000-78D6193F9B99}">
-													<ClipList>
-														<MusicClip Name="SNARE REVERB_01" ID="{04097E20-E762-4C0E-A267-25E633D0BE54}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18661.79138322"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="SNARE REVERB_01" ID="{72D80B9B-FA31-412B-B93F-061CEBE0CF5B}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-										<MusicTrack Name="snare_01" ID="{0D54F802-7247-4957-8A08-FAA96D04F9C5}" ShortID="818256414">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="snare_01" ID="{53B5C201-2E95-412B-B2B4-C01D954C107A}" ShortID="601798243">
-													<Language>SFX</Language>
-													<AudioFile>SB Oiral 11-11 iv\snare_01.wav</AudioFile>
-													<ConvertedFileIDList>
-														<File ID="624821922"/>
-													</ConvertedFileIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{9E23A190-D952-45A7-B74B-E97F10CD18D4}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{5768613E-32E3-4543-BBAA-4DADB5B80FAF}">
-													<ClipList>
-														<MusicClip Name="snare_01" ID="{3097D794-643C-4D3F-BC5D-FB9A97BEE427}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="18988.7528344671"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="snare_01" ID="{53B5C201-2E95-412B-B2B4-C01D954C107A}"/>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -1644,6 +1143,103 @@
 																<Property Name="PlayAt" Type="Real64" Value="8727.27272727273"/>
 															</PropertyList>
 															<AudioSourceRef Name="mid tom_01" ID="{EEA7129F-BD78-4C63-9A29-F4AC61251F49}"/>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+										<MusicTrack Name="loop mixdown" ID="{C10911F5-63BA-4D1E-8305-81C2A6244824}" ShortID="391179552">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="loop mixdown" ID="{0A082FF4-F217-4296-AAB7-4E91ED7CF042}" ShortID="1007845606">
+													<Language>SFX</Language>
+													<AudioFile>loop mixdown.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="827315680"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{23545676-5780-4C84-A8D8-FE7B9049BC54}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{CEFF0E85-7380-4322-B291-45D1A985D0B2}">
+													<ClipList>
+														<MusicClip Name="loop mixdown" ID="{D9623F49-D3FC-49BD-852E-6040B81714BF}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="loop mixdown" ID="{0A082FF4-F217-4296-AAB7-4E91ED7CF042}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{F3B94D6D-B0A8-4133-BB62-9990F5F36E9B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{0103FFE9-57C0-40C5-9F35-0ED9A06C711C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{39075899-411E-4C5D-87F6-058463F9E1B4}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>18</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
 														</MusicClip>
 													</ClipList>
 												</MusicTrackSequence>
@@ -2416,6 +2012,124 @@
 						</Entry>
 					</EntryList>
 				</MusicSwitchContainer>
+				<MusicSegment Name="loop mixdown" ID="{3B2E00CD-F2FE-45D6-909A-49838854AF2F}" ShortID="999594238">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="19000"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="loop mixdown" ID="{F37E199E-8A33-4066-9BC8-1D7D9A83A43B}" ShortID="934782519">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="loop mixdown" ID="{E182EE51-6BE3-4665-8029-6B180ED45AB9}" ShortID="827315680">
+									<Language>SFX</Language>
+									<AudioFile>loop mixdown.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{373EC600-4D85-4646-926D-86F4443BA640}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{BB8FD49E-42BE-4C4C-8386-B010DD56002E}">
+									<ClipList>
+										<MusicClip Name="loop mixdown" ID="{F5DD222F-CB84-4123-91B4-1D837935E89D}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="18000"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="loop mixdown" ID="{E182EE51-6BE3-4665-8029-6B180ED45AB9}"/>
+											<PropertyCurveList>
+												<PropertyCurve PropertyName="Highpass">
+													<Curve Name="" ID="{D2087D6B-6886-43C9-A90D-B437806E2E89}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>18</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</PropertyCurve>
+												<PropertyCurve PropertyName="Lowpass">
+													<Curve Name="" ID="{68915708-E6BE-4775-BFC8-2DC162ABB459}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>18</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</PropertyCurve>
+												<PropertyCurve PropertyName="Volume">
+													<Curve Name="" ID="{188DE1B4-B0DB-4312-A196-AF25D9EA0FED}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>18</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</PropertyCurve>
+											</PropertyCurveList>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{683D32D4-C49C-4C56-BE52-A5215E64C735}"/>
+						<MusicCue Name="Exit Cue" ID="{94846525-57A3-4533-949E-CEB560C20662}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="16000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

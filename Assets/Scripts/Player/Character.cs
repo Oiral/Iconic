@@ -30,20 +30,23 @@ public class Character : MonoBehaviour {
     public float healthRegenTime;
 
     public Animator healthAnimator;
-    public AudioSource shieldAudio;
-
+    //public AudioSource shieldAudio;
+	public AK.Wwise.Event shieldAudio;
+	public AK.Wwise.Event ExplodeAudio;
 
     [Header("Shooting")]
     public float range = 70;
     float shotTimer;
     public GameObject bulletPrefab;
     public CustomSlider shotSlider;
-    public AudioSource shootingAudioSource;
+    //public AudioSource shootingAudioSource;
+	public AK.Wwise.Event ShootAudio;
 
     [Header("Power Ups")]
 
     public float shotSpeed = 1f;
     public int multiShot = 1;
+	public AK.Wwise.Event PowerUpAudio;
 
     [Header("UI")]
     public Text speedText;
@@ -237,7 +240,8 @@ public class Character : MonoBehaviour {
             GetComponent<ParticleSystem>().Play();
 
             //Play shield sound
-            shieldAudio.Play();
+            //shieldAudio.Play();
+			shieldAudio.Post(gameObject);
 
             invulnerableTimer = invulnerableTime;
             healthRegenTimer = 0;
@@ -274,6 +278,8 @@ public class Character : MonoBehaviour {
 
     public void Die()
     {
-        GameManager.instance.StartGameOver();
+        //Sound player explodes
+		ExplodeAudio.Post(gameObject);
+		GameManager.instance.StartGameOver();
     }
 }
