@@ -158,6 +158,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  PowerUpAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2f84e7bd51ffbcf47b78fd42aae81a02,
+      type: 2}
   score: 2
   explosionCircle: {fileID: 0}
 --- !u!212 &212322330527054750

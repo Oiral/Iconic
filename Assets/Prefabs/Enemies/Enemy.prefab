@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 114659417438151268}
   - component: {fileID: 114163001665523400}
   - component: {fileID: 114804322984068864}
+  - component: {fileID: 114915346501165266}
+  - component: {fileID: 114415395766348696}
   m_Layer: 10
   m_Name: Enemy
   m_TagString: Enemy
@@ -143,8 +145,40 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
       type: 2}
+  EEngineStopAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: d36ff7852136a25428bcc04bfaf7311a,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
+--- !u!114 &114415395766348696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947820f543dc62a40aa5d74e127d0da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: be5556c33b23cd142b4928f31b4e4ff2,
+      type: 2}
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 2
 --- !u!114 &114659417438151268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -206,6 +240,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &114915346501165266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490664565516690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741a5638f52647f4bba4b0c7b4d8f000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!212 &212088653082552394
 SpriteRenderer:
   m_ObjectHideFlags: 1

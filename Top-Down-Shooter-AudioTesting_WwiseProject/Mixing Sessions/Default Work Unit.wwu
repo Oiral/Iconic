@@ -6,6 +6,8 @@
 				<MixingSession Name="Music" ID="{D5E91784-E953-4DA5-8E9F-09B09BF49B09}">
 					<ObjectList>
 						<ObjectRef Name="Music Bus" ID="{D87A8425-E730-40A9-85AB-7E7421B0B762}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						<ObjectRef Name="SFX Bus" ID="{0438C72F-F409-4F85-8400-62B181431F10}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+						<ObjectRef Name="E Engine Bus" ID="{D0C12127-B830-496C-8FAF-E442683BABE6}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 					</ObjectList>
 				</MixingSession>
 			</ChildrenList>

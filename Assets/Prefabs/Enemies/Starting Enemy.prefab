@@ -26,6 +26,8 @@ GameObject:
   - component: {fileID: 114707950512092236}
   - component: {fileID: 114494947519854260}
   - component: {fileID: 114814440663199684}
+  - component: {fileID: 114651490403619788}
+  - component: {fileID: 114344191454976088}
   m_Layer: 10
   m_Name: Starting Enemy
   m_TagString: Enemy
@@ -113,8 +115,40 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
       type: 2}
+  EEngineStopAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: d36ff7852136a25428bcc04bfaf7311a,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
+--- !u!114 &114344191454976088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756149312463966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947820f543dc62a40aa5d74e127d0da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: be5556c33b23cd142b4928f31b4e4ff2,
+      type: 2}
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
 --- !u!114 &114494947519854260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -130,6 +164,27 @@ MonoBehaviour:
   - {fileID: 1796715360905046, guid: 7184d746b9a938940a6966a3cfc09c95, type: 2}
   guaranteeDrop: 1
   dropChance: 0.9
+--- !u!114 &114651490403619788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756149312463966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741a5638f52647f4bba4b0c7b4d8f000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &114707950512092236
 MonoBehaviour:
   m_ObjectHideFlags: 1

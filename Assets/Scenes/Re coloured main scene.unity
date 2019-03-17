@@ -1880,6 +1880,9 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
       type: 2}
+  EEngineStopAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 0}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
 --- !u!114 &632410494
@@ -6210,7 +6213,6 @@ GameObject:
   - component: {fileID: 2013865671}
   - component: {fileID: 2013865672}
   - component: {fileID: 2013865674}
-  - component: {fileID: 2013865676}
   m_Layer: 13
   m_Name: Player
   m_TagString: Player
@@ -11260,26 +11262,6 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: abbd411a3fa99664a8f9c0ced0f7e2b1,
       type: 2}
---- !u!114 &2013865676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2013865665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ea3b030977ab6342be45d5ef6b7f55a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c958ca0ea
-  useOtherObject: 0
-  data:
-    valueGuid: 
-    groupGuid: 
-    WwiseObjectReference: {fileID: 11400000, guid: 262eaffdaa70d9c4f80cadae55b1ccce,
-      type: 2}
-  valueGuid: 
-  groupGuid: 
 --- !u!1 &2068629862
 GameObject:
   m_ObjectHideFlags: 0

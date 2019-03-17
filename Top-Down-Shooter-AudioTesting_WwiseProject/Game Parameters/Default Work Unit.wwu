@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{9531D137-27FA-4B05-9039-79131D7B8A16}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Music_GP_WU" ID="{BFA0B03C-90C4-46B9-A58B-AE4CD5FC2114}" PersistMode="Reference"/>
+				<GameParameter Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

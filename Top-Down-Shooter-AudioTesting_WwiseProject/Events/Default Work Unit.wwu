@@ -156,7 +156,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Engine1" ID="{19C700F6-BBB3-409D-8BD3-15D0023B3990}"/>
+				<Event Name="Engine1" ID="{19C700F6-BBB3-409D-8BD3-15D0023B3990}">
+					<ChildrenList>
+						<Action Name="" ID="{5EECAA67-74E4-409F-8148-F5E79A1035AE}" ShortID="473828963">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine1" ID="{CE8269BF-A0E6-4AB5-A5D4-645ACACB161F}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Player_Shields" ID="{3C15BD3A-8C75-4126-B6BC-6BEE4ECB8D0F}">
 					<ChildrenList>
 						<Action Name="" ID="{07FD2C24-8C5C-491C-BCFE-65C7F96FFA3D}" ShortID="822782266">
@@ -166,6 +179,76 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="siren" ID="{9A213E52-F668-4791-87D7-0BC338A3621A}" WorkUnitID="{9C06043C-7E4E-45DA-BB06-4823B612FAA8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Engine2" ID="{535A960A-C579-4381-830D-19F758781FC6}">
+					<ChildrenList>
+						<Action Name="" ID="{48F3D584-4C9C-427B-8DC3-3960C3CBA31A}" ShortID="357738703">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine2" ID="{94EA2DFD-4E44-405D-A233-F2490B9156EF}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Engine3" ID="{BB485D2B-7C39-44C5-B7D5-C1F75C824E77}">
+					<ChildrenList>
+						<Action Name="" ID="{E9E9ED0D-D485-4215-B3F2-C9C00DA3739E}" ShortID="818544829">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine3" ID="{0BA80A46-F1A8-455C-B46D-0C5958F6C7C7}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Engine1_Stop" ID="{42729527-9CBA-4485-8166-9009B6CA9720}">
+					<ChildrenList>
+						<Action Name="" ID="{5D01AE25-7033-445D-85D5-9A8579188510}" ShortID="83777902">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine1" ID="{CE8269BF-A0E6-4AB5-A5D4-645ACACB161F}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Engine2_Stop" ID="{C58B41FE-D29A-4F46-9ED0-35B98EEA89AA}">
+					<ChildrenList>
+						<Action Name="" ID="{8403608D-3BAF-4A60-9A25-CE34345A670A}" ShortID="867422757">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine2" ID="{94EA2DFD-4E44-405D-A233-F2490B9156EF}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Engine3_Stop" ID="{32184958-1B67-4014-B5BA-43D0DDA1BBD4}">
+					<ChildrenList>
+						<Action Name="" ID="{3A237193-5C71-4817-AA36-7D1DEABB816D}" ShortID="425508435">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="engine3" ID="{0BA80A46-F1A8-455C-B46D-0C5958F6C7C7}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

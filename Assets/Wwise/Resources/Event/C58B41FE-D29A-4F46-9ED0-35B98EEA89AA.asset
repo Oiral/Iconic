@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a76b60a35d8f84b882417280fce439, type: 3}
+  m_Name: C58B41FE-D29A-4F46-9ED0-35B98EEA89AA
+  m_EditorClassIdentifier: 
+  objectName: Engine2_Stop
+  id: 3642045662
+  guid: C58B41FE-D29A-4F46-9ED0-35B98EEA89AA

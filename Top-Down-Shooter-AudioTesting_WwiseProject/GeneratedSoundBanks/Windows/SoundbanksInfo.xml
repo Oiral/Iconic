@@ -18,6 +18,12 @@
 			<IncludedEvents>
 				<Event Id="187567512" Name="Enemy_Explodes" ObjectPath="\Events\Default Work Unit\Enemy_Explodes"/>
 				<Event Id="3478727910" Name="Enemy_Shoots" ObjectPath="\Events\Default Work Unit\Enemy_Shoots"/>
+				<Event Id="759487248" Name="Engine1" ObjectPath="\Events\Default Work Unit\Engine1"/>
+				<Event Id="1455197407" Name="Engine1_Stop" ObjectPath="\Events\Default Work Unit\Engine1_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="759487251" Name="Engine2" ObjectPath="\Events\Default Work Unit\Engine2"/>
+				<Event Id="3642045662" Name="Engine2_Stop" ObjectPath="\Events\Default Work Unit\Engine2_Stop" MaxAttenuation="0.000000"/>
+				<Event Id="759487250" Name="Engine3" ObjectPath="\Events\Default Work Unit\Engine3"/>
+				<Event Id="3125878193" Name="Engine3_Stop" ObjectPath="\Events\Default Work Unit\Engine3_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="2629526263" Name="Player_Explodes" ObjectPath="\Events\Default Work Unit\Player_Explodes"/>
 				<Event Id="663803017" Name="Player_Shields" ObjectPath="\Events\Default Work Unit\Player_Shields"/>
 				<Event Id="2108129981" Name="Player_Shoots" ObjectPath="\Events\Default Work Unit\Player_Shoots"/>
@@ -26,7 +32,7 @@
 			<IncludedMemoryFiles>
 				<File Id="18005470" Language="SFX">
 					<ShortName>engine1.wav</ShortName>
-					<Path>SFX\engine1_56D34C19.wem</Path>
+					<Path>SFX\engine1_8956FC97.wem</Path>
 				</File>
 				<File Id="76113811" Language="SFX">
 					<ShortName>powerup.wav</ShortName>
@@ -42,11 +48,11 @@
 				</File>
 				<File Id="513757403" Language="SFX">
 					<ShortName>engine2.wav</ShortName>
-					<Path>SFX\engine2_56D34C19.wem</Path>
+					<Path>SFX\engine2_8956FC97.wem</Path>
 				</File>
 				<File Id="635160145" Language="SFX">
 					<ShortName>siren.wav</ShortName>
-					<Path>SFX\siren_A3ED6C9B.wem</Path>
+					<Path>SFX\siren_0AC030E2.wem</Path>
 				</File>
 				<File Id="717144871" Language="SFX">
 					<ShortName>boom.wav</ShortName>
@@ -54,7 +60,7 @@
 				</File>
 				<File Id="882627490" Language="SFX">
 					<ShortName>engine3.wav</ShortName>
-					<Path>SFX\engine3_56D34C19.wem</Path>
+					<Path>SFX\engine3_8956FC97.wem</Path>
 				</File>
 				<File Id="1063086504" Language="SFX">
 					<ShortName>boom2.wav</ShortName>

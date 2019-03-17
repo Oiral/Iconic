@@ -1932,29 +1932,36 @@
 								<MusicTransition Name="Transition" ID="{457C9211-E040-4005-A938-6AC7A8BFE686}">
 									<TransitionInfo/>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{3CDACBFF-8A91-41A4-9AC7-24E4BDE4FDF6}">
+								<MusicTransition Name="Transition" ID="{A91ADBD4-BBD5-4544-9C3A-4C95928D5EBE}">
 									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
-										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 										</Reference>
 									</ReferenceList>
-									<TransitionInfo/>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{FFCE51FB-F022-49E2-9EC0-01F6CCBA9128}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{BA611BF5-E288-4E18-AA49-A06160D3F6CC}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
 										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1965,18 +1972,47 @@
 											<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 										</Reference>
 									</ReferenceList>
-									<TransitionInfo/>
+									<TransitionInfo>
+										<JumpToPlaylistItemRef Name="" ID="{50A331F7-155D-4C8A-AB56-72753D8FF42F}"/>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{C64D0177-CC7D-49BB-A3DB-D1F6133CC9A3}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+													<Property Name="FadeTime" Type="Real64" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
 								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{A91ADBD4-BBD5-4544-9C3A-4C95928D5EBE}">
+								<MusicTransition Name="Transition" ID="{3CDACBFF-8A91-41A4-9AC7-24E4BDE4FDF6}">
 									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
+										</Reference>
 										<Reference Name="SourceContextObject">
 											<ObjectRef Name="SB_11iv_MPlaylistCon" ID="{3DFDAD83-997D-4D11-A700-6251B0E1D180}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 										</Reference>
 									</ReferenceList>
-									<TransitionInfo/>
+									<TransitionInfo>
+										<JumpToPlaylistItemRef Name="" ID="{9B3573BD-C0AD-427C-AE0F-CB3776463AC1}"/>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{E2D5E295-D34F-473A-B534-B789E369FEAC}">
+												<PropertyList>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="2"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>

@@ -26,12 +26,20 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="engine1" ID="{CE8269BF-A0E6-4AB5-A5D4-645ACACB161F}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="SB-11iv_Menul_MPlaylistCon" ID="{2332970B-122A-489B-89F0-0A26D185B5A8}" WorkUnitID="{751E3E11-CF86-47F3-9F48-3DF327193702}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Music_Vol_Slider" ID="{BEDC5260-A515-4441-BD76-3C128741B594}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="engine2" ID="{94EA2DFD-4E44-405D-A233-F2490B9156EF}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_Switch_Mute_Music" ID="{308B413F-7766-4141-80C0-351451401A37}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
@@ -41,11 +49,19 @@
 							<ObjectRef Name="Player_Shields" ID="{3C15BD3A-8C75-4126-B6BC-6BEE4ECB8D0F}" WorkUnitID="{6CDDB4C0-3BC8-44A1-B8CF-44E38FA4CA82}"/>
 							<Position X="3" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="engine3" ID="{0BA80A46-F1A8-455C-B46D-0C5958F6C7C7}" WorkUnitID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}"/>
+							<Position X="3" Y="2"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Music_GP" ID="{89A90069-9EA8-413B-A533-3A3B4EA92CC8}"/>
-							<Value>-44</Value>
+							<Value>-50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}"/>
+							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

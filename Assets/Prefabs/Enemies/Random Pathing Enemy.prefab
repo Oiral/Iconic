@@ -28,6 +28,8 @@ GameObject:
   - component: {fileID: 114367268734511896}
   - component: {fileID: 114384633779614942}
   - component: {fileID: 114778205779379682}
+  - component: {fileID: 114869943050831152}
+  - component: {fileID: 114518288639695832}
   m_Layer: 10
   m_Name: Random Pathing Enemy
   m_TagString: Enemy
@@ -154,6 +156,10 @@ MonoBehaviour:
     valueGuid: 
     WwiseObjectReference: {fileID: 11400000, guid: 66e08c3f55643784db222cd97e3ec088,
       type: 2}
+  EEngineStopAudio:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: c35ca9960d3000d45aad7cfb61a84eb7,
+      type: 2}
   deathParticle: {fileID: 1410913702249978, guid: 655040b9ca2ab5f4c9f69969c17c82de,
     type: 2}
 --- !u!114 &114384633779614942
@@ -173,6 +179,34 @@ MonoBehaviour:
   - {fileID: 1338268070716786, guid: 1d2ae29c90844c142b7584bf9a2c3729, type: 2}
   guaranteeDrop: 0
   dropChance: 0.1
+--- !u!114 &114518288639695832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750660823908506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947820f543dc62a40aa5d74e127d0da2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    valueGuid: 
+    WwiseObjectReference: {fileID: 11400000, guid: a7ce054843f6de241b2d242c5d6f6d97,
+      type: 2}
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 
+  multiPositionArray: []
+  MultiPositionType: 1
+  multiPositionTypeLabel: 2
 --- !u!114 &114778205779379682
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +231,27 @@ MonoBehaviour:
     healthMultiplier: 0
     movementSpeed: 5
     image: {fileID: 21300000, guid: 449ac5b8ea98c91478780c406f8018cb, type: 3}
+--- !u!114 &114869943050831152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1750660823908506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 741a5638f52647f4bba4b0c7b4d8f000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!212 &212558946151785752
 SpriteRenderer:
   m_ObjectHideFlags: 1

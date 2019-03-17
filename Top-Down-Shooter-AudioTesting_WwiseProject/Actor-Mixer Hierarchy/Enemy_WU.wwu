@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+							<ObjectRef Name="SFX Bus" ID="{0438C72F-F409-4F85-8400-62B181431F10}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -51,13 +51,18 @@
 								<Value>350</Value>
 							</ValueList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+							<ObjectRef Name="SFX Bus" ID="{0438C72F-F409-4F85-8400-62B181431F10}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -74,12 +79,76 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="engine1" ID="{CE8269BF-A0E6-4AB5-A5D4-645ACACB161F}" ShortID="36889066">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{ED855DC1-C981-4943-9A7C-DAFBECDA35A6}" ShortID="722732080">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{6A7AACE0-6ABD-406A-B6D7-7BA3E650CBD2}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1348</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>InvertedSCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-1240</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{69261DCA-787B-49FA-B02D-A6B95722577B}" ShortID="556927598">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{E49FE6BD-5885-46F1-B1CD-F0C14656DB2D}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-38.9878</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+							<ObjectRef Name="E Engine Bus" ID="{D0C12127-B830-496C-8FAF-E442683BABE6}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -93,12 +162,73 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="engine2" ID="{94EA2DFD-4E44-405D-A233-F2490B9156EF}" ShortID="577397197">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{70ABB77E-54C7-493B-8437-37179AF88139}" ShortID="934348184">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{1304D186-8B9B-429B-AB37-1C61DA79EB1C}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1133</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>InvertedSCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-1295</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{8763EECC-ADBB-42AF-BD5D-A7080507D4C3}" ShortID="490566485">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{8803B29B-D09E-4277-92EF-023D461DB8D4}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log1</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+							<ObjectRef Name="E Engine Bus" ID="{D0C12127-B830-496C-8FAF-E442683BABE6}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -112,12 +242,73 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="engine3" ID="{0BA80A46-F1A8-455C-B46D-0C5958F6C7C7}" ShortID="50880155">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{4F08CA66-DE95-4F64-8DBE-9EBC33925B5D}" ShortID="53331147">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{3E5DF60C-1775-4701-83CA-03AEEF0034F2}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1240</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>SCurve</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-1348</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{DE315489-FD98-4E83-8A02-DDB8FFB5F465}" ShortID="972173023">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}" WorkUnitID="{9531D137-27FA-4B05-9039-79131D7B8A16}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{44B2EEA8-94C2-495B-BE7D-5AA0D6A2BC1F}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+												<SegmentShape>Log2</SegmentShape>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-200</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
+							<ObjectRef Name="E Engine Bus" ID="{D0C12127-B830-496C-8FAF-E442683BABE6}" WorkUnitID="{5A58910C-B289-4DEA-81DA-3EC3762C55C9}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

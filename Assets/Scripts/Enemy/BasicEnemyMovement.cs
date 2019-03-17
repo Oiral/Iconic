@@ -26,6 +26,10 @@ public class BasicEnemyMovement : MonoBehaviour {
 
     public int score;
 
+	//Setting RTPCs for Enemy engine sounds
+	public AK.Wwise.RTPC EtoPDistanceRTPC = null;
+	public AK.Wwise.RTPC EVelocityRTPC = null;
+
 	void Start () {
         target = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
@@ -39,7 +43,6 @@ public class BasicEnemyMovement : MonoBehaviour {
 
             //Get the direction to the player
             var dir = target.transform.position - transform.position;
-
             //Aim at the player
             if (aimAtPlayer)
             {
@@ -52,6 +55,12 @@ public class BasicEnemyMovement : MonoBehaviour {
 
             //Clamp the velocity to the max speed
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+
+			//Enemy engine RTPC set up. 
+			var distance = Vector3.Distance(target.transform.position, transform.position);
+			EtoPDistanceRTPC.SetGlobalValue(distance);
+			//EVelocityRTPC.SetGlobalValue(rb.velocity);
+
         }
 	}
 

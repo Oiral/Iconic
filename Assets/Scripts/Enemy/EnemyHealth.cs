@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour {
     public int score;
 
 	public AK.Wwise.Event EExplodeAudio;
+	public AK.Wwise.Event EEngineStopAudio;
     public GameObject deathParticle;
 
     public void RemoveHealth(int damage)
@@ -24,6 +25,9 @@ public class EnemyHealth : MonoBehaviour {
             EnemyManager.instance.enemiesKilledText.text = EnemyManager.instance.enemiesKilled.ToString(); ;
             
             Instantiate(deathParticle, transform.position, transform.rotation, null);
+
+			//Stop engine sound, play explosion
+			EEngineStopAudio.Post(gameObject);
 			EExplodeAudio.Post (gameObject);
 
             //Call screen shake
