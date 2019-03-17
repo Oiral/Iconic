@@ -9,6 +9,17 @@
 							<ValueList>
 								<Value>-330</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{097ED032-B077-49EE-9496-A9DBFEE0D897}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>

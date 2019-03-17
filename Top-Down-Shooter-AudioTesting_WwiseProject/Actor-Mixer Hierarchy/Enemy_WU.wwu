@@ -4,6 +4,21 @@
 		<WorkUnit Name="Enemy_WU" ID="{7F85FFA2-8765-49E1-BB9D-9CA2CFF80B36}" OwnerID="{20D23E04-35EC-4986-91DA-60D9FAB2493C}" PersistMode="Nested">
 			<ChildrenList>
 				<Sound Name="boom" ID="{62ADAADD-4BBD-4195-BCC2-A7409DEB1A65}" ShortID="703093268">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{649DFF8D-C9C7-4055-AF0E-6C1B15664AF2}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="600"/>
+											<Property Name="Min" Type="Real64" Value="-600"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0C518F14-518F-4F1A-BF41-8CF985550CF2}"/>
@@ -50,6 +65,16 @@
 							<ValueList>
 								<Value>350</Value>
 							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E5DACC63-7F01-41C4-B84A-59B87A7413D1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="600"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -128,7 +153,7 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-0</YPos>
+												<YPos>0</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
@@ -208,7 +233,7 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-0</YPos>
+												<YPos>0</YPos>
 												<Flags>5</Flags>
 												<SegmentShape>Log1</SegmentShape>
 											</Point>
