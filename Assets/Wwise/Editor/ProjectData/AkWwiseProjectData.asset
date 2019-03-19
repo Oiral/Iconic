@@ -21,6 +21,7 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0c91585a89b2ea4d81da3ec3762c55c9
+    m_lastTime: -8586486536455792404
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -73,6 +74,7 @@ MonoBehaviour:
       - ElementName: Enemy_Shoots
         ObjectType: 3
       Path: Default Work Unit\Enemy_Shoots
+      maxAttenuation: 50
       maxDuration: 0
       minDuration: 0
     - name: Engine1
@@ -84,6 +86,7 @@ MonoBehaviour:
       - ElementName: Engine1
         ObjectType: 3
       Path: Default Work Unit\Engine1
+      maxAttenuation: 50
       maxDuration: 0
       minDuration: 0
     - name: Engine1_Stop
@@ -107,6 +110,7 @@ MonoBehaviour:
       - ElementName: Engine2
         ObjectType: 3
       Path: Default Work Unit\Engine2
+      maxAttenuation: 50
       maxDuration: 0
       minDuration: 0
     - name: Engine2_Stop
@@ -130,6 +134,7 @@ MonoBehaviour:
       - ElementName: Engine3
         ObjectType: 3
       Path: Default Work Unit\Engine3
+      maxAttenuation: 50
       maxDuration: 0
       minDuration: 0
     - name: Engine3_Stop
