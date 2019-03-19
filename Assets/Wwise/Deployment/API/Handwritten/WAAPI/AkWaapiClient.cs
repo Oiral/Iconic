@@ -207,7 +207,16 @@ public class AkWaapiClient
 	static AkWaapiClient()
 	{
 		UnityEditor.EditorApplication.update += ProcessCallbacks;
-		AkWaapiClient_PINVOKE.SetWampEventCallback(InternalWampEventCallback);
+        try
+        {
+            AkWaapiClient_PINVOKE.SetWampEventCallback(InternalWampEventCallback);
+        }
+        catch (System.Exception)
+        {
+            UnityEngine.Debug.Log("Cannot find InternalWampEventCallBack");
+            throw;
+        }
+		
 	}
 
 	~AkWaapiClient()
