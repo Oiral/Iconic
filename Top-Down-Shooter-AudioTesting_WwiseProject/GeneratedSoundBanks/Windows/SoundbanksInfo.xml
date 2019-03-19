@@ -17,12 +17,12 @@
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="187567512" Name="Enemy_Explodes" ObjectPath="\Events\Default Work Unit\Enemy_Explodes"/>
-				<Event Id="3478727910" Name="Enemy_Shoots" ObjectPath="\Events\Default Work Unit\Enemy_Shoots"/>
-				<Event Id="759487248" Name="Engine1" ObjectPath="\Events\Default Work Unit\Engine1"/>
+				<Event Id="3478727910" Name="Enemy_Shoots" ObjectPath="\Events\Default Work Unit\Enemy_Shoots" MaxAttenuation="50.000000"/>
+				<Event Id="759487248" Name="Engine1" ObjectPath="\Events\Default Work Unit\Engine1" MaxAttenuation="50.000000"/>
 				<Event Id="1455197407" Name="Engine1_Stop" ObjectPath="\Events\Default Work Unit\Engine1_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="759487251" Name="Engine2" ObjectPath="\Events\Default Work Unit\Engine2"/>
+				<Event Id="759487251" Name="Engine2" ObjectPath="\Events\Default Work Unit\Engine2" MaxAttenuation="50.000000"/>
 				<Event Id="3642045662" Name="Engine2_Stop" ObjectPath="\Events\Default Work Unit\Engine2_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="759487250" Name="Engine3" ObjectPath="\Events\Default Work Unit\Engine3"/>
+				<Event Id="759487250" Name="Engine3" ObjectPath="\Events\Default Work Unit\Engine3" MaxAttenuation="50.000000"/>
 				<Event Id="3125878193" Name="Engine3_Stop" ObjectPath="\Events\Default Work Unit\Engine3_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="2629526263" Name="Player_Explodes" ObjectPath="\Events\Default Work Unit\Player_Explodes"/>
 				<Event Id="663803017" Name="Player_Shields" ObjectPath="\Events\Default Work Unit\Player_Shields"/>

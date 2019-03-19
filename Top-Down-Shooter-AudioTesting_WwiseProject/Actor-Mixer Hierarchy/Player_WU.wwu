@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<Sound Name="Fire_Laser" ID="{33D31C3C-5C51-408C-A895-1EB128FCE5FE}" ShortID="846254334">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 						<Property Name="Pitch" Type="int32">
 							<ValueList>
 								<Value>-330</Value>

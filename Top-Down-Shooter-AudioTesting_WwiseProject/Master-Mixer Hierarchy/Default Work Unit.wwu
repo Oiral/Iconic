@@ -17,6 +17,7 @@
 										<Value>-24</Value>
 									</ValueList>
 								</Property>
+								<Property Name="UsedForBackgroundMusic" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
@@ -30,11 +31,21 @@
 							</ReferenceList>
 						</Bus>
 						<Bus Name="SFX Bus" ID="{0438C72F-F409-4F85-8400-62B181431F10}">
+							<PropertyList>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
 									<ObjectRef Name="Hard_Knee_Minus_3dB_RMS" ID="{D083BAE5-F9EF-426B-A311-D9DF8DFE8807}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
+							<PositioningInfo>
+								<Panner Name="" ID="{BE4A5960-03F1-4290-B45C-EA707977602A}"/>
+							</PositioningInfo>
 						</Bus>
 						<Bus Name="E Engine Bus" ID="{D0C12127-B830-496C-8FAF-E442683BABE6}">
 							<PropertyList>

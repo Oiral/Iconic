@@ -61,7 +61,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="EtoPDistanceRTP" ID="{08784B62-2EBC-48BC-8D46-85B13C292325}"/>
-							<Value>52</Value>
+							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
