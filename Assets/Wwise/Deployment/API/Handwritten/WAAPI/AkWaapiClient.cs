@@ -1,5 +1,7 @@
 #if UNITY_EDITOR
 
+using System;
+
 [UnityEditor.InitializeOnLoad]
 ///@brief The full Wwise Authoring API is exposed to Unity as a native plugin for the Windows and macOS platforms. All features, including subscriptions, are supported through the \c AkWAAPIClient class.
 public class AkWaapiClient
