@@ -14,7 +14,7 @@ public class ShotCounter : MonoBehaviour {
         
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
-            Character player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
+             PlayerWeapon player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerWeapon>();
 
             if (player != null)
             {
